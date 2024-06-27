@@ -1,0 +1,219 @@
+---
+p_type: "projects"
+title: "Acoustic Ray Simulation"
+title_sub: "Designing and Evaluating the KAI-MICE Auditorium Design"
+
+slug: "acoustic-ray-simulation"
+
+hero_img_src: "./figures/acoustic-ray-simulation-thumbnail-color.jpg"
+hero_img_alt: "Acoustic Ray Simulation"
+hero_img_crd_txt: "Arnott Ferels"
+hero_img_crd_link: ""
+
+keywords:
+  - id: 1
+    name: "Computation"
+  - id: 2
+    name: "Auditorium Design"
+  - id: 3
+    name: "Acoustic Design"
+  - id: 4
+    name: "Design Optimization"
+
+location: "Bandung, Indonesia"
+
+date: "2023-10"
+pr_tag: "Professional Work"
+pr_type: "Collaborative work in the National Professional Competition by IAI West Java (Indonesian Institute of Architect West Java)"
+award: ""
+
+pr_contribution: "Research, Conceptual Design, Acoustic Modeling, Analysis and Simulation, Scripting & Visualization"
+pr_contributor: "Arnott Ferels, Robby D. Juliardi, Ekky Maulidin, Ghina Z & Zulafa Azmi"
+
+software:
+  - id: 1
+    name: "Rhino"
+  - id: 2
+    name: "Grasshopper"
+  - id: 3
+    name: "Pachyderm Acoustic"
+  - id: 4
+    name: "Twinmotion"
+
+pr_adv: ""
+pr_jury: ""
+
+abstract: "This study details the creation of a specialized auditorium model, inspired by Architect’s Data by Neufert. Employing Grasshopper for algorithmic modeling, parameters were refined, emphasizing ray distribution simulation for acoustic analysis via Ray Pachyderm Acoustical Simulation. Data visualization, featuring a heat map, illustrates ray counts at each step for seats. In conclusion, this method offers insights into sound ray behavior in acoustics."
+---
+
+<VidRmt
+  src="https://youtube.com/embed/-1DhkZLcgt8"
+  title="Animation"
+  videoUrl="https://youtube.com/watch?v=-1DhkZLcgt8"
+/>
+
+# Method
+<ImgInv>![Method](./figures/acoustic-ray-simulation-method.jpg "Method")</ImgInv>
+<FigCpt>Method.</FigCpt>
+
+The creation of auditorium space is defined using an algorithmic modeling approach integrated with the Pachyderm Acoustic Simulation engine for continuous optimization.
+
+# Distribution of Sound Particles (Audio)
+<ImgInv>![Distribution of Sound Particles (Audio) (1)](./figures/acoustic-ray-simulation-distribution-01.jpg "Distribution of Sound Particles (Audio) (1)")</ImgInv>
+<FigCpt>Distribution of Sound Particles (Audio) (1).</FigCpt>
+
+The diagram depicts the simulation in a 1530-seat auditorium, recording 61,208 Ray Curves (RC) for ATD. Red areas signal more than 10 sound reflections, while blue and yellow indicate 2 and 6 reflections, optimizing sound based on seat positions.
+
+<ImgInv>![Distribution of Sound Particles (Audio) (2)](./figures/acoustic-ray-simulation-distribution-02.jpg "Distribution of Sound Particles (Audio) (2)")</ImgInv>
+<FigCpt>Distribution of Sound Particles (Audio) (2).</FigCpt>
+
+# Animation
+<VidRmt
+  src="https://youtube.com/embed/uyrB8jYWXSA"
+  title="Front"
+  videoUrl="https://youtube.com/watch?v=uyrB8jYWXSA"
+/>
+
+<VidRmt
+  src="https://youtube.com/embed/nuKRgFvHTII"
+  title="Axonometric"
+  videoUrl="https://youtube.com/watch?v=nuKRgFvHTII"
+/>
+
+<VidRmt
+  src="https://youtube.com/embed/w9u6KCcH3MY"
+  title="Top"
+  videoUrl="https://youtube.com/watch?v=w9u6KCcH3MY"
+/>
+
+<VidRmt
+  src="https://youtube.com/embed/ZGoC3yJz7LQ"
+  title="Right"
+  videoUrl="https://youtube.com/watch?v=ZGoC3yJz7LQ"
+/>
+
+# Acoustic Material Recommendation: Sound Absorption for Optimization
+<TblWrp id="table1">
+<TblCpt>Acoustic Material Recommendations for Absorption in Auditorium Spaces. Source: Acoustic Projects Study (Acoustic Traffic LLC, 2023).</TblCpt>
+  <thead id="thead-row-1">
+    <tr>
+      <th rowSpan={2}>No.</th>
+      <th rowSpan={2}>Element</th>
+      <th rowSpan={2}>Material</th>
+      <th rowSpan={2}>Finishing</th>
+      <th colSpan={9} className="text-center">Absorption coef (% energy absorbed)</th>
+      <th rowSpan={2}>Page Ref.</th>
+    </tr>
+    <tr>
+      <th>62.5Hz</th>
+      <th>125Hz</th>
+      <th>250Hz</th>
+      <th>500Hz</th>
+      <th>1KHz</th>
+      <th>2KHz</th>
+      <th>4KHz</th>
+      <th>8KHz</th>
+      <th>Flatten All</th>
+    </tr>
+  </thead>
+
+  <tbody className="table-group-divider">
+    <tr id="table-row-01">
+      <td>1</td>
+      <td>Wall</td>
+      <td>Rockwool 75mm</td>
+      <td>Fabric</td>
+      <td>&#45;</td>
+      <td>0.3</td>
+      <td>0.69</td>
+      <td>0.94</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>&#45;</td>
+      <td>0.82</td>
+      <td>10</td>
+    </tr>
+    <tr id="table-row-02">
+      <td>2</td>
+      <td>Floor</td>
+      <td>Carpet</td>
+      <td>Fabric</td>
+      <td>&#45;</td>
+      <td>0.1</td>
+      <td>0.15</td>
+      <td>0.25</td>
+      <td>0.3</td>
+      <td>0.3</td>
+      <td>0.3</td>
+      <td>&#45;</td>
+      <td>0.23</td>
+      <td>1</td>
+    </tr>
+    <tr id="table-row-03">
+      <td>3</td>
+      <td>Furniture</td>
+      <td>Chair</td>
+      <td>Fabric</td>
+      <td>&#45;</td>
+      <td>0.33</td>
+      <td>0.44</td>
+      <td>0.45</td>
+      <td>0.45</td>
+      <td>0.45</td>
+      <td>0.45</td>
+      <td>&#45;</td>
+      <td>0.42</td>
+      <td>2</td>
+    </tr>
+    <tr id="table-row-04">
+      <td>4</td>
+      <td>Ceiling</td>
+      <td>Woodwool 50mm</td>
+      <td>Fabric</td>
+      <td>&#45;</td>
+      <td>0.3</td>
+      <td>0.4</td>
+      <td>0.5</td>
+      <td>0.85</td>
+      <td>0.5</td>
+      <td>0.65</td>
+      <td>&#45;</td>
+      <td>0.53</td>
+      <td>3</td>
+    </tr>
+    <tr id="table-row-05">
+      <td>5</td>
+      <td>LED screen</td>
+      <td>&#45;</td>
+      <td>&#45;</td>
+      <td>&#45;</td>
+      <td>&#45;</td>
+      <td>&#45;</td>
+      <td>&#45;</td>
+      <td>&#45;</td>
+      <td>&#45;</td>
+      <td>&#45;</td>
+      <td>&#45;</td>
+      <td>Undefined</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</TblWrp>
+
+The table outlines acoustic material recommendations for optimizing sound in the auditorium, considering material types, finishes, and absorption coefficients. Selection criteria include sound resonance, durability, and aesthetics. Follow these guidelines for enhanced sound quality and material durability in the auditorium.
+
+<ImgDefa>![Implementation of acoustic materials in the auditorium space.](./figures/acoustic-ray-simulation-interior.jpg "Implementation of acoustic materials in the auditorium space.")</ImgDefa>
+<FigCpt>Implementation of acoustic materials in the auditorium space.</FigCpt>
+
+Acoustic materials in the auditorium are optimized for the best sound absorption. From Rockwool on the walls to carpet on the floor, every element contributes to improving the room’s sound quality.
+
+# References
+1. Acoustic Traffic LLC. (n.d.). Absorption coefficients [dataset]. [_https://www.acoustic.ua/st/web_absorption_data_eng.pdf_](https://www.acoustic.ua/st/web_absorption_data_eng.pdf)
+1. Architects’ Data. (2023). In Wikipedia. [_https://en.wikipedia.org/w/index.php?title=Architects%27_Data&oldid=1142529729_](https://en.wikipedia.org/w/index.php?title=Architects%27_Data&oldid=1142529729)
+1. Kereta Api Indonesia. (2023). In Wikipedia. [_https://en.wikipedia.org/w/index.php?title=Kereta_Api_Indonesia&oldid=1183278651_](https://en.wikipedia.org/w/index.php?title=Kereta_Api_Indonesia&oldid=1183278651)
+1. Neufert, E., & Neufert, P. (2012). Architects’ Data. John Wiley & Sons.
+1. Pachyderm Acoustical Simulation. (2014). [Computer software]. [_https://www.food4rhino.com/en/app/pachyderm-acoustical-simulation_](https://www.food4rhino.com/en/app/pachyderm-acoustical-simulation)
+
+# Notes
+Pachyderm is an open source collection of numerical and geometrical simulation techniques curated by Open Research in Acoustical Science and Education.

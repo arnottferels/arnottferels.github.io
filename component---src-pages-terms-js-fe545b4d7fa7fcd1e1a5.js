@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_site=self.webpackChunkmy_site||[]).push([[4172],{3215:function(e,t,a){a.r(t),a.d(t,{Head:function(){return l}});var n=a(7294),s=a(6318),r=a(8894);t.default=()=>n.createElement(s.BR,{pageTitle:"Terms",extraClass:"sans-pretty"},n.createElement(n.Fragment,null,n.createElement("div",{id:"afid-temporary",className:"h-fit"},n.createElement("p",{className:"font-mono text-center"},"Coming soon."))));const l=()=>n.createElement(r.Ct,{title:"Terms"})}}]);
+//# sourceMappingURL=component---src-pages-terms-js-fe545b4d7fa7fcd1e1a5.js.map
