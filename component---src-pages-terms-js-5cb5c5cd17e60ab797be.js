@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_site=self.webpackChunkmy_site||[]).push([[4172],{3215:function(e,t,n){n.r(t),n.d(t,{Head:function(){return c}});var s=n(7294),a=n(9126),r=n(8894);t.default=()=>s.createElement(a.BR,{pageTitle:"Terms",extraClass:"sans-pretty"},s.createElement("div",{style:{height:"fit-content"}},s.createElement("p",{className:"g-mono g-text-center"},"Coming soon")));const c=()=>s.createElement(r.Ct,{title:"Terms"})}}]);
+//# sourceMappingURL=component---src-pages-terms-js-5cb5c5cd17e60ab797be.js.map
