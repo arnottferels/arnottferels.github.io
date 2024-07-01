@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_site=self.webpackChunkmy_site||[]).push([[5346],{2024:function(e,t,n){n.r(t),n.d(t,{Head:function(){return i}});var s=n(7294),a=n(9126),c=n(8894);t.default=()=>s.createElement(a.BR,{pageTitle:"License",extraClass:"sans-pretty"},s.createElement("div",{style:{height:"fit-content"},className:"g-pretty-p"},s.createElement("p",{className:"g-mono g-text-center"},"Coming soon")));const i=()=>s.createElement(c.Ct,{title:"License"})}}]);
+//# sourceMappingURL=component---src-pages-others-license-js-274fba3a38cdb2e1071a.js.map
