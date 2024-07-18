@@ -1,0 +1,1 @@
+import"./hoisted.lE9w6dxy.js";function e(){new PagefindUI({element:"#search",debounceTimeoutMs:500,resetStyles:!1,showEmptyFilters:!1,excerptLength:10,showImages:!0,showSubResults:!1,autofocus:!1})}window.addEventListener("DOMContentLoaded",t=>{e()});window.addEventListener("astro:after-swap",t=>{e()});
