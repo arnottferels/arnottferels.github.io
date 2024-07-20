@@ -1,1 +1,0 @@
-document.querySelector(".hamburger").addEventListener("click",()=>{document.querySelector(".nav-links").classList.toggle("expanded")});document.addEventListener("DOMContentLoaded",()=>{const t=window.location.pathname;document.querySelectorAll("a").forEach(e=>{e.getAttribute("href")===t&&e.classList.add("active")})});

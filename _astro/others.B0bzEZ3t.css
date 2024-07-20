@@ -1,1 +1,19 @@
-.wrapper[data-astro-cid-dzw6n3dx]{margin-inline:auto;width:75%;display:flex;flex-direction:column;align-items:left;font-size:1.25rem;@media (min-width: 768px){font-size:1.5rem}}p[data-astro-cid-dzw6n3dx]{font-size:calc(var(--arnott-ui-font-size) * 1);padding-inline:2rem;text-align:center;text-indent:1rem;letter-spacing:1rem;text-transform:uppercase}
+.wrapper[data-astro-cid-dzw6n3dx] {
+  margin-inline: auto;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: 1.25rem;
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+p[data-astro-cid-dzw6n3dx] {
+  font-size: calc(var(--arnott-ui-font-size) * 1);
+  padding-inline: 2rem;
+  text-align: center;
+  text-indent: 1rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}

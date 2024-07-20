@@ -1,1 +1,21 @@
-div[data-astro-cid-kh7btl4r]{display:block;margin:auto;text-wrap:pretty;max-width:100ch}.about-text[data-astro-cid-kh7btl4r]{font-size:1rem;@media (min-width: 768px){font-size:2rem}padding-inline:2rem;width:100%;text-align:left}.about-text[data-astro-cid-kh7btl4r]:first-child{margin-top:0}.about-text[data-astro-cid-kh7btl4r]:last-child{margin-bottom:0}
+div[data-astro-cid-kh7btl4r] {
+  display: block;
+  margin: auto;
+  text-wrap: pretty;
+  max-width: 100ch;
+}
+.about-text[data-astro-cid-kh7btl4r] {
+  font-size: 1rem;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+  padding-inline: 2rem;
+  width: 100%;
+  text-align: left;
+}
+.about-text[data-astro-cid-kh7btl4r]:first-child {
+  margin-top: 0;
+}
+.about-text[data-astro-cid-kh7btl4r]:last-child {
+  margin-bottom: 0;
+}

@@ -1,1 +1,2 @@
-import{i}from"./index.CTbVEFV3.js";i();
+import { i } from './index.CTbVEFV3.js';
+i();
