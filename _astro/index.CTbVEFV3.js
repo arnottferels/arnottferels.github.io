@@ -4,7 +4,14 @@ let f = !0,
   h,
   l = !1;
 function L(e) {
-  l || ((l = !0), (f ??= e?.prefetchAll ?? !1), (h ??= e?.defaultStrategy ?? 'hover'), v(), g(), p(), y());
+  l ||
+    ((l = !0),
+    (f ??= e?.prefetchAll ?? !1),
+    (h ??= e?.defaultStrategy ?? 'hover'),
+    v(),
+    g(),
+    p(),
+    y());
 }
 function v() {
   for (const e of ['touchstart', 'mousedown'])
@@ -72,13 +79,18 @@ function w() {
 }
 function y() {
   u(() => {
-    for (const e of document.getElementsByTagName('a')) i(e, 'load') && s(e.href);
+    for (const e of document.getElementsByTagName('a'))
+      i(e, 'load') && s(e.href);
   });
 }
 function s(e, t) {
   const o = t?.ignoreSlowConnection ?? !1;
   if (S(e, o))
-    if ((d.add(e), document.createElement('link').relList?.supports?.('prefetch') && t?.with !== 'fetch')) {
+    if (
+      (d.add(e),
+      document.createElement('link').relList?.supports?.('prefetch') &&
+        t?.with !== 'fetch')
+    ) {
       const n = document.createElement('link');
       (n.rel = 'prefetch'), n.setAttribute('href', e), document.head.append(n);
     } else fetch(e, { priority: 'low' });
@@ -88,7 +100,9 @@ function S(e, t) {
   try {
     const o = new URL(e, location.href);
     return (
-      location.origin === o.origin && (location.pathname !== o.pathname || location.search !== o.search) && !d.has(e)
+      location.origin === o.origin &&
+      (location.pathname !== o.pathname || location.search !== o.search) &&
+      !d.has(e)
     );
   } catch {}
   return !1;

@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const n = () => {
     if (e) {
       const { text: r, latin: o, transliteration: s } = i[t];
-      o ? (e.innerText = r) : (e.innerHTML = `${r} <div class="transliteration">(${s})</div>`),
+      o
+        ? (e.innerText = r)
+        : (e.innerHTML = `${r} <div class="transliteration">(${s})</div>`),
         (t = (t + 1) % i.length);
     } else console.error('Greeting element not found');
   };

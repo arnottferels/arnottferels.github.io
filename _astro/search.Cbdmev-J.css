@@ -116,7 +116,9 @@ html[data-theme='dark'] #searchContainer .pagefind-ui__search-input {
   color: #000;
   opacity: 0.5;
 }
-html[data-theme='dark'] #searchContainer .pagefind-ui__search-input::placeholder {
+html[data-theme='dark']
+  #searchContainer
+  .pagefind-ui__search-input::placeholder {
   color: #fff;
   opacity: 0.5;
 }

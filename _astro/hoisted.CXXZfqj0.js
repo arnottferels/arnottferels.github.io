@@ -7,7 +7,8 @@ function R() {
 function D() {
   const e = document.querySelector('.nav-links'),
     t = document.querySelector('.menu');
-  window.innerWidth >= 1440 && (e.classList.remove('expanded'), t.classList.remove('active'));
+  window.innerWidth >= 1440 &&
+    (e.classList.remove('expanded'), t.classList.remove('active'));
 }
 function b() {
   const e = document.querySelector('.nav-links'),
@@ -34,16 +35,26 @@ window.addEventListener('replacestate', b);
   var t = e.pushState,
     n = e.replaceState;
   (e.pushState = function (o) {
-    return typeof e.onpushstate == 'function' && e.onpushstate({ state: o }), b(), t.apply(e, arguments);
+    return (
+      typeof e.onpushstate == 'function' && e.onpushstate({ state: o }),
+      b(),
+      t.apply(e, arguments)
+    );
   }),
     (e.replaceState = function (o) {
-      return typeof e.onreplacestate == 'function' && e.onreplacestate({ state: o }), b(), n.apply(e, arguments);
+      return (
+        typeof e.onreplacestate == 'function' && e.onreplacestate({ state: o }),
+        b(),
+        n.apply(e, arguments)
+      );
     });
 })(window.history);
 function X() {
   const e = window.location.pathname;
   document.querySelectorAll('a').forEach((n) => {
-    n.getAttribute('href') === e ? n.classList.add('active') : n.classList.remove('active');
+    n.getAttribute('href') === e
+      ? n.classList.add('active')
+      : n.classList.remove('active');
   });
 }
 document.addEventListener('DOMContentLoaded', () => {
@@ -57,7 +68,9 @@ function L() {
     var e = document.querySelector('header'),
       t = window.scrollY,
       n = window.innerHeight * 0.3;
-    t > n ? e.classList.add('header-hidden') : e.classList.remove('header-hidden');
+    t > n
+      ? e.classList.add('header-hidden')
+      : e.classList.remove('header-hidden');
   } else {
     var e = document.querySelector('header');
     e.classList.remove('header-hidden');
@@ -94,7 +107,8 @@ function ee(e) {
     for (const n of e.scripts)
       if (
         !n.hasAttribute('data-astro-rerun') &&
-        ((!t.src && t.textContent === n.textContent) || (t.src && t.type === n.type && t.src === n.src))
+        ((!t.src && t.textContent === n.textContent) ||
+          (t.src && t.type === n.type && t.src === n.src))
       ) {
         n.dataset.astroExec = '';
         break;
@@ -102,8 +116,12 @@ function ee(e) {
 }
 function te(e) {
   const t = document.documentElement,
-    n = [...t.attributes].filter(({ name: o }) => (t.removeAttribute(o), o.startsWith('data-astro-')));
-  [...e.documentElement.attributes, ...n].forEach(({ name: o, value: r }) => t.setAttribute(o, r));
+    n = [...t.attributes].filter(
+      ({ name: o }) => (t.removeAttribute(o), o.startsWith('data-astro-'))
+    );
+  [...e.documentElement.attributes, ...n].forEach(({ name: o, value: r }) =>
+    t.setAttribute(o, r)
+  );
 }
 function ne(e) {
   for (const t of Array.from(document.head.children)) {
@@ -121,7 +139,8 @@ function oe(e, t) {
       (r.replaceWith(n),
       r.localName === 'astro-island' &&
         se(n) &&
-        (n.setAttribute('ssr', ''), n.setAttribute('props', r.getAttribute('props'))));
+        (n.setAttribute('ssr', ''),
+        n.setAttribute('props', r.getAttribute('props'))));
   }
 }
 const re = () => {
@@ -139,7 +158,8 @@ const re = () => {
     e &&
       (e.focus(),
       (e instanceof HTMLInputElement || e instanceof HTMLTextAreaElement) &&
-        (typeof t == 'number' && (e.selectionStart = t), typeof n == 'number' && (e.selectionEnd = n)));
+        (typeof t == 'number' && (e.selectionStart = t),
+        typeof n == 'number' && (e.selectionEnd = n)));
   },
   ie = (e, t) => {
     const n = e.getAttribute(y),
@@ -203,7 +223,10 @@ class fe extends U {
     super(ce, { cancelable: !0 }, t, n, o, r, s, d, a, c),
       (this.formData = u),
       (this.loader = l.bind(this, this)),
-      Object.defineProperties(this, { formData: { enumerable: !0 }, loader: { enumerable: !0, writable: !0 } });
+      Object.defineProperties(this, {
+        formData: { enumerable: !0 },
+        loader: { enumerable: !0, writable: !0 },
+      });
   }
 }
 class he extends U {
@@ -211,7 +234,18 @@ class he extends U {
   viewTransition;
   swap;
   constructor(t, n) {
-    super(de, void 0, t.from, t.to, t.direction, t.navigationType, t.sourceElement, t.info, t.newDocument, t.signal),
+    super(
+      de,
+      void 0,
+      t.from,
+      t.to,
+      t.direction,
+      t.navigationType,
+      t.sourceElement,
+      t.info,
+      t.newDocument,
+      t.signal
+    ),
       (this.direction = t.direction),
       (this.viewTransition = n),
       (this.swap = () => ae(this.newDocument)),
@@ -226,7 +260,9 @@ async function pe(e, t, n, o, r, s, d, a, c) {
   const u = new fe(e, t, n, o, r, s, window.document, d, a, c);
   return (
     document.dispatchEvent(u) &&
-      (await u.loader(), u.defaultPrevented || (me(le), u.navigationType !== 'traverse' && P({ scrollX, scrollY }))),
+      (await u.loader(),
+      u.defaultPrevented ||
+        (me(le), u.navigationType !== 'traverse' && P({ scrollX, scrollY }))),
     u
   );
 }
@@ -237,7 +273,9 @@ function we(e, t) {
 const ve = history.pushState.bind(history),
   T = history.replaceState.bind(history),
   P = (e) => {
-    history.state && ((history.scrollRestoration = 'manual'), T({ ...history.state, ...e }, ''));
+    history.state &&
+      ((history.scrollRestoration = 'manual'),
+      T({ ...history.state, ...e }, ''));
   },
   M = !!document.startViewTransition,
   I = () => !!document.querySelector('[name="astro-view-transitions-enabled"]'),
@@ -252,7 +290,10 @@ const $ = (e) => document.dispatchEvent(new Event(e)),
       (e.className = 'astro-route-announcer'),
       document.body.append(e),
       setTimeout(() => {
-        let t = document.title || document.querySelector('h1')?.textContent || location.pathname;
+        let t =
+          document.title ||
+          document.querySelector('h1')?.textContent ||
+          location.pathname;
         e.textContent = t;
       }, 60);
   },
@@ -262,15 +303,22 @@ const $ = (e) => document.dispatchEvent(new Event(e)),
 let O,
   E = 0;
 history.state
-  ? ((E = history.state.index), scrollTo({ left: history.state.scrollX, top: history.state.scrollY }))
-  : I() && (T({ index: E, scrollX, scrollY }, ''), (history.scrollRestoration = 'manual'));
+  ? ((E = history.state.index),
+    scrollTo({ left: history.state.scrollX, top: history.state.scrollY }))
+  : I() &&
+    (T({ index: E, scrollX, scrollY }, ''),
+    (history.scrollRestoration = 'manual'));
 async function ye(e, t) {
   try {
     const n = await fetch(e, t),
       r = (n.headers.get('content-type') ?? '').split(';', 1)[0].trim();
     return r !== 'text/html' && r !== 'application/xhtml+xml'
       ? null
-      : { html: await n.text(), redirected: n.redirected ? n.url : void 0, mediaType: r };
+      : {
+          html: await n.text(),
+          redirected: n.redirected ? n.url : void 0,
+          mediaType: r,
+        };
   } catch {
     return null;
   }
@@ -308,15 +356,26 @@ const V = (e, t, n, o, r) => {
   if (e.href !== location.href && !r)
     if (n.history === 'replace') {
       const c = history.state;
-      T({ ...n.state, index: c.index, scrollX: c.scrollX, scrollY: c.scrollY }, '', e.href);
+      T(
+        { ...n.state, index: c.index, scrollX: c.scrollX, scrollY: c.scrollY },
+        '',
+        e.href
+      );
     } else ve({ ...n.state, index: ++E, scrollX: 0, scrollY: 0 }, '', e.href);
-  if (((document.title = d), (A = e), s || (scrollTo({ left: 0, top: 0, behavior: 'instant' }), (a = !0)), r))
+  if (
+    ((document.title = d),
+    (A = e),
+    s || (scrollTo({ left: 0, top: 0, behavior: 'instant' }), (a = !0)),
+    r)
+  )
     scrollTo(r.scrollX, r.scrollY);
   else {
     if (e.hash) {
       history.scrollRestoration = 'auto';
       const c = history.state;
-      (location.href = e.href), history.state || (T(c, ''), s && window.dispatchEvent(new PopStateEvent('popstate')));
+      (location.href = e.href),
+        history.state ||
+          (T(c, ''), s && window.dispatchEvent(new PopStateEvent('popstate')));
     } else a || scrollTo({ left: 0, top: 0, behavior: 'instant' });
     history.scrollRestoration = 'manual';
   }
@@ -325,7 +384,9 @@ function Ee(e) {
   const t = [];
   for (const n of e.querySelectorAll('head link[rel=stylesheet]'))
     if (
-      !document.querySelector(`[${N}="${n.getAttribute(N)}"], link[rel=stylesheet][href="${n.getAttribute('href')}"]`)
+      !document.querySelector(
+        `[${N}="${n.getAttribute(N)}"], link[rel=stylesheet][href="${n.getAttribute('href')}"]`
+      )
     ) {
       const o = document.createElement('link');
       o.setAttribute('rel', 'preload'),
@@ -333,7 +394,8 @@ function Ee(e) {
         o.setAttribute('href', n.getAttribute('href')),
         t.push(
           new Promise((r) => {
-            ['load', 'error'].forEach((s) => o.addEventListener(s, r)), document.head.append(o);
+            ['load', 'error'].forEach((s) => o.addEventListener(s, r)),
+              document.head.append(o);
           })
         );
     }
@@ -345,7 +407,8 @@ async function C(e, t, n, o, r) {
       const f = h.effect;
       return !f || !(f instanceof KeyframeEffect) || !f.target
         ? !1
-        : window.getComputedStyle(f.target, f.pseudoElement).animationIterationCount === 'infinite';
+        : window.getComputedStyle(f.target, f.pseudoElement)
+            .animationIterationCount === 'infinite';
     }
     const l = document.getAnimations();
     document.documentElement.setAttribute(k, c);
@@ -376,12 +439,23 @@ async function z(e, t, n, o, r) {
   }
   const d = r ? 'traverse' : o.history === 'replace' ? 'replace' : 'push';
   if (
-    (d !== 'traverse' && P({ scrollX, scrollY }), W(t, n) && ((e !== 'back' && n.hash) || (e === 'back' && t.hash)))
+    (d !== 'traverse' && P({ scrollX, scrollY }),
+    W(t, n) && ((e !== 'back' && n.hash) || (e === 'back' && t.hash)))
   ) {
     V(n, t, o, document.title, r), s === m && (m = void 0);
     return;
   }
-  const a = await pe(t, n, e, d, o.sourceElement, o.info, s.controller.signal, o.formData, c);
+  const a = await pe(
+    t,
+    n,
+    e,
+    d,
+    o.sourceElement,
+    o.info,
+    s.controller.signal,
+    o.formData,
+    c
+  );
   if (a.defaultPrevented || a.signal.aborted) {
     s === m && (m = void 0), a.signal.aborted || (location.href = n.href);
     return;
@@ -398,7 +472,8 @@ async function z(e, t, n, o, r) {
             ? i.sourceElement.form
             : i.sourceElement?.closest('form');
       h.body =
-        g?.attributes.getNamedItem('enctype')?.value === 'application/x-www-form-urlencoded'
+        g?.attributes.getNamedItem('enctype')?.value ===
+        'application/x-www-form-urlencoded'
           ? new URLSearchParams(i.formData)
           : i.formData;
     }
@@ -419,7 +494,8 @@ async function z(e, t, n, o, r) {
       ((O ??= new DOMParser()),
       (i.newDocument = O.parseFromString(f.html, f.mediaType)),
       i.newDocument.querySelectorAll('noscript').forEach((g) => g.remove()),
-      !i.newDocument.querySelector('[name="astro-view-transitions-enabled"]') && !i.formData)
+      !i.newDocument.querySelector('[name="astro-view-transitions-enabled"]') &&
+        !i.formData)
     ) {
       i.preventDefault();
       return;
@@ -444,7 +520,9 @@ async function z(e, t, n, o, r) {
     return;
   }
   if ((document.documentElement.setAttribute(q, a.direction), M))
-    l.viewTransition = document.startViewTransition(async () => await C(a, o, l, r));
+    l.viewTransition = document.startViewTransition(
+      async () => await C(a, o, l, r)
+    );
   else {
     const i = (async () => {
       await Promise.resolve(), await C(a, o, l, r, K());
@@ -490,7 +568,9 @@ function Le(e) {
   (E = n), z(o, A, new URL(location.href), {}, t);
 }
 const F = () => {
-  history.state && (scrollX !== history.state.scrollX || scrollY !== history.state.scrollY) && P({ scrollX, scrollY });
+  history.state &&
+    (scrollX !== history.state.scrollX || scrollY !== history.state.scrollY) &&
+    P({ scrollX, scrollY });
 };
 {
   if (M || K() !== 'none')
@@ -516,7 +596,11 @@ const F = () => {
       addEventListener(
         'scroll',
         () => {
-          e === void 0 && ((o = history.state.index), (t = scrollY), (n = scrollX), (e = window.setInterval(r, 50)));
+          e === void 0 &&
+            ((o = history.state.index),
+            (t = scrollY),
+            (n = scrollX),
+            (e = window.setInterval(r, 50)));
         },
         { passive: !0 }
       );
@@ -536,7 +620,9 @@ function Y(e) {
     if (
       (e.composed && (t = e.composedPath()[0]),
       t instanceof Element && (t = t.closest('a, area')),
-      !(t instanceof HTMLAnchorElement) && !(t instanceof SVGAElement) && !(t instanceof HTMLAreaElement))
+      !(t instanceof HTMLAnchorElement) &&
+        !(t instanceof SVGAElement) &&
+        !(t instanceof HTMLAreaElement))
     )
       return;
     const n = t instanceof HTMLElement ? t.target : t.target.baseVal,
@@ -554,7 +640,10 @@ function Y(e) {
       e.shiftKey ||
       e.defaultPrevented ||
       (e.preventDefault(),
-      H(o, { history: t.dataset.astroHistory === 'replace' ? 'replace' : 'auto', sourceElement: t }));
+      H(o, {
+        history: t.dataset.astroHistory === 'replace' ? 'replace' : 'auto',
+        sourceElement: t,
+      }));
   }),
   document.addEventListener('submit', (e) => {
     let t = e.target;
@@ -566,7 +655,8 @@ function Y(e) {
       d = typeof n.method == 'string' ? n.method : n.getAttribute('method');
     let a = o?.getAttribute('formaction') ?? s ?? location.pathname;
     const c = o?.getAttribute('formmethod') ?? d ?? 'get';
-    if (c === 'dialog' || location.origin !== new URL(a, location.href).origin) return;
+    if (c === 'dialog' || location.origin !== new URL(a, location.href).origin)
+      return;
     const u = { sourceElement: o ?? n };
     if (c === 'get') {
       const l = new URLSearchParams(r),
@@ -606,7 +696,11 @@ function v() {
   const e = document.querySelector('.name-span');
   if (!e) return;
   const t = document.documentElement.clientWidth;
-  t < 320 ? (e.textContent = Me) : t <= 600 ? (e.textContent = Pe) : (e.textContent = De);
+  t < 320
+    ? (e.textContent = Me)
+    : t <= 600
+      ? (e.textContent = Pe)
+      : (e.textContent = De);
 }
 document.addEventListener('DOMContentLoaded', () => {
   v(),

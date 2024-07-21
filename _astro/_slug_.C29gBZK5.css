@@ -684,9 +684,15 @@ sup a {
   word-break: normal;
   text-decoration: none;
 }
-html[data-theme='dark'] .nav-links[data-astro-cid-loasjeqz] a[data-astro-cid-loasjeqz],
-html[data-theme='dark'] .nav-links[data-astro-cid-loasjeqz] .theme-wrapper[data-astro-cid-loasjeqz],
-html[data-theme='dark'] .nav-links[data-astro-cid-loasjeqz] .open[data-astro-cid-loasjeqz] {
+html[data-theme='dark']
+  .nav-links[data-astro-cid-loasjeqz]
+  a[data-astro-cid-loasjeqz],
+html[data-theme='dark']
+  .nav-links[data-astro-cid-loasjeqz]
+  .theme-wrapper[data-astro-cid-loasjeqz],
+html[data-theme='dark']
+  .nav-links[data-astro-cid-loasjeqz]
+  .open[data-astro-cid-loasjeqz] {
   color: #fff;
 }
 .nav-links[data-astro-cid-loasjeqz].expanded {
@@ -729,7 +735,9 @@ html[data-theme='dark'] .nav-links[data-astro-cid-loasjeqz] .open[data-astro-cid
 .nav-links[data-astro-cid-loasjeqz] a[data-astro-cid-loasjeqz].active {
   border-color: #000;
 }
-html[data-theme='dark'] .nav-links[data-astro-cid-loasjeqz] a[data-astro-cid-loasjeqz].active {
+html[data-theme='dark']
+  .nav-links[data-astro-cid-loasjeqz]
+  a[data-astro-cid-loasjeqz].active {
   border-color: #fff;
 }
 @media (min-width: 375px) {
@@ -737,14 +745,18 @@ html[data-theme='dark'] .nav-links[data-astro-cid-loasjeqz] a[data-astro-cid-loa
     font-weight: 300;
   }
 }
-html[data-theme='dark'] .nav-links[data-astro-cid-loasjeqz] a[data-astro-cid-loasjeqz] {
+html[data-theme='dark']
+  .nav-links[data-astro-cid-loasjeqz]
+  a[data-astro-cid-loasjeqz] {
   color: #fff;
 }
 .nav-links[data-astro-cid-loasjeqz] a[data-astro-cid-loasjeqz]:hover {
   background-color: #000;
   color: #fff;
 }
-html[data-theme='dark'] .nav-links[data-astro-cid-loasjeqz] a[data-astro-cid-loasjeqz]:hover {
+html[data-theme='dark']
+  .nav-links[data-astro-cid-loasjeqz]
+  a[data-astro-cid-loasjeqz]:hover {
   background-color: #fff;
   color: #000;
 }
@@ -790,7 +802,9 @@ html[data-theme='dark'] .nav-links[data-astro-cid-loasjeqz] a[data-astro-cid-loa
   text-decoration-line: none;
   width: fit-content;
 }
-.brand-wrapper[data-astro-cid-a7vz6cvk] .brand[data-astro-cid-a7vz6cvk] .name-span[data-astro-cid-a7vz6cvk] {
+.brand-wrapper[data-astro-cid-a7vz6cvk]
+  .brand[data-astro-cid-a7vz6cvk]
+  .name-span[data-astro-cid-a7vz6cvk] {
   text-transform: uppercase;
   font-weight: 700;
   text-wrap: nowrap;
@@ -805,16 +819,22 @@ html[data-theme='dark']
   color: #fff;
 }
 @media (min-width: 375px) {
-  .brand-wrapper[data-astro-cid-a7vz6cvk] .brand[data-astro-cid-a7vz6cvk] .name-span[data-astro-cid-a7vz6cvk] {
+  .brand-wrapper[data-astro-cid-a7vz6cvk]
+    .brand[data-astro-cid-a7vz6cvk]
+    .name-span[data-astro-cid-a7vz6cvk] {
     font-weight: 300;
   }
 }
 @media (min-width: 645px) {
-  .brand-wrapper[data-astro-cid-a7vz6cvk] .brand[data-astro-cid-a7vz6cvk] .name-span[data-astro-cid-a7vz6cvk] {
+  .brand-wrapper[data-astro-cid-a7vz6cvk]
+    .brand[data-astro-cid-a7vz6cvk]
+    .name-span[data-astro-cid-a7vz6cvk] {
     padding-inline: 1rem;
   }
 }
-.brand-wrapper[data-astro-cid-a7vz6cvk] .brand[data-astro-cid-a7vz6cvk] .name-span[data-astro-cid-a7vz6cvk]:hover {
+.brand-wrapper[data-astro-cid-a7vz6cvk]
+  .brand[data-astro-cid-a7vz6cvk]
+  .name-span[data-astro-cid-a7vz6cvk]:hover {
   background-color: #000;
   color: #fff;
 }
@@ -922,10 +942,12 @@ header[data-astro-cid-pwmmw5ba]:has(:not(.search-wrapper.show)) {
   -webkit-backdrop-filter: blur(10px);
   background-color: #ffffffb3;
 }
-html[data-theme='dark'] header[data-astro-cid-pwmmw5ba]:has(:not(.search-wrapper.show)) {
+html[data-theme='dark']
+  header[data-astro-cid-pwmmw5ba]:has(:not(.search-wrapper.show)) {
   background-color: #000000b3;
 }
-header[data-astro-cid-pwmmw5ba]:has(:not(.search-wrapper.show)) .floating[data-astro-cid-pwmmw5ba] {
+header[data-astro-cid-pwmmw5ba]:has(:not(.search-wrapper.show))
+  .floating[data-astro-cid-pwmmw5ba] {
   cursor: default;
   backdrop-filter: none;
   background-color: transparent;
@@ -934,7 +956,8 @@ header[data-astro-cid-pwmmw5ba]:has(.search-wrapper.show) {
   backdrop-filter: none;
   background-color: transparent;
 }
-header[data-astro-cid-pwmmw5ba]:has(.search-wrapper.show) .floating[data-astro-cid-pwmmw5ba] {
+header[data-astro-cid-pwmmw5ba]:has(.search-wrapper.show)
+  .floating[data-astro-cid-pwmmw5ba] {
   cursor: default;
   position: fixed;
   width: 100%;
@@ -945,7 +968,9 @@ header[data-astro-cid-pwmmw5ba]:has(.search-wrapper.show) .floating[data-astro-c
   -webkit-backdrop-filter: blur(10px);
   background-color: #ffffffb3;
 }
-html[data-theme='dark'] header[data-astro-cid-pwmmw5ba]:has(.search-wrapper.show) .floating[data-astro-cid-pwmmw5ba] {
+html[data-theme='dark']
+  header[data-astro-cid-pwmmw5ba]:has(.search-wrapper.show)
+  .floating[data-astro-cid-pwmmw5ba] {
   background-color: #000000b3;
 }
 header[data-astro-cid-pwmmw5ba] nav[data-astro-cid-pwmmw5ba] {
@@ -969,7 +994,8 @@ header[data-astro-cid-pwmmw5ba] nav[data-astro-cid-pwmmw5ba]:has(.expanded) {
     padding-block: 0.6rem;
   }
 }
-header[data-astro-cid-pwmmw5ba] nav[data-astro-cid-pwmmw5ba]:has(:not(.expanded)) {
+header[data-astro-cid-pwmmw5ba]
+  nav[data-astro-cid-pwmmw5ba]:has(:not(.expanded)) {
   flex-wrap: nowrap;
 }
 header[data-astro-cid-pwmmw5ba] nav[data-astro-cid-pwmmw5ba]:has(.expanded) {
@@ -986,13 +1012,19 @@ header[data-astro-cid-pwmmw5ba] nav[data-astro-cid-pwmmw5ba]:has(.expanded) {
   }
 }
 @media (min-width: 1440px) {
-  header[data-astro-cid-pwmmw5ba] nav[data-astro-cid-pwmmw5ba] span[data-astro-cid-pwmmw5ba].menu {
+  header[data-astro-cid-pwmmw5ba]
+    nav[data-astro-cid-pwmmw5ba]
+    span[data-astro-cid-pwmmw5ba].menu {
     order: 2;
   }
-  header[data-astro-cid-pwmmw5ba] nav[data-astro-cid-pwmmw5ba] span[data-astro-cid-pwmmw5ba].search-open {
+  header[data-astro-cid-pwmmw5ba]
+    nav[data-astro-cid-pwmmw5ba]
+    span[data-astro-cid-pwmmw5ba].search-open {
     order: 3;
   }
-  header[data-astro-cid-pwmmw5ba] nav[data-astro-cid-pwmmw5ba] span[data-astro-cid-pwmmw5ba].theme-toggle {
+  header[data-astro-cid-pwmmw5ba]
+    nav[data-astro-cid-pwmmw5ba]
+    span[data-astro-cid-pwmmw5ba].theme-toggle {
     order: 4;
   }
 }
@@ -1044,7 +1076,9 @@ footer[data-astro-cid-dwl4onjj] .footer-wrapper[data-astro-cid-dwl4onjj] {
     font-size: 1.5rem;
   }
 }
-footer[data-astro-cid-dwl4onjj] .footer-wrapper[data-astro-cid-dwl4onjj] .section[data-astro-cid-dwl4onjj] {
+footer[data-astro-cid-dwl4onjj]
+  .footer-wrapper[data-astro-cid-dwl4onjj]
+  .section[data-astro-cid-dwl4onjj] {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1059,7 +1093,9 @@ footer[data-astro-cid-dwl4onjj]
 }
 footer[data-astro-cid-dwl4onjj]
   .footer-wrapper[data-astro-cid-dwl4onjj]
-  .section[data-astro-cid-dwl4onjj]:has(.sub-section:nth-child(2)):not(:has(.sub-section:nth-child(3))),
+  .section[data-astro-cid-dwl4onjj]:has(.sub-section:nth-child(2)):not(
+    :has(.sub-section:nth-child(3))
+  ),
 footer[data-astro-cid-dwl4onjj]
   .footer-wrapper[data-astro-cid-dwl4onjj]
   .section[data-astro-cid-dwl4onjj]:has(.sub-section:nth-child(4)) {
@@ -1069,7 +1105,9 @@ footer[data-astro-cid-dwl4onjj]
 }
 footer[data-astro-cid-dwl4onjj]
   .footer-wrapper[data-astro-cid-dwl4onjj]
-  .section[data-astro-cid-dwl4onjj]:has(.sub-section:nth-child(2)):not(:has(.sub-section:nth-child(3)))
+  .section[data-astro-cid-dwl4onjj]:has(.sub-section:nth-child(2)):not(
+    :has(.sub-section:nth-child(3))
+  )
   .sub-section[data-astro-cid-dwl4onjj],
 footer[data-astro-cid-dwl4onjj]
   .footer-wrapper[data-astro-cid-dwl4onjj]
@@ -1084,7 +1122,9 @@ footer[data-astro-cid-dwl4onjj]
 @media (min-width: 640px) {
   footer[data-astro-cid-dwl4onjj]
     .footer-wrapper[data-astro-cid-dwl4onjj]
-    .section[data-astro-cid-dwl4onjj]:has(.sub-section:nth-child(2)):not(:has(.sub-section:nth-child(3)))
+    .section[data-astro-cid-dwl4onjj]:has(.sub-section:nth-child(2)):not(
+      :has(.sub-section:nth-child(3))
+    )
     .sub-section[data-astro-cid-dwl4onjj],
   footer[data-astro-cid-dwl4onjj]
     .footer-wrapper[data-astro-cid-dwl4onjj]
@@ -1096,7 +1136,9 @@ footer[data-astro-cid-dwl4onjj]
 @media (min-width: 640px) {
   footer[data-astro-cid-dwl4onjj]
     .footer-wrapper[data-astro-cid-dwl4onjj]
-    .section[data-astro-cid-dwl4onjj]:has(.sub-section:nth-child(2)):not(:has(.sub-section:nth-child(3)))
+    .section[data-astro-cid-dwl4onjj]:has(.sub-section:nth-child(2)):not(
+      :has(.sub-section:nth-child(3))
+    )
     .sub-section[data-astro-cid-dwl4onjj],
   footer[data-astro-cid-dwl4onjj]
     .footer-wrapper[data-astro-cid-dwl4onjj]
@@ -1127,13 +1169,17 @@ footer[data-astro-cid-dwl4onjj]
 }
 footer[data-astro-cid-dwl4onjj]
   .footer-wrapper[data-astro-cid-dwl4onjj]
-  .section[data-astro-cid-dwl4onjj]:has(.sub-section:nth-child(2)):not(:has(.sub-section:nth-child(3))) {
+  .section[data-astro-cid-dwl4onjj]:has(.sub-section:nth-child(2)):not(
+    :has(.sub-section:nth-child(3))
+  ) {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 @media (min-width: 640px) {
   footer[data-astro-cid-dwl4onjj]
     .footer-wrapper[data-astro-cid-dwl4onjj]
-    .section[data-astro-cid-dwl4onjj]:has(.sub-section:nth-child(2)):not(:has(.sub-section:nth-child(3))) {
+    .section[data-astro-cid-dwl4onjj]:has(.sub-section:nth-child(2)):not(
+      :has(.sub-section:nth-child(3))
+    ) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1149,7 +1195,9 @@ footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].title {
   }
 }
 footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].title,
-footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].value a[data-astro-cid-dwl4onjj] {
+footer[data-astro-cid-dwl4onjj]
+  span[data-astro-cid-dwl4onjj].value
+  a[data-astro-cid-dwl4onjj] {
   padding-inline: 0.5rem;
   border-style: solid;
   border-width: 1px;
@@ -1157,15 +1205,21 @@ footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].value a[data-astro
 }
 @media (min-width: 1024px) {
   footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].title,
-  footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].value a[data-astro-cid-dwl4onjj] {
+  footer[data-astro-cid-dwl4onjj]
+    span[data-astro-cid-dwl4onjj].value
+    a[data-astro-cid-dwl4onjj] {
     padding-inline: 1rem;
   }
 }
 footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].title.active,
-footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].value a[data-astro-cid-dwl4onjj].active {
+footer[data-astro-cid-dwl4onjj]
+  span[data-astro-cid-dwl4onjj].value
+  a[data-astro-cid-dwl4onjj].active {
   border-color: #000;
 }
-html[data-theme='dark'] footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].title.active,
+html[data-theme='dark']
+  footer[data-astro-cid-dwl4onjj]
+  span[data-astro-cid-dwl4onjj].title.active,
 html[data-theme='dark']
   footer[data-astro-cid-dwl4onjj]
   span[data-astro-cid-dwl4onjj].value
@@ -1173,20 +1227,31 @@ html[data-theme='dark']
   border-color: #fff;
 }
 footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].title.copyright,
-footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].value a[data-astro-cid-dwl4onjj] {
+footer[data-astro-cid-dwl4onjj]
+  span[data-astro-cid-dwl4onjj].value
+  a[data-astro-cid-dwl4onjj] {
   font-weight: 300;
   text-decoration: none;
   word-break: normal;
   color: #000;
 }
-html[data-theme='dark'] footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].title.copyright,
-html[data-theme='dark'] footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].value a[data-astro-cid-dwl4onjj] {
+html[data-theme='dark']
+  footer[data-astro-cid-dwl4onjj]
+  span[data-astro-cid-dwl4onjj].title.copyright,
+html[data-theme='dark']
+  footer[data-astro-cid-dwl4onjj]
+  span[data-astro-cid-dwl4onjj].value
+  a[data-astro-cid-dwl4onjj] {
   color: #fff;
 }
-footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].value a[data-astro-cid-dwl4onjj] {
+footer[data-astro-cid-dwl4onjj]
+  span[data-astro-cid-dwl4onjj].value
+  a[data-astro-cid-dwl4onjj] {
   word-break: normal;
 }
-footer[data-astro-cid-dwl4onjj] span[data-astro-cid-dwl4onjj].value a[data-astro-cid-dwl4onjj]:hover {
+footer[data-astro-cid-dwl4onjj]
+  span[data-astro-cid-dwl4onjj].value
+  a[data-astro-cid-dwl4onjj]:hover {
   background-color: #000;
   color: #fff;
 }
@@ -1345,7 +1410,9 @@ body .hero-banner-subtitle[data-astro-cid-37fxchfa] {
 body .hero-banner-subtitle[data-astro-cid-37fxchfa] {
   margin-top: 2rem;
 }
-body .hero-banner-subtitle[data-astro-cid-37fxchfa] ~ .hero-banner-title[data-astro-cid-37fxchfa] {
+body
+  .hero-banner-subtitle[data-astro-cid-37fxchfa]
+  ~ .hero-banner-title[data-astro-cid-37fxchfa] {
   margin-top: 0;
 }
 body .hero-banner-title[data-astro-cid-37fxchfa] {

@@ -17,19 +17,29 @@
     return typeof n == 'function';
   }
   function K(n, e) {
-    return n != n ? e == e : n !== e || (n && typeof n == 'object') || typeof n == 'function';
+    return n != n
+      ? e == e
+      : n !== e || (n && typeof n == 'object') || typeof n == 'function';
   }
   var Xe;
   function ie(n, e) {
-    return Xe || (Xe = document.createElement('a')), (Xe.href = e), n === Xe.href;
+    return (
+      Xe || (Xe = document.createElement('a')), (Xe.href = e), n === Xe.href
+    );
   }
   function cn(n) {
     return Object.keys(n).length === 0;
   }
-  var _n = typeof window < 'u' ? window : typeof globalThis < 'u' ? globalThis : global,
+  var _n =
+      typeof window < 'u'
+        ? window
+        : typeof globalThis < 'u'
+          ? globalThis
+          : global,
     de = class {
       constructor(e) {
-        (this.options = e), (this._listeners = 'WeakMap' in _n ? new WeakMap() : void 0);
+        (this.options = e),
+          (this._listeners = 'WeakMap' in _n ? new WeakMap() : void 0);
       }
       observe(e, t) {
         return (
@@ -47,7 +57,10 @@
           : (this._observer = new ResizeObserver((t) => {
               var s;
               for (let l of t)
-                de.entries.set(l.target, l), (s = this._listeners.get(l.target)) === null || s === void 0 || s(l);
+                de.entries.set(l.target, l),
+                  (s = this._listeners.get(l.target)) === null ||
+                    s === void 0 ||
+                    s(l);
             }));
       }
     };
@@ -90,7 +103,9 @@
     return n.addEventListener(e, t, s), () => n.removeEventListener(e, t, s);
   }
   function E(n, e, t) {
-    t == null ? n.removeAttribute(e) : n.getAttribute(e) !== t && n.setAttribute(e, t);
+    t == null
+      ? n.removeAttribute(e)
+      : n.getAttribute(e) !== t && n.setAttribute(e, t);
   }
   function Cs(n) {
     return Array.from(n.childNodes);
@@ -113,14 +128,20 @@
     }
     m(e, t, s = null) {
       this.e ||
-        (this.is_svg ? (this.e = Ts(t.nodeName)) : (this.e = C(t.nodeType === 11 ? 'TEMPLATE' : t.nodeName)),
+        (this.is_svg
+          ? (this.e = Ts(t.nodeName))
+          : (this.e = C(t.nodeType === 11 ? 'TEMPLATE' : t.nodeName)),
         (this.t = t.tagName !== 'TEMPLATE' ? t : t.content),
         this.c(e)),
         this.i(s);
     }
     h(e) {
       (this.e.innerHTML = e),
-        (this.n = Array.from(this.e.nodeName === 'TEMPLATE' ? this.e.content.childNodes : this.e.childNodes));
+        (this.n = Array.from(
+          this.e.nodeName === 'TEMPLATE'
+            ? this.e.content.childNodes
+            : this.e.childNodes
+        ));
     }
     i(e) {
       for (let t = 0; t < this.n.length; t += 1) y(this.t, this.n[t], e);
@@ -137,7 +158,8 @@
     he = n;
   }
   function dn() {
-    if (!he) throw new Error('Function called outside component initialization');
+    if (!he)
+      throw new Error('Function called outside component initialization');
     return he;
   }
   function dt(n) {
@@ -189,13 +211,17 @@
     if (n.fragment !== null) {
       n.update(), G(n.before_update);
       let e = n.dirty;
-      (n.dirty = [-1]), n.fragment && n.fragment.p(n.ctx, e), n.after_update.forEach(ct);
+      (n.dirty = [-1]),
+        n.fragment && n.fragment.p(n.ctx, e),
+        n.after_update.forEach(ct);
     }
   }
   function Ms(n) {
     let e = [],
       t = [];
-    le.forEach((s) => (n.indexOf(s) === -1 ? e.push(s) : t.push(s))), t.forEach((s) => s()), (le = e);
+    le.forEach((s) => (n.indexOf(s) === -1 ? e.push(s) : t.push(s))),
+      t.forEach((s) => s()),
+      (le = e);
   }
   var Qe = new Set(),
     ee;
@@ -311,7 +337,8 @@
       s ||
         ct(() => {
           let i = n.$$.on_mount.map(_t).filter(xe);
-          n.$$.on_destroy ? n.$$.on_destroy.push(...i) : G(i), (n.$$.on_mount = []);
+          n.$$.on_destroy ? n.$$.on_destroy.push(...i) : G(i),
+            (n.$$.on_mount = []);
         }),
       r.forEach(ct);
   }
@@ -325,7 +352,8 @@
       (t.ctx = []));
   }
   function vs(n, e) {
-    n.$$.dirty[0] === -1 && (se.push(n), ys(), n.$$.dirty.fill(0)), (n.$$.dirty[(e / 31) | 0] |= 1 << e % 31);
+    n.$$.dirty[0] === -1 && (se.push(n), ys(), n.$$.dirty.fill(0)),
+      (n.$$.dirty[(e / 31) | 0] |= 1 << e % 31);
   }
   function Y(n, e, t, s, l, r, i, a = [-1]) {
     let o = he;
@@ -355,7 +383,10 @@
         ? t(n, e.props || {}, (m, p, ...d) => {
             let _ = d.length ? d[0] : p;
             return (
-              h.ctx && l(h.ctx[m], (h.ctx[m] = _)) && (!h.skip_bound && h.bound[m] && h.bound[m](_), c && vs(n, m)), p
+              h.ctx &&
+                l(h.ctx[m], (h.ctx[m] = _)) &&
+                (!h.skip_bound && h.bound[m] && h.bound[m](_), c && vs(n, m)),
+              p
             );
           })
         : []),
@@ -370,7 +401,10 @@
         let m = Cs(e.target);
         h.fragment && h.fragment.l(m), m.forEach(k);
       } else h.fragment && h.fragment.c();
-      e.intro && D(n.$$.fragment), me(n, e.target, e.anchor, e.customElement), bs(), mn();
+      e.intro && D(n.$$.fragment),
+        me(n, e.target, e.anchor, e.customElement),
+        bs(),
+        mn();
     }
     fe(o);
   }
@@ -406,7 +440,9 @@
         );
       }
       $set(n) {
-        this.$$set && !cn(n) && ((this.$$.skip_bound = !0), this.$$set(n), (this.$$.skip_bound = !1));
+        this.$$set &&
+          !cn(n) &&
+          ((this.$$.skip_bound = !0), this.$$set(n), (this.$$.skip_bound = !1));
       }
     });
   var q = class {
@@ -425,7 +461,9 @@
       );
     }
     $set(e) {
-      this.$$set && !cn(e) && ((this.$$.skip_bound = !0), this.$$set(e), (this.$$.skip_bound = !1));
+      this.$$set &&
+        !cn(e) &&
+        ((this.$$.skip_bound = !0), this.$$set(e), (this.$$.skip_bound = !1));
     }
   };
   function I(n) {
@@ -487,7 +525,8 @@
     if (n == null) throw new Error('Expected string, got `' + n + '`');
     if (Fs.call(mt, l)) {
       let a = mt[l];
-      return (e.normalize === void 0 || e.normalize === null || e.normalize) && typeof a == 'string'
+      return (e.normalize === void 0 || e.normalize === null || e.normalize) &&
+        typeof a == 'string'
         ? tt(a)
         : ((t[Rn.includes(l) ? 'regular' : 'irregular'] = s), t);
     }
@@ -504,7 +543,12 @@
           !I(l.charCodeAt(r + 4));
 
         ) {
-          if (a > 2) return i(r, 3, 'Too many extended language subtags, expected at most 3 subtags');
+          if (a > 2)
+            return i(
+              r,
+              3,
+              'Too many extended language subtags, expected at most 3 subtags'
+            );
           t.extendedLanguageSubtags.push(s.slice(r + 1, r + 4)), (r += 4), a++;
         }
       }
@@ -517,7 +561,9 @@
           !I(l.charCodeAt(r + 5)) &&
           ((t.script = s.slice(r + 1, r + 5)), (r += 5)),
           l.charCodeAt(r) === 45 &&
-            (I(l.charCodeAt(r + 1)) && I(l.charCodeAt(r + 2)) && !I(l.charCodeAt(r + 3))
+            (I(l.charCodeAt(r + 1)) &&
+            I(l.charCodeAt(r + 2)) &&
+            !I(l.charCodeAt(r + 3))
               ? ((t.region = s.slice(r + 1, r + 3)), (r += 3))
               : $(l.charCodeAt(r + 1)) &&
                 $(l.charCodeAt(r + 2)) &&
@@ -530,10 +576,12 @@
         let a = r + 1,
           o = a;
         for (; Z(l.charCodeAt(o)); ) {
-          if (o - a > 7) return i(o, 1, 'Too long variant, expected at most 8 characters');
+          if (o - a > 7)
+            return i(o, 1, 'Too long variant, expected at most 8 characters');
           o++;
         }
-        if (o - a > 4 || (o - a > 3 && $(l.charCodeAt(a)))) t.variants.push(s.slice(a, o)), (r = o);
+        if (o - a > 4 || (o - a > 3 && $(l.charCodeAt(a))))
+          t.variants.push(s.slice(a, o)), (r = o);
         else break;
       }
       for (
@@ -549,24 +597,52 @@
       ) {
         let a = r + 2,
           o = 0;
-        for (; l.charCodeAt(a) === 45 && Z(l.charCodeAt(a + 1)) && Z(l.charCodeAt(a + 2)); ) {
+        for (
+          ;
+          l.charCodeAt(a) === 45 &&
+          Z(l.charCodeAt(a + 1)) &&
+          Z(l.charCodeAt(a + 2));
+
+        ) {
           let h = a + 1;
           for (a = h + 2, o++; Z(l.charCodeAt(a)); ) {
-            if (a - h > 7) return i(a, 2, 'Too long extension, expected at most 8 characters');
+            if (a - h > 7)
+              return i(
+                a,
+                2,
+                'Too long extension, expected at most 8 characters'
+              );
             a++;
           }
         }
-        if (!o) return i(a, 4, 'Empty extension, extensions must have at least 2 characters of content');
-        t.extensions.push({ singleton: s.charAt(r + 1), extensions: s.slice(r + 3, a).split('-') }), (r = a);
+        if (!o)
+          return i(
+            a,
+            4,
+            'Empty extension, extensions must have at least 2 characters of content'
+          );
+        t.extensions.push({
+          singleton: s.charAt(r + 1),
+          extensions: s.slice(r + 3, a).split('-'),
+        }),
+          (r = a);
       }
     } else r = 0;
-    if ((r === 0 && l.charCodeAt(r) === 120) || (l.charCodeAt(r) === 45 && l.charCodeAt(r + 1) === 120)) {
+    if (
+      (r === 0 && l.charCodeAt(r) === 120) ||
+      (l.charCodeAt(r) === 45 && l.charCodeAt(r + 1) === 120)
+    ) {
       r = r ? r + 2 : 1;
       let a = r;
       for (; l.charCodeAt(a) === 45 && Z(l.charCodeAt(a + 1)); ) {
         let o = r + 1;
         for (a = o; Z(l.charCodeAt(a)); ) {
-          if (a - o > 7) return i(a, 5, 'Too long private-use area, expected at most 8 characters');
+          if (a - o > 7)
+            return i(
+              a,
+              5,
+              'Too long private-use area, expected at most 8 characters'
+            );
           a++;
         }
         t.privateuse.push(s.slice(r + 1, a)), (r = a);
@@ -612,15 +688,25 @@
           (l = A()),
           (r = C('p')),
           (r.textContent = `${n[3](40)}`),
-          E(s, 'class', 'pagefind-ui__result-title pagefind-ui__loading svelte-j9e30'),
-          E(r, 'class', 'pagefind-ui__result-excerpt pagefind-ui__loading svelte-j9e30'),
+          E(
+            s,
+            'class',
+            'pagefind-ui__result-title pagefind-ui__loading svelte-j9e30'
+          ),
+          E(
+            r,
+            'class',
+            'pagefind-ui__result-excerpt pagefind-ui__loading svelte-j9e30'
+          ),
           E(t, 'class', 'pagefind-ui__result-inner svelte-j9e30');
       },
       m(a, o) {
         i && i.m(a, o), y(a, e, o), y(a, t, o), b(t, s), b(t, l), b(t, r);
       },
       p(a, o) {
-        a[0] ? i || ((i = Cn(a)), i.c(), i.m(e.parentNode, e)) : i && (i.d(1), (i = null));
+        a[0]
+          ? i || ((i = Cn(a)), i.c(), i.m(e.parentNode, e))
+          : i && (i.d(1), (i = null));
       },
       d(a) {
         i && i.d(a), a && k(e), a && k(t);
@@ -673,11 +759,19 @@
           d && d.m(t, null);
       },
       p(_, u) {
-        _[0] ? (p ? p.p(_, u) : ((p = kn(_)), p.c(), p.m(e.parentNode, e))) : p && (p.d(1), (p = null)),
+        _[0]
+          ? p
+            ? p.p(_, u)
+            : ((p = kn(_)), p.c(), p.m(e.parentNode, e))
+          : p && (p.d(1), (p = null)),
           u & 2 && r !== (r = _[1].meta?.title + '') && N(i, r),
           u & 2 && a !== (a = _[1].meta?.url || _[1].url) && E(l, 'href', a),
           u & 2 && c !== (c = _[1].excerpt + '') && (h.innerHTML = c),
-          _[2].length ? (d ? d.p(_, u) : ((d = Sn(_)), d.c(), d.m(t, null))) : d && (d.d(1), (d = null));
+          _[2].length
+            ? d
+              ? d.p(_, u)
+              : ((d = Sn(_)), d.c(), d.m(t, null))
+            : d && (d.d(1), (d = null));
       },
       d(_) {
         p && p.d(_), _ && k(e), _ && k(t), d && d.d();
@@ -688,7 +782,12 @@
     let e;
     return {
       c() {
-        (e = C('div')), E(e, 'class', 'pagefind-ui__result-thumb pagefind-ui__loading svelte-j9e30');
+        (e = C('div')),
+          E(
+            e,
+            'class',
+            'pagefind-ui__result-thumb pagefind-ui__loading svelte-j9e30'
+          );
       },
       m(t, s) {
         y(t, e, s);
@@ -703,13 +802,19 @@
       t = n[1].meta.image && yn(n);
     return {
       c() {
-        (e = C('div')), t && t.c(), E(e, 'class', 'pagefind-ui__result-thumb svelte-j9e30');
+        (e = C('div')),
+          t && t.c(),
+          E(e, 'class', 'pagefind-ui__result-thumb svelte-j9e30');
       },
       m(s, l) {
         y(s, e, l), t && t.m(e, null);
       },
       p(s, l) {
-        s[1].meta.image ? (t ? t.p(s, l) : ((t = yn(s)), t.c(), t.m(e, null))) : t && (t.d(1), (t = null));
+        s[1].meta.image
+          ? t
+            ? t.p(s, l)
+            : ((t = yn(s)), t.c(), t.m(e, null))
+          : t && (t.d(1), (t = null));
       },
       d(s) {
         s && k(e), t && t.d();
@@ -730,7 +835,9 @@
       },
       p(l, r) {
         r & 2 && !ie(e.src, (t = l[1].meta?.image)) && E(e, 'src', t),
-          r & 2 && s !== (s = l[1].meta?.image_alt || l[1].meta?.title) && E(e, 'alt', s);
+          r & 2 &&
+            s !== (s = l[1].meta?.image_alt || l[1].meta?.title) &&
+            E(e, 'alt', s);
       },
       d(l) {
         l && k(e);
@@ -790,7 +897,8 @@
         y(o, e, h), b(e, s), b(e, l), b(e, i), b(e, a);
       },
       p(o, h) {
-        h & 4 && t !== (t = o[8].replace(/^(\w)/, An) + '') && N(s, t), h & 4 && r !== (r = o[9] + '') && N(i, r);
+        h & 4 && t !== (t = o[8].replace(/^(\w)/, An) + '') && N(s, t),
+          h & 4 && r !== (r = o[9] + '') && N(i, r);
       },
       d(o) {
         o && k(e);
@@ -812,7 +920,9 @@
         y(r, e, i), l.m(e, null);
       },
       p(r, [i]) {
-        s === (s = t(r, i)) && l ? l.p(r, i) : (l.d(1), (l = s(r)), l && (l.c(), l.m(e, null)));
+        s === (s = t(r, i)) && l
+          ? l.p(r, i)
+          : (l.d(1), (l = s(r)), l && (l.c(), l.m(e, null)));
       },
       i: j,
       o: j,
@@ -849,7 +959,12 @@
   }
   var pt = class extends q {
       constructor(e) {
-        super(), Y(this, e, zs, Os, K, { show_images: 0, process_result: 4, result: 5 });
+        super(),
+          Y(this, e, zs, Os, K, {
+            show_images: 0,
+            process_result: 4,
+            result: 5,
+          });
       }
     },
     vn = pt;
@@ -878,15 +993,25 @@
           (l = A()),
           (r = C('p')),
           (r.textContent = `${n[5](40)}`),
-          E(s, 'class', 'pagefind-ui__result-title pagefind-ui__loading svelte-4xnkmf'),
-          E(r, 'class', 'pagefind-ui__result-excerpt pagefind-ui__loading svelte-4xnkmf'),
+          E(
+            s,
+            'class',
+            'pagefind-ui__result-title pagefind-ui__loading svelte-4xnkmf'
+          ),
+          E(
+            r,
+            'class',
+            'pagefind-ui__result-excerpt pagefind-ui__loading svelte-4xnkmf'
+          ),
           E(t, 'class', 'pagefind-ui__result-inner svelte-4xnkmf');
       },
       m(a, o) {
         i && i.m(a, o), y(a, e, o), y(a, t, o), b(t, s), b(t, l), b(t, r);
       },
       p(a, o) {
-        a[0] ? i || ((i = Hn(a)), i.c(), i.m(e.parentNode, e)) : i && (i.d(1), (i = null));
+        a[0]
+          ? i || ((i = Hn(a)), i.c(), i.m(e.parentNode, e))
+          : i && (i.d(1), (i = null));
       },
       d(a) {
         i && i.d(a), a && k(e), a && k(t);
@@ -912,7 +1037,15 @@
     let u = n[2].length && Dn(n);
     return {
       c() {
-        m && m.c(), (e = A()), (t = C('div')), (s = C('p')), (l = C('a')), (i = w(r)), (o = A()), p && p.c(), (h = A());
+        m && m.c(),
+          (e = A()),
+          (t = C('div')),
+          (s = C('p')),
+          (l = C('a')),
+          (i = w(r)),
+          (o = A()),
+          p && p.c(),
+          (h = A());
         for (let f = 0; f < _.length; f += 1) _[f].c();
         (c = A()),
           u && u.c(),
@@ -922,16 +1055,32 @@
           E(t, 'class', 'pagefind-ui__result-inner svelte-4xnkmf');
       },
       m(f, T) {
-        m && m.m(f, T), y(f, e, T), y(f, t, T), b(t, s), b(s, l), b(l, i), b(t, o), p && p.m(t, null), b(t, h);
+        m && m.m(f, T),
+          y(f, e, T),
+          y(f, t, T),
+          b(t, s),
+          b(s, l),
+          b(l, i),
+          b(t, o),
+          p && p.m(t, null),
+          b(t, h);
         for (let R = 0; R < _.length; R += 1) _[R] && _[R].m(t, null);
         b(t, c), u && u.m(t, null);
       },
       p(f, T) {
         if (
-          (f[0] ? (m ? m.p(f, T) : ((m = Nn(f)), m.c(), m.m(e.parentNode, e))) : m && (m.d(1), (m = null)),
+          (f[0]
+            ? m
+              ? m.p(f, T)
+              : ((m = Nn(f)), m.c(), m.m(e.parentNode, e))
+            : m && (m.d(1), (m = null)),
           T & 2 && r !== (r = f[1].meta?.title + '') && N(i, r),
           T & 2 && a !== (a = f[1].meta?.url || f[1].url) && E(l, 'href', a),
-          f[4] ? (p ? p.p(f, T) : ((p = zn(f)), p.c(), p.m(t, h))) : p && (p.d(1), (p = null)),
+          f[4]
+            ? p
+              ? p.p(f, T)
+              : ((p = zn(f)), p.c(), p.m(t, h))
+            : p && (p.d(1), (p = null)),
           T & 8)
         ) {
           d = f[3];
@@ -943,7 +1092,11 @@
           for (; R < _.length; R += 1) _[R].d(1);
           _.length = d.length;
         }
-        f[2].length ? (u ? u.p(f, T) : ((u = Dn(f)), u.c(), u.m(t, null))) : u && (u.d(1), (u = null));
+        f[2].length
+          ? u
+            ? u.p(f, T)
+            : ((u = Dn(f)), u.c(), u.m(t, null))
+          : u && (u.d(1), (u = null));
       },
       d(f) {
         m && m.d(f), f && k(e), f && k(t), p && p.d(), Q(_, f), u && u.d();
@@ -954,7 +1107,12 @@
     let e;
     return {
       c() {
-        (e = C('div')), E(e, 'class', 'pagefind-ui__result-thumb pagefind-ui__loading svelte-4xnkmf');
+        (e = C('div')),
+          E(
+            e,
+            'class',
+            'pagefind-ui__result-thumb pagefind-ui__loading svelte-4xnkmf'
+          );
       },
       m(t, s) {
         y(t, e, s);
@@ -969,13 +1127,19 @@
       t = n[1].meta.image && On(n);
     return {
       c() {
-        (e = C('div')), t && t.c(), E(e, 'class', 'pagefind-ui__result-thumb svelte-4xnkmf');
+        (e = C('div')),
+          t && t.c(),
+          E(e, 'class', 'pagefind-ui__result-thumb svelte-4xnkmf');
       },
       m(s, l) {
         y(s, e, l), t && t.m(e, null);
       },
       p(s, l) {
-        s[1].meta.image ? (t ? t.p(s, l) : ((t = On(s)), t.c(), t.m(e, null))) : t && (t.d(1), (t = null));
+        s[1].meta.image
+          ? t
+            ? t.p(s, l)
+            : ((t = On(s)), t.c(), t.m(e, null))
+          : t && (t.d(1), (t = null));
       },
       d(s) {
         s && k(e), t && t.d();
@@ -996,7 +1160,9 @@
       },
       p(l, r) {
         r & 2 && !ie(e.src, (t = l[1].meta?.image)) && E(e, 'src', t),
-          r & 2 && s !== (s = l[1].meta?.image_alt || l[1].meta?.title) && E(e, 'alt', s);
+          r & 2 &&
+            s !== (s = l[1].meta?.image_alt || l[1].meta?.title) &&
+            E(e, 'alt', s);
       },
       d(l) {
         l && k(e);
@@ -1008,7 +1174,8 @@
       t = n[1].excerpt + '';
     return {
       c() {
-        (e = C('p')), E(e, 'class', 'pagefind-ui__result-excerpt svelte-4xnkmf');
+        (e = C('p')),
+          E(e, 'class', 'pagefind-ui__result-excerpt svelte-4xnkmf');
       },
       m(s, l) {
         y(s, e, l), (e.innerHTML = t);
@@ -1046,7 +1213,13 @@
           E(e, 'class', 'pagefind-ui__result-nested svelte-4xnkmf');
       },
       m(c, m) {
-        y(c, e, m), b(e, t), b(t, s), b(s, r), b(e, a), b(e, o), (o.innerHTML = h);
+        y(c, e, m),
+          b(e, t),
+          b(t, s),
+          b(s, r),
+          b(e, a),
+          b(e, o),
+          (o.innerHTML = h);
       },
       p(c, m) {
         m & 8 && l !== (l = c[15].title + '') && N(r, l),
@@ -1111,7 +1284,8 @@
         y(o, e, h), b(e, s), b(e, l), b(e, i), b(e, a);
       },
       p(o, h) {
-        h & 4 && t !== (t = o[11].replace(/^(\w)/, In) + '') && N(s, t), h & 4 && r !== (r = o[12] + '') && N(i, r);
+        h & 4 && t !== (t = o[11].replace(/^(\w)/, In) + '') && N(s, t),
+          h & 4 && r !== (r = o[12] + '') && N(i, r);
       },
       d(o) {
         o && k(e);
@@ -1127,13 +1301,17 @@
       l = s(n);
     return {
       c() {
-        (e = C('li')), l.c(), E(e, 'class', 'pagefind-ui__result svelte-4xnkmf');
+        (e = C('li')),
+          l.c(),
+          E(e, 'class', 'pagefind-ui__result svelte-4xnkmf');
       },
       m(r, i) {
         y(r, e, i), l.m(e, null);
       },
       p(r, [i]) {
-        s === (s = t(r, i)) && l ? l.p(r, i) : (l.d(1), (l = s(r)), l && (l.c(), l.m(e, null)));
+        s === (s = t(r, i)) && l
+          ? l.p(r, i)
+          : (l.d(1), (l = s(r)), l && (l.c(), l.m(e, null)));
       },
       i: j,
       o: j,
@@ -1166,7 +1344,9 @@
           t(2, (o = Object.entries(a.meta).filter(([u]) => !i.includes(u)))),
           Array.isArray(a.sub_results) &&
             (t(4, (c = a.sub_results?.[0]?.url === (a.meta?.url || a.url))),
-            c ? t(3, (h = m(a.sub_results.slice(1), 3))) : t(3, (h = m([...a.sub_results], 3))));
+            c
+              ? t(3, (h = m(a.sub_results.slice(1), 3)))
+              : t(3, (h = m([...a.sub_results], 3))));
       },
       d = (_ = 30) => '. '.repeat(Math.floor(10 + Math.random() * _));
     return (
@@ -1183,7 +1363,12 @@
   }
   var gt = class extends q {
       constructor(e) {
-        super(), Y(this, e, Is, Us, K, { show_images: 0, process_result: 6, result: 7 });
+        super(),
+          Y(this, e, Is, Us, K, {
+            show_images: 0,
+            process_result: 6,
+            result: 7,
+          });
       }
     },
     Pn = gt;
@@ -1216,7 +1401,12 @@
         for (let c = 0; c < a.length; c += 1) a[c] && a[c].m(e, null);
       },
       p(o, h) {
-        if ((h & 112 && s !== (s = o[4]('filters_label', o[5], o[6]) + '') && N(l, s), h & 143)) {
+        if (
+          (h & 112 &&
+            s !== (s = o[4]('filters_label', o[5], o[6]) + '') &&
+            N(l, s),
+          h & 143)
+        ) {
           i = Object.entries(o[1]);
           let c;
           for (c = 0; c < i.length; c += 1) {
@@ -1293,12 +1483,19 @@
         (n = M),
           U & 2 && s !== (s = n[10] + '-' + n[14]) && E(t, 'id', s),
           U & 2 && l !== (l = n[10]) && E(t, 'name', l),
-          U & 2 && r !== (r = n[14]) && ((t.__value = r), (t.value = t.__value)),
+          U & 2 &&
+            r !== (r = n[14]) &&
+            ((t.__value = r), (t.value = t.__value)),
           U & 3 && (t.checked = n[0][`${n[10]}:${n[14]}`]),
           U & 2 && h !== (h = n[14] + '') && o.p(h),
           U & 2 && m !== (m = n[15] + '') && N(p, m),
           U & 2 && _ !== (_ = n[10] + '-' + n[14]) && E(a, 'for', _),
-          U & 3 && B(e, 'pagefind-ui__filter-value--checked', n[0][`${n[10]}:${n[14]}`]);
+          U & 3 &&
+            B(
+              e,
+              'pagefind-ui__filter-value--checked',
+              n[0][`${n[10]}:${n[14]}`]
+            );
       },
       d(M) {
         M && k(e), (f = !1), T();
@@ -1343,7 +1540,12 @@
     for (let d = 0; d < m.length; d += 1) p[d] = Vn(qn(n, m, d));
     return {
       c() {
-        (e = C('details')), (t = C('summary')), (l = A()), (r = C('fieldset')), (i = C('legend')), (o = A());
+        (e = C('details')),
+          (t = C('summary')),
+          (l = A()),
+          (r = C('fieldset')),
+          (i = C('legend')),
+          (o = A());
         for (let d = 0; d < p.length; d += 1) p[d].c();
         (h = A()),
           E(t, 'class', 'pagefind-ui__filter-name svelte-1v2r7ls'),
@@ -1353,13 +1555,22 @@
           (e.open = c = n[7] || n[3].map(Jn).includes(n[10].toLowerCase()));
       },
       m(d, _) {
-        y(d, e, _), b(e, t), (t.innerHTML = s), b(e, l), b(e, r), b(r, i), (i.innerHTML = a), b(r, o);
+        y(d, e, _),
+          b(e, t),
+          (t.innerHTML = s),
+          b(e, l),
+          b(e, r),
+          b(r, i),
+          (i.innerHTML = a),
+          b(r, o);
         for (let u = 0; u < p.length; u += 1) p[u] && p[u].m(r, null);
         b(e, h);
       },
       p(d, _) {
         if (
-          (_ & 2 && s !== (s = d[10].replace(/^(\w)/, Kn) + '') && (t.innerHTML = s),
+          (_ & 2 &&
+            s !== (s = d[10].replace(/^(\w)/, Kn) + '') &&
+            (t.innerHTML = s),
           _ & 2 && a !== (a = d[10] + '') && (i.innerHTML = a),
           _ & 7)
         ) {
@@ -1372,7 +1583,9 @@
           for (; u < p.length; u += 1) p[u].d(1);
           p.length = m.length;
         }
-        _ & 138 && c !== (c = d[7] || d[3].map(Jn).includes(d[10].toLowerCase())) && (e.open = c);
+        _ & 138 &&
+          c !== (c = d[7] || d[3].map(Jn).includes(d[10].toLowerCase())) &&
+          (e.open = c);
       },
       d(d) {
         d && k(e), Q(p, d);
@@ -1392,7 +1605,11 @@
       },
       p(l, [r]) {
         r & 2 && (e = l[1] && Object.entries(l[1]).length),
-          e ? (s ? s.p(l, r) : ((s = Bn(l)), s.c(), s.m(t.parentNode, t))) : s && (s.d(1), (s = null));
+          e
+            ? s
+              ? s.p(l, r)
+              : ((s = Bn(l)), s.c(), s.m(t.parentNode, t))
+            : s && (s.d(1), (s = null));
       },
       i: j,
       o: j,
@@ -1431,7 +1648,9 @@
           e: if (s && !c) {
             t(8, (c = !0));
             let d = Object.entries(s || {});
-            d.length === 1 && Object.entries(d[0][1])?.length <= 6 && t(7, (m = !0));
+            d.length === 1 &&
+              Object.entries(d[0][1])?.length <= 6 &&
+              t(7, (m = !0));
           }
         }
       }),
@@ -1454,7 +1673,13 @@
     },
     Yn = Et;
   var Rt = {};
-  S(Rt, { comments: () => Bs, default: () => Gs, direction: () => Ws, strings: () => Vs, thanks_to: () => qs });
+  S(Rt, {
+    comments: () => Bs,
+    default: () => Gs,
+    direction: () => Ws,
+    strings: () => Vs,
+    thanks_to: () => qs,
+  });
   var qs = 'Jan Claasen <jan@cloudcannon.com>',
     Bs = '',
     Ws = 'ltr',
@@ -1467,20 +1692,30 @@
       zero_results: 'Geen resultate vir [SEARCH_TERM]',
       many_results: '[COUNT] resultate vir [SEARCH_TERM]',
       one_result: '[COUNT] resultate vir [SEARCH_TERM]',
-      alt_search: 'Geen resultate vir [SEARCH_TERM]. Toon resultate vir [DIFFERENT_TERM] in plaas daarvan',
-      search_suggestion: 'Geen resultate vir [SEARCH_TERM]. Probeer eerder een van die volgende terme:',
+      alt_search:
+        'Geen resultate vir [SEARCH_TERM]. Toon resultate vir [DIFFERENT_TERM] in plaas daarvan',
+      search_suggestion:
+        'Geen resultate vir [SEARCH_TERM]. Probeer eerder een van die volgende terme:',
       searching: 'Soek vir [SEARCH_TERM]',
     },
     Gs = { thanks_to: qs, comments: Bs, direction: Ws, strings: Vs };
   var bt = {};
-  S(bt, { comments: () => Js, default: () => Xs, direction: () => Ys, strings: () => Zs, thanks_to: () => Ks });
+  S(bt, {
+    comments: () => Js,
+    default: () => Xs,
+    direction: () => Ys,
+    strings: () => Zs,
+    thanks_to: () => Ks,
+  });
   var Ks = 'Maruf Alom <mail@marufalom.com>',
     Js = '',
     Ys = 'ltr',
     Zs = {
-      placeholder: '\u0985\u09A8\u09C1\u09B8\u09A8\u09CD\u09A7\u09BE\u09A8 \u0995\u09B0\u09C1\u09A8',
+      placeholder:
+        '\u0985\u09A8\u09C1\u09B8\u09A8\u09CD\u09A7\u09BE\u09A8 \u0995\u09B0\u09C1\u09A8',
       clear_search: '\u09AE\u09C1\u099B\u09C7 \u09AB\u09C7\u09B2\u09C1\u09A8',
-      load_more: '\u0986\u09B0\u09CB \u09AB\u09B2\u09BE\u09AB\u09B2 \u09A6\u09C7\u0996\u09C1\u09A8',
+      load_more:
+        '\u0986\u09B0\u09CB \u09AB\u09B2\u09BE\u09AB\u09B2 \u09A6\u09C7\u0996\u09C1\u09A8',
       search_label:
         '\u098F\u0987 \u0993\u09DF\u09C7\u09AC\u09B8\u09BE\u0987\u099F\u09C7 \u0985\u09A8\u09C1\u09B8\u09A8\u09CD\u09A7\u09BE\u09A8 \u0995\u09B0\u09C1\u09A8',
       filters_label: '\u09AB\u09BF\u09B2\u09CD\u099F\u09BE\u09B0',
@@ -1494,11 +1729,18 @@
         '\u0995\u09CB\u09A8 \u0995\u09BF\u099B\u09C1 \u0996\u09C1\u0981\u099C\u09C7 \u09AA\u09BE\u0993\u09DF\u09BE \u09AF\u09BE\u09DF\u09A8\u09BF [SEARCH_TERM] \u098F\u09B0 \u099C\u09A8\u09CD\u09AF. \u09AA\u09B0\u09BF\u09AC\u09B0\u09CD\u09A4\u09C7 [DIFFERENT_TERM] \u098F\u09B0 \u099C\u09A8\u09CD\u09AF \u09A6\u09C7\u0996\u09BE\u09A8\u09CB \u09B9\u099A\u09CD\u099B\u09C7',
       search_suggestion:
         '\u0995\u09CB\u09A8 \u0995\u09BF\u099B\u09C1 \u0996\u09C1\u0981\u099C\u09C7 \u09AA\u09BE\u0993\u09DF\u09BE \u09AF\u09BE\u09DF\u09A8\u09BF [SEARCH_TERM] \u098F\u09B0 \u09AC\u09BF\u09B7\u09DF\u09C7. \u09A8\u09BF\u09A8\u09CD\u09AE\u09C7\u09B0 \u09AC\u09BF\u09B7\u09DF\u09AC\u09B8\u09CD\u09A4\u09C1 \u0996\u09C1\u0981\u099C\u09C7 \u09A6\u09C7\u0996\u09C1\u09A8:',
-      searching: '\u0985\u09A8\u09C1\u09B8\u09A8\u09CD\u09A7\u09BE\u09A8 \u099A\u09B2\u099B\u09C7 [SEARCH_TERM]...',
+      searching:
+        '\u0985\u09A8\u09C1\u09B8\u09A8\u09CD\u09A7\u09BE\u09A8 \u099A\u09B2\u099B\u09C7 [SEARCH_TERM]...',
     },
     Xs = { thanks_to: Ks, comments: Js, direction: Ys, strings: Zs };
   var Tt = {};
-  S(Tt, { comments: () => xs, default: () => tl, direction: () => $s, strings: () => el, thanks_to: () => Qs });
+  S(Tt, {
+    comments: () => xs,
+    default: () => tl,
+    direction: () => $s,
+    strings: () => el,
+    thanks_to: () => Qs,
+  });
   var Qs = 'Pablo Villaverde <https://github.com/pvillaverde>',
     xs = '',
     $s = 'ltr',
@@ -1511,13 +1753,21 @@
       zero_results: 'No es van trobar resultats per [SEARCH_TERM]',
       many_results: '[COUNT] resultats trobats per [SEARCH_TERM]',
       one_result: '[COUNT] resultat trobat per [SEARCH_TERM]',
-      alt_search: 'No es van trobar resultats per [SEARCH_TERM]. Mostrant al seu lloc resultats per [DIFFERENT_TERM]',
-      search_suggestion: 'No es van trobar resultats per [SEARCH_TERM]. Proveu una de les cerques seg\xFCents:',
+      alt_search:
+        'No es van trobar resultats per [SEARCH_TERM]. Mostrant al seu lloc resultats per [DIFFERENT_TERM]',
+      search_suggestion:
+        'No es van trobar resultats per [SEARCH_TERM]. Proveu una de les cerques seg\xFCents:',
       searching: 'Cercant [SEARCH_TERM]...',
     },
     tl = { thanks_to: Qs, comments: xs, direction: $s, strings: el };
   var Ct = {};
-  S(Ct, { comments: () => sl, default: () => il, direction: () => ll, strings: () => rl, thanks_to: () => nl });
+  S(Ct, {
+    comments: () => sl,
+    default: () => il,
+    direction: () => ll,
+    strings: () => rl,
+    thanks_to: () => nl,
+  });
   var nl = 'Dalibor Hon <https://github.com/dallyh>',
     sl = '',
     ll = 'ltr',
@@ -1530,13 +1780,21 @@
       zero_results: '\u017D\xE1dn\xE9 v\xFDsledky pro [SEARCH_TERM]',
       many_results: '[COUNT] v\xFDsledk\u016F pro [SEARCH_TERM]',
       one_result: '[COUNT] v\xFDsledek pro [SEARCH_TERM]',
-      alt_search: '\u017D\xE1dn\xE9 v\xFDsledky pro [SEARCH_TERM]. Zobrazuj\xED se v\xFDsledky pro [DIFFERENT_TERM]',
-      search_suggestion: '\u017D\xE1dn\xE9 v\xFDsledky pro [SEARCH_TERM]. Souvisej\xEDc\xED v\xFDsledky hled\xE1n\xED:',
+      alt_search:
+        '\u017D\xE1dn\xE9 v\xFDsledky pro [SEARCH_TERM]. Zobrazuj\xED se v\xFDsledky pro [DIFFERENT_TERM]',
+      search_suggestion:
+        '\u017D\xE1dn\xE9 v\xFDsledky pro [SEARCH_TERM]. Souvisej\xEDc\xED v\xFDsledky hled\xE1n\xED:',
       searching: 'Hled\xE1m [SEARCH_TERM]...',
     },
     il = { thanks_to: nl, comments: sl, direction: ll, strings: rl };
   var kt = {};
-  S(kt, { comments: () => ol, default: () => _l, direction: () => ul, strings: () => cl, thanks_to: () => al });
+  S(kt, {
+    comments: () => ol,
+    default: () => _l,
+    direction: () => ul,
+    strings: () => cl,
+    thanks_to: () => al,
+  });
   var al = 'Jonas Smedegaard <dr@jones.dk>',
     ol = '',
     ul = 'ltr',
@@ -1549,13 +1807,21 @@
       zero_results: 'Ingen resultater for [SEARCH_TERM]',
       many_results: '[COUNT] resultater for [SEARCH_TERM]',
       one_result: '[COUNT] resultat for [SEARCH_TERM]',
-      alt_search: 'Ingen resultater for [SEARCH_TERM]. Viser resultater for [DIFFERENT_TERM] i stedet',
-      search_suggestion: 'Ingen resultater for [SEARCH_TERM]. Pr\xF8v et af disse s\xF8geord i stedet:',
+      alt_search:
+        'Ingen resultater for [SEARCH_TERM]. Viser resultater for [DIFFERENT_TERM] i stedet',
+      search_suggestion:
+        'Ingen resultater for [SEARCH_TERM]. Pr\xF8v et af disse s\xF8geord i stedet:',
       searching: 'S\xF8ger efter [SEARCH_TERM]...',
     },
     _l = { thanks_to: al, comments: ol, direction: ul, strings: cl };
   var yt = {};
-  S(yt, { comments: () => dl, default: () => pl, direction: () => hl, strings: () => ml, thanks_to: () => fl });
+  S(yt, {
+    comments: () => dl,
+    default: () => pl,
+    direction: () => hl,
+    strings: () => ml,
+    thanks_to: () => fl,
+  });
   var fl = 'Jan Claasen <jan@cloudcannon.com>',
     dl = '',
     hl = 'ltr',
@@ -1570,12 +1836,19 @@
       one_result: '[COUNT] Ergebnis f\xFCr [SEARCH_TERM]',
       alt_search:
         'Keine Ergebnisse f\xFCr [SEARCH_TERM]. Stattdessen werden Ergebnisse f\xFCr [DIFFERENT_TERM] angezeigt',
-      search_suggestion: 'Keine Ergebnisse f\xFCr [SEARCH_TERM]. Versuchen Sie eine der folgenden Suchen:',
+      search_suggestion:
+        'Keine Ergebnisse f\xFCr [SEARCH_TERM]. Versuchen Sie eine der folgenden Suchen:',
       searching: 'Suche f\xFCr [SEARCH_TERM]',
     },
     pl = { thanks_to: fl, comments: dl, direction: hl, strings: ml };
   var St = {};
-  S(St, { comments: () => El, default: () => Tl, direction: () => Rl, strings: () => bl, thanks_to: () => gl });
+  S(St, {
+    comments: () => El,
+    default: () => Tl,
+    direction: () => Rl,
+    strings: () => bl,
+    thanks_to: () => gl,
+  });
   var gl = 'Liam Bigelow <liam@cloudcannon.com>',
     El = '',
     Rl = 'ltr',
@@ -1588,13 +1861,21 @@
       zero_results: 'No results for [SEARCH_TERM]',
       many_results: '[COUNT] results for [SEARCH_TERM]',
       one_result: '[COUNT] result for [SEARCH_TERM]',
-      alt_search: 'No results for [SEARCH_TERM]. Showing results for [DIFFERENT_TERM] instead',
-      search_suggestion: 'No results for [SEARCH_TERM]. Try one of the following searches:',
+      alt_search:
+        'No results for [SEARCH_TERM]. Showing results for [DIFFERENT_TERM] instead',
+      search_suggestion:
+        'No results for [SEARCH_TERM]. Try one of the following searches:',
       searching: 'Searching for [SEARCH_TERM]...',
     },
     Tl = { thanks_to: gl, comments: El, direction: Rl, strings: bl };
   var Mt = {};
-  S(Mt, { comments: () => kl, default: () => Ml, direction: () => yl, strings: () => Sl, thanks_to: () => Cl });
+  S(Mt, {
+    comments: () => kl,
+    default: () => Ml,
+    direction: () => yl,
+    strings: () => Sl,
+    thanks_to: () => Cl,
+  });
   var Cl = 'Pablo Villaverde <https://github.com/pvillaverde>',
     kl = '',
     yl = 'ltr',
@@ -1609,12 +1890,19 @@
       one_result: '[COUNT] resultado encontrado para [SEARCH_TERM]',
       alt_search:
         'No se encontraron resultados para [SEARCH_TERM]. Mostrando en su lugar resultados para [DIFFERENT_TERM]',
-      search_suggestion: 'No se encontraron resultados para [SEARCH_TERM]. Prueba una de las siguientes b\xFAsquedas:',
+      search_suggestion:
+        'No se encontraron resultados para [SEARCH_TERM]. Prueba una de las siguientes b\xFAsquedas:',
       searching: 'Buscando [SEARCH_TERM]...',
     },
     Ml = { thanks_to: Cl, comments: kl, direction: yl, strings: Sl };
   var At = {};
-  S(At, { comments: () => vl, default: () => Hl, direction: () => wl, strings: () => Fl, thanks_to: () => Al });
+  S(At, {
+    comments: () => vl,
+    default: () => Hl,
+    direction: () => wl,
+    strings: () => Fl,
+    thanks_to: () => Al,
+  });
   var Al = 'Valtteri Laitinen <dev@valtlai.fi>',
     vl = '',
     wl = 'ltr',
@@ -1627,13 +1915,21 @@
       zero_results: 'Ei tuloksia haulle [SEARCH_TERM]',
       many_results: '[COUNT] tulosta haulle [SEARCH_TERM]',
       one_result: '[COUNT] tulos haulle [SEARCH_TERM]',
-      alt_search: 'Ei tuloksia haulle [SEARCH_TERM]. N\xE4ytet\xE4\xE4n tulokset sen sijaan haulle [DIFFERENT_TERM]',
-      search_suggestion: 'Ei tuloksia haulle [SEARCH_TERM]. Kokeile jotain seuraavista:',
+      alt_search:
+        'Ei tuloksia haulle [SEARCH_TERM]. N\xE4ytet\xE4\xE4n tulokset sen sijaan haulle [DIFFERENT_TERM]',
+      search_suggestion:
+        'Ei tuloksia haulle [SEARCH_TERM]. Kokeile jotain seuraavista:',
       searching: 'Haetaan [SEARCH_TERM]...',
     },
     Hl = { thanks_to: Al, comments: vl, direction: wl, strings: Fl };
   var vt = {};
-  S(vt, { comments: () => Ol, default: () => Dl, direction: () => zl, strings: () => jl, thanks_to: () => Nl });
+  S(vt, {
+    comments: () => Ol,
+    default: () => Dl,
+    direction: () => zl,
+    strings: () => jl,
+    thanks_to: () => Nl,
+  });
   var Nl = 'Nicolas Friedli <nicolas@theologique.ch>',
     Ol = '',
     zl = 'ltr',
@@ -1646,13 +1942,21 @@
       zero_results: 'Pas de r\xE9sultat pour [SEARCH_TERM]',
       many_results: '[COUNT] r\xE9sultats pour [SEARCH_TERM]',
       one_result: '[COUNT] r\xE9sultat pour [SEARCH_TERM]',
-      alt_search: 'Pas de r\xE9sultat pour [SEARCH_TERM]. Montre les r\xE9sultats pour [DIFFERENT_TERM] \xE0 la place',
-      search_suggestion: 'Pas de r\xE9sultat pour [SEARCH_TERM]. Essayer une des recherches suivantes:',
+      alt_search:
+        'Pas de r\xE9sultat pour [SEARCH_TERM]. Montre les r\xE9sultats pour [DIFFERENT_TERM] \xE0 la place',
+      search_suggestion:
+        'Pas de r\xE9sultat pour [SEARCH_TERM]. Essayer une des recherches suivantes:',
       searching: 'Recherche [SEARCH_TERM]...',
     },
     Dl = { thanks_to: Nl, comments: Ol, direction: zl, strings: jl };
   var wt = {};
-  S(wt, { comments: () => Il, default: () => ql, direction: () => Pl, strings: () => Ll, thanks_to: () => Ul });
+  S(wt, {
+    comments: () => Il,
+    default: () => ql,
+    direction: () => Pl,
+    strings: () => Ll,
+    thanks_to: () => Ul,
+  });
   var Ul = 'Pablo Villaverde <https://github.com/pvillaverde>',
     Il = '',
     Pl = 'ltr',
@@ -1667,12 +1971,19 @@
       one_result: '[COUNT] resultado atopado para [SEARCH_TERM]',
       alt_search:
         'Non se atoparon resultados para [SEARCH_TERM]. Amosando no seu lugar resultados para [DIFFERENT_TERM]',
-      search_suggestion: 'Non se atoparon resultados para [SEARCH_TERM]. Probe unha das seguintes pesquisas:',
+      search_suggestion:
+        'Non se atoparon resultados para [SEARCH_TERM]. Probe unha das seguintes pesquisas:',
       searching: 'Buscando [SEARCH_TERM]...',
     },
     ql = { thanks_to: Ul, comments: Il, direction: Pl, strings: Ll };
   var Ft = {};
-  S(Ft, { comments: () => Wl, default: () => Kl, direction: () => Vl, strings: () => Gl, thanks_to: () => Bl });
+  S(Ft, {
+    comments: () => Wl,
+    default: () => Kl,
+    direction: () => Vl,
+    strings: () => Gl,
+    thanks_to: () => Bl,
+  });
   var Bl = 'Amit Yadav <amit@thetechbasket.com>',
     Wl = '',
     Vl = 'ltr',
@@ -1681,7 +1992,8 @@
       clear_search: '\u0938\u093E\u092B \u0915\u0930\u0947\u0902',
       load_more:
         '\u0914\u0930 \u0905\u0927\u093F\u0915 \u092A\u0930\u093F\u0923\u093E\u092E \u0932\u094B\u0921 \u0915\u0930\u0947\u0902',
-      search_label: '\u0907\u0938 \u0938\u093E\u0907\u091F \u092E\u0947\u0902 \u0916\u094B\u091C\u0947\u0902',
+      search_label:
+        '\u0907\u0938 \u0938\u093E\u0907\u091F \u092E\u0947\u0902 \u0916\u094B\u091C\u0947\u0902',
       filters_label: '\u092B\u093C\u093F\u0932\u094D\u091F\u0930',
       zero_results:
         '\u0915\u094B\u0908 \u092A\u0930\u093F\u0923\u093E\u092E [SEARCH_TERM] \u0915\u0947 \u0932\u093F\u090F \u0928\u0939\u0940\u0902 \u092E\u093F\u0932\u093E',
@@ -1698,7 +2010,13 @@
     },
     Kl = { thanks_to: Bl, comments: Wl, direction: Vl, strings: Gl };
   var Ht = {};
-  S(Ht, { comments: () => Yl, default: () => Ql, direction: () => Zl, strings: () => Xl, thanks_to: () => Jl });
+  S(Ht, {
+    comments: () => Yl,
+    default: () => Ql,
+    direction: () => Zl,
+    strings: () => Xl,
+    thanks_to: () => Jl,
+  });
   var Jl = 'Diomed <https://github.com/diomed>',
     Yl = '',
     Zl = 'ltr',
@@ -1711,13 +2029,21 @@
       zero_results: 'Nema rezultata za [SEARCH_TERM]',
       many_results: '[COUNT] rezultata za [SEARCH_TERM]',
       one_result: '[COUNT] rezultat za [SEARCH_TERM]',
-      alt_search: 'Nema rezultata za [SEARCH_TERM]. Prikazujem rezultate za [DIFFERENT_TERM]',
-      search_suggestion: 'Nema rezultata za [SEARCH_TERM]. Poku\u0161aj s jednom od ovih pretraga:',
+      alt_search:
+        'Nema rezultata za [SEARCH_TERM]. Prikazujem rezultate za [DIFFERENT_TERM]',
+      search_suggestion:
+        'Nema rezultata za [SEARCH_TERM]. Poku\u0161aj s jednom od ovih pretraga:',
       searching: 'Pretra\u017Eujem [SEARCH_TERM]...',
     },
     Ql = { thanks_to: Jl, comments: Yl, direction: Zl, strings: Xl };
   var Nt = {};
-  S(Nt, { comments: () => $l, default: () => nr, direction: () => er, strings: () => tr, thanks_to: () => xl });
+  S(Nt, {
+    comments: () => $l,
+    default: () => nr,
+    direction: () => er,
+    strings: () => tr,
+    thanks_to: () => xl,
+  });
   var xl = 'Adam Laki <info@adamlaki.com>',
     $l = '',
     er = 'ltr',
@@ -1738,7 +2064,13 @@
     },
     nr = { thanks_to: xl, comments: $l, direction: er, strings: tr };
   var Ot = {};
-  S(Ot, { comments: () => lr, default: () => ar, direction: () => rr, strings: () => ir, thanks_to: () => sr });
+  S(Ot, {
+    comments: () => lr,
+    default: () => ar,
+    direction: () => rr,
+    strings: () => ir,
+    thanks_to: () => sr,
+  });
   var sr = 'Nixentric',
     lr = '',
     rr = 'ltr',
@@ -1751,13 +2083,21 @@
       zero_results: '[SEARCH_TERM] tidak ditemukan',
       many_results: 'Ditemukan [COUNT] hasil untuk [SEARCH_TERM]',
       one_result: 'Ditemukan [COUNT] hasil untuk [SEARCH_TERM]',
-      alt_search: '[SEARCH_TERM] tidak ditemukan. Menampilkan hasil [DIFFERENT_TERM] sebagai gantinya',
-      search_suggestion: '[SEARCH_TERM] tidak ditemukan. Coba salah satu pencarian berikut ini:',
+      alt_search:
+        '[SEARCH_TERM] tidak ditemukan. Menampilkan hasil [DIFFERENT_TERM] sebagai gantinya',
+      search_suggestion:
+        '[SEARCH_TERM] tidak ditemukan. Coba salah satu pencarian berikut ini:',
       searching: 'Mencari [SEARCH_TERM]...',
     },
     ar = { thanks_to: sr, comments: lr, direction: rr, strings: ir };
   var zt = {};
-  S(zt, { comments: () => ur, default: () => fr, direction: () => cr, strings: () => _r, thanks_to: () => or });
+  S(zt, {
+    comments: () => ur,
+    default: () => fr,
+    direction: () => cr,
+    strings: () => _r,
+    thanks_to: () => or,
+  });
   var or = 'Cosette Bruhns Alonso, Andrew Janco <apjanco@upenn.edu>',
     ur = '',
     cr = 'ltr',
@@ -1770,13 +2110,21 @@
       zero_results: 'Nessun risultato per [SEARCH_TERM]',
       many_results: '[COUNT] risultati per [SEARCH_TERM]',
       one_result: '[COUNT] risultato per [SEARCH_TERM]',
-      alt_search: 'Nessun risultato per [SEARCH_TERM]. Mostrando risultati per [DIFFERENT_TERM] come alternativa.',
-      search_suggestion: 'Nessun risultato per [SEARCH_TERM]. Prova una delle seguenti ricerche:',
+      alt_search:
+        'Nessun risultato per [SEARCH_TERM]. Mostrando risultati per [DIFFERENT_TERM] come alternativa.',
+      search_suggestion:
+        'Nessun risultato per [SEARCH_TERM]. Prova una delle seguenti ricerche:',
       searching: 'Cercando [SEARCH_TERM]...',
     },
     fr = { thanks_to: or, comments: ur, direction: cr, strings: _r };
   var jt = {};
-  S(jt, { comments: () => hr, default: () => gr, direction: () => mr, strings: () => pr, thanks_to: () => dr });
+  S(jt, {
+    comments: () => hr,
+    default: () => gr,
+    direction: () => mr,
+    strings: () => pr,
+    thanks_to: () => dr,
+  });
   var dr = 'Tate',
     hr = '',
     mr = 'ltr',
@@ -1788,17 +2136,26 @@
       filters_label: '\u30D5\u30A3\u30EB\u30BF',
       zero_results:
         '[SEARCH_TERM]\u306E\u691C\u7D22\u306B\u4E00\u81F4\u3059\u308B\u60C5\u5831\u306F\u3042\u308A\u307E\u305B\u3093\u3067\u3057\u305F',
-      many_results: '[SEARCH_TERM]\u306E[COUNT]\u4EF6\u306E\u691C\u7D22\u7D50\u679C',
-      one_result: '[SEARCH_TERM]\u306E[COUNT]\u4EF6\u306E\u691C\u7D22\u7D50\u679C',
+      many_results:
+        '[SEARCH_TERM]\u306E[COUNT]\u4EF6\u306E\u691C\u7D22\u7D50\u679C',
+      one_result:
+        '[SEARCH_TERM]\u306E[COUNT]\u4EF6\u306E\u691C\u7D22\u7D50\u679C',
       alt_search:
         '[SEARCH_TERM]\u306E\u691C\u7D22\u306B\u4E00\u81F4\u3059\u308B\u60C5\u5831\u306F\u3042\u308A\u307E\u305B\u3093\u3067\u3057\u305F\u3002[DIFFERENT_TERM]\u306E\u691C\u7D22\u7D50\u679C\u3092\u8868\u793A\u3057\u3066\u3044\u307E\u3059',
       search_suggestion:
         '[SEARCH_TERM]\u306E\u691C\u7D22\u306B\u4E00\u81F4\u3059\u308B\u60C5\u5831\u306F\u3042\u308A\u307E\u305B\u3093\u3067\u3057\u305F\u3002\u6B21\u306E\u3044\u305A\u308C\u304B\u306E\u691C\u7D22\u3092\u8A66\u3057\u3066\u304F\u3060\u3055\u3044',
-      searching: '[SEARCH_TERM]\u3092\u691C\u7D22\u3057\u3066\u3044\u307E\u3059',
+      searching:
+        '[SEARCH_TERM]\u3092\u691C\u7D22\u3057\u3066\u3044\u307E\u3059',
     },
     gr = { thanks_to: dr, comments: hr, direction: mr, strings: pr };
   var Dt = {};
-  S(Dt, { comments: () => Rr, default: () => Cr, direction: () => br, strings: () => Tr, thanks_to: () => Er });
+  S(Dt, {
+    comments: () => Rr,
+    default: () => Cr,
+    direction: () => br,
+    strings: () => Tr,
+    thanks_to: () => Er,
+  });
   var Er = 'Seokho Son <https://github.com/seokho-son>',
     Rr = '',
     br = 'ltr',
@@ -1808,8 +2165,10 @@
       load_more: '\uAC80\uC0C9 \uACB0\uACFC \uB354 \uBCF4\uAE30',
       search_label: '\uC0AC\uC774\uD2B8 \uAC80\uC0C9',
       filters_label: '\uD544\uD130',
-      zero_results: '[SEARCH_TERM]\uC5D0 \uB300\uD55C \uACB0\uACFC \uC5C6\uC74C',
-      many_results: '[SEARCH_TERM]\uC5D0 \uB300\uD55C \uACB0\uACFC [COUNT]\uAC74',
+      zero_results:
+        '[SEARCH_TERM]\uC5D0 \uB300\uD55C \uACB0\uACFC \uC5C6\uC74C',
+      many_results:
+        '[SEARCH_TERM]\uC5D0 \uB300\uD55C \uACB0\uACFC [COUNT]\uAC74',
       one_result: '[SEARCH_TERM]\uC5D0 \uB300\uD55C \uACB0\uACFC [COUNT]\uAC74',
       alt_search:
         '[SEARCH_TERM]\uC5D0 \uB300\uD55C \uACB0\uACFC \uC5C6\uC74C. [DIFFERENT_TERM]\uC5D0 \uB300\uD55C \uACB0\uACFC',
@@ -1819,7 +2178,13 @@
     },
     Cr = { thanks_to: Er, comments: Rr, direction: br, strings: Tr };
   var Ut = {};
-  S(Ut, { comments: () => yr, default: () => Ar, direction: () => Sr, strings: () => Mr, thanks_to: () => kr });
+  S(Ut, {
+    comments: () => yr,
+    default: () => Ar,
+    direction: () => Sr,
+    strings: () => Mr,
+    thanks_to: () => kr,
+  });
   var kr = '',
     yr = '',
     Sr = 'ltr',
@@ -1832,13 +2197,21 @@
       zero_results: 'Otinga kore ki [SEARCH_TERM]',
       many_results: '[COUNT] otinga ki [SEARCH_TERM]',
       one_result: '[COUNT] otinga ki [SEARCH_TERM]',
-      alt_search: 'Otinga kore ki [SEARCH_TERM]. Otinga k\u0113 ki [DIFFERENT_TERM]',
-      search_suggestion: 'Otinga kore ki [SEARCH_TERM]. whakam\u0101tau ki ng\u0101 mea atu:',
+      alt_search:
+        'Otinga kore ki [SEARCH_TERM]. Otinga k\u0113 ki [DIFFERENT_TERM]',
+      search_suggestion:
+        'Otinga kore ki [SEARCH_TERM]. whakam\u0101tau ki ng\u0101 mea atu:',
       searching: 'Rapu ki [SEARCH_TERM]...',
     },
     Ar = { thanks_to: kr, comments: yr, direction: Sr, strings: Mr };
   var It = {};
-  S(It, { comments: () => wr, default: () => Nr, direction: () => Fr, strings: () => Hr, thanks_to: () => vr });
+  S(It, {
+    comments: () => wr,
+    default: () => Nr,
+    direction: () => Fr,
+    strings: () => Hr,
+    thanks_to: () => vr,
+  });
   var vr = 'Paul van Brouwershaven',
     wr = '',
     Fr = 'ltr',
@@ -1853,12 +2226,19 @@
       one_result: '[COUNT] resultaat voor [SEARCH_TERM]',
       alt_search:
         'Geen resultaten voor [SEARCH_TERM]. In plaats daarvan worden resultaten voor [DIFFERENT_TERM] weergegeven',
-      search_suggestion: 'Geen resultaten voor [SEARCH_TERM]. Probeer een van de volgende zoekopdrachten:',
+      search_suggestion:
+        'Geen resultaten voor [SEARCH_TERM]. Probeer een van de volgende zoekopdrachten:',
       searching: 'Zoeken naar [SEARCH_TERM]...',
     },
     Nr = { thanks_to: vr, comments: wr, direction: Fr, strings: Hr };
   var Pt = {};
-  S(Pt, { comments: () => zr, default: () => Ur, direction: () => jr, strings: () => Dr, thanks_to: () => Or });
+  S(Pt, {
+    comments: () => zr,
+    default: () => Ur,
+    direction: () => jr,
+    strings: () => Dr,
+    thanks_to: () => Or,
+  });
   var Or = 'Christopher Wingate',
     zr = '',
     jr = 'ltr',
@@ -1871,13 +2251,21 @@
       zero_results: 'Ingen resultater for [SEARCH_TERM]',
       many_results: '[COUNT] resultater for [SEARCH_TERM]',
       one_result: '[COUNT] resultat for [SEARCH_TERM]',
-      alt_search: 'Ingen resultater for [SEARCH_TERM]. Viser resultater for [DIFFERENT_TERM] i stedet',
-      search_suggestion: 'Ingen resultater for [SEARCH_TERM]. Pr\xF8v en av disse s\xF8keordene i stedet:',
+      alt_search:
+        'Ingen resultater for [SEARCH_TERM]. Viser resultater for [DIFFERENT_TERM] i stedet',
+      search_suggestion:
+        'Ingen resultater for [SEARCH_TERM]. Pr\xF8v en av disse s\xF8keordene i stedet:',
       searching: 'S\xF8ker etter [SEARCH_TERM]',
     },
     Ur = { thanks_to: Or, comments: zr, direction: jr, strings: Dr };
   var Lt = {};
-  S(Lt, { comments: () => Pr, default: () => Br, direction: () => Lr, strings: () => qr, thanks_to: () => Ir });
+  S(Lt, {
+    comments: () => Pr,
+    default: () => Br,
+    direction: () => Lr,
+    strings: () => qr,
+    thanks_to: () => Ir,
+  });
   var Ir = '',
     Pr = '',
     Lr = 'ltr',
@@ -1890,13 +2278,21 @@
       zero_results: 'Brak wynik\xF3w dla [SEARCH_TERM]',
       many_results: '[COUNT] wynik\xF3w dla [SEARCH_TERM]',
       one_result: '[COUNT] wynik dla [SEARCH_TERM]',
-      alt_search: 'Brak wynik\xF3w dla [SEARCH_TERM]. Wy\u015Bwietlam wyniki dla [DIFFERENT_TERM]',
-      search_suggestion: 'Brak wynik\xF3w dla [SEARCH_TERM]. Pokrewne wyniki wyszukiwania:',
+      alt_search:
+        'Brak wynik\xF3w dla [SEARCH_TERM]. Wy\u015Bwietlam wyniki dla [DIFFERENT_TERM]',
+      search_suggestion:
+        'Brak wynik\xF3w dla [SEARCH_TERM]. Pokrewne wyniki wyszukiwania:',
       searching: 'Szukam [SEARCH_TERM]...',
     },
     Br = { thanks_to: Ir, comments: Pr, direction: Lr, strings: qr };
   var qt = {};
-  S(qt, { comments: () => Vr, default: () => Jr, direction: () => Gr, strings: () => Kr, thanks_to: () => Wr });
+  S(qt, {
+    comments: () => Vr,
+    default: () => Jr,
+    direction: () => Gr,
+    strings: () => Kr,
+    thanks_to: () => Wr,
+  });
   var Wr = 'Jonatah',
     Vr = '',
     Gr = 'ltr',
@@ -1909,13 +2305,21 @@
       zero_results: 'Nenhum resultado encontrado para [SEARCH_TERM]',
       many_results: '[COUNT] resultados encontrados para [SEARCH_TERM]',
       one_result: '[COUNT] resultado encontrado para [SEARCH_TERM]',
-      alt_search: 'Nenhum resultado encontrado para [SEARCH_TERM]. Exibindo resultados para [DIFFERENT_TERM]',
-      search_suggestion: 'Nenhum resultado encontrado para [SEARCH_TERM]. Tente uma das seguintes pesquisas:',
+      alt_search:
+        'Nenhum resultado encontrado para [SEARCH_TERM]. Exibindo resultados para [DIFFERENT_TERM]',
+      search_suggestion:
+        'Nenhum resultado encontrado para [SEARCH_TERM]. Tente uma das seguintes pesquisas:',
       searching: 'Pesquisando por [SEARCH_TERM]...',
     },
     Jr = { thanks_to: Wr, comments: Vr, direction: Gr, strings: Kr };
   var Bt = {};
-  S(Bt, { comments: () => Zr, default: () => xr, direction: () => Xr, strings: () => Qr, thanks_to: () => Yr });
+  S(Bt, {
+    comments: () => Zr,
+    default: () => xr,
+    direction: () => Xr,
+    strings: () => Qr,
+    thanks_to: () => Yr,
+  });
   var Yr = 'Bogdan Mateescu <bogdan@surfverse.com>',
     Zr = '',
     Xr = 'ltr',
@@ -1936,15 +2340,24 @@
     },
     xr = { thanks_to: Yr, comments: Zr, direction: Xr, strings: Qr };
   var Wt = {};
-  S(Wt, { comments: () => ei, default: () => si, direction: () => ti, strings: () => ni, thanks_to: () => $r });
+  S(Wt, {
+    comments: () => ei,
+    default: () => si,
+    direction: () => ti,
+    strings: () => ni,
+    thanks_to: () => $r,
+  });
   var $r = 'Aleksandr Gordeev',
     ei = '',
     ti = 'ltr',
     ni = {
       placeholder: '\u041F\u043E\u0438\u0441\u043A',
-      clear_search: '\u041E\u0447\u0438\u0441\u0442\u0438\u0442\u044C \u043F\u043E\u043B\u0435',
-      load_more: '\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C \u0435\u0449\u0435',
-      search_label: '\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443',
+      clear_search:
+        '\u041E\u0447\u0438\u0441\u0442\u0438\u0442\u044C \u043F\u043E\u043B\u0435',
+      load_more:
+        '\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C \u0435\u0449\u0435',
+      search_label:
+        '\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443',
       filters_label: '\u0424\u0438\u043B\u044C\u0442\u0440\u044B',
       zero_results:
         '\u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043E \u043F\u043E \u0437\u0430\u043F\u0440\u043E\u0441\u0443: [SEARCH_TERM]',
@@ -1961,7 +2374,13 @@
     },
     si = { thanks_to: $r, comments: ei, direction: ti, strings: ni };
   var Vt = {};
-  S(Vt, { comments: () => ri, default: () => oi, direction: () => ii, strings: () => ai, thanks_to: () => li });
+  S(Vt, {
+    comments: () => ri,
+    default: () => oi,
+    direction: () => ii,
+    strings: () => ai,
+    thanks_to: () => li,
+  });
   var li = 'Andrija Sagicc',
     ri = '',
     ii = 'ltr',
@@ -1970,12 +2389,15 @@
       clear_search: '\u0411\u0440\u0438\u0441\u0430\u045A\u0435',
       load_more:
         '\u041F\u0440\u0438\u043A\u0430\u0437 \u0432\u0438\u0448\u0435 \u0440\u0435\u0437\u0443\u043B\u0442\u0430\u0442\u0430',
-      search_label: '\u041F\u0440\u0435\u0442\u0440\u0430\u0433\u0430 \u0441\u0430\u0458\u0442\u0430',
+      search_label:
+        '\u041F\u0440\u0435\u0442\u0440\u0430\u0433\u0430 \u0441\u0430\u0458\u0442\u0430',
       filters_label: '\u0424\u0438\u043B\u0442\u0435\u0440\u0438',
       zero_results:
         '\u041D\u0435\u043C\u0430 \u0440\u0435\u0437\u0443\u043B\u0442\u0430\u0442\u0430 \u0437\u0430 [SEARCH_TERM]',
-      many_results: '[COUNT] \u0440\u0435\u0437\u0443\u043B\u0442\u0430\u0442\u0430 \u0437\u0430 [SEARCH_TERM]',
-      one_result: '[COUNT] \u0440\u0435\u0437\u0443\u043B\u0442\u0430\u0442\u0430 \u0437\u0430 [SEARCH_TERM]',
+      many_results:
+        '[COUNT] \u0440\u0435\u0437\u0443\u043B\u0442\u0430\u0442\u0430 \u0437\u0430 [SEARCH_TERM]',
+      one_result:
+        '[COUNT] \u0440\u0435\u0437\u0443\u043B\u0442\u0430\u0442\u0430 \u0437\u0430 [SEARCH_TERM]',
       alt_search:
         '\u041D\u0435\u043C\u0430 \u0440\u0435\u0437\u0443\u043B\u0442\u0430\u0442\u0430 \u0437\u0430 [SEARCH_TERM]. \u041F\u0440\u0438\u043A\u0430\u0437 \u0434\u043E\u0434\u0430\u0442\u043D\u0438\u043A \u0440\u0435\u0437\u0443\u043B\u0442\u0430\u0442\u0430 \u0437\u0430 [DIFFERENT_TERM]',
       search_suggestion:
@@ -1985,7 +2407,13 @@
     },
     oi = { thanks_to: li, comments: ri, direction: ii, strings: ai };
   var Gt = {};
-  S(Gt, { comments: () => ci, default: () => di, direction: () => _i, strings: () => fi, thanks_to: () => ui });
+  S(Gt, {
+    comments: () => ci,
+    default: () => di,
+    direction: () => _i,
+    strings: () => fi,
+    thanks_to: () => ui,
+  });
   var ui = 'Montazar Al-Jaber <montazar@nanawee.tech>',
     ci = '',
     _i = 'ltr',
@@ -1998,13 +2426,21 @@
       zero_results: '[SEARCH_TERM] gav inga tr\xE4ffar',
       many_results: '[SEARCH_TERM] gav [COUNT] tr\xE4ffar',
       one_result: '[SEARCH_TERM] gav [COUNT] tr\xE4ff',
-      alt_search: '[SEARCH_TERM] gav inga tr\xE4ffar. Visar resultat f\xF6r [DIFFERENT_TERM] ist\xE4llet',
-      search_suggestion: '[SEARCH_TERM] gav inga tr\xE4ffar. F\xF6rs\xF6k igen med en av f\xF6ljande s\xF6kord:',
+      alt_search:
+        '[SEARCH_TERM] gav inga tr\xE4ffar. Visar resultat f\xF6r [DIFFERENT_TERM] ist\xE4llet',
+      search_suggestion:
+        '[SEARCH_TERM] gav inga tr\xE4ffar. F\xF6rs\xF6k igen med en av f\xF6ljande s\xF6kord:',
       searching: 'S\xF6ker efter [SEARCH_TERM]...',
     },
     di = { thanks_to: ui, comments: ci, direction: _i, strings: fi };
   var Kt = {};
-  S(Kt, { comments: () => mi, default: () => Ei, direction: () => pi, strings: () => gi, thanks_to: () => hi });
+  S(Kt, {
+    comments: () => mi,
+    default: () => Ei,
+    direction: () => pi,
+    strings: () => gi,
+    thanks_to: () => hi,
+  });
   var hi = '',
     mi = '',
     pi = 'ltr',
@@ -2015,12 +2451,14 @@
         '\u0BAE\u0BC7\u0BB2\u0BC1\u0BAE\u0BCD \u0BAE\u0BC1\u0B9F\u0BBF\u0BB5\u0BC1\u0B95\u0BB3\u0BC8\u0B95\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0B95',
       search_label:
         '\u0B87\u0BA8\u0BCD\u0BA4 \u0BA4\u0BB3\u0BA4\u0BCD\u0BA4\u0BBF\u0BB2\u0BCD \u0BA4\u0BC7\u0B9F\u0BC1\u0B95',
-      filters_label: '\u0BB5\u0B9F\u0BBF\u0B95\u0B9F\u0BCD\u0B9F\u0BB2\u0BCD\u0B95\u0BB3\u0BCD',
+      filters_label:
+        '\u0BB5\u0B9F\u0BBF\u0B95\u0B9F\u0BCD\u0B9F\u0BB2\u0BCD\u0B95\u0BB3\u0BCD',
       zero_results:
         '[SEARCH_TERM] \u0B95\u0BCD\u0B95\u0BBE\u0BA9 \u0BAE\u0BC1\u0B9F\u0BBF\u0BB5\u0BC1\u0B95\u0BB3\u0BCD \u0B87\u0BB2\u0BCD\u0BB2\u0BC8',
       many_results:
         '[SEARCH_TERM] \u0B95\u0BCD\u0B95\u0BBE\u0BA9 [COUNT] \u0BAE\u0BC1\u0B9F\u0BBF\u0BB5\u0BC1\u0B95\u0BB3\u0BCD',
-      one_result: '[SEARCH_TERM] \u0B95\u0BCD\u0B95\u0BBE\u0BA9 \u0BAE\u0BC1\u0B9F\u0BBF\u0BB5\u0BC1',
+      one_result:
+        '[SEARCH_TERM] \u0B95\u0BCD\u0B95\u0BBE\u0BA9 \u0BAE\u0BC1\u0B9F\u0BBF\u0BB5\u0BC1',
       alt_search:
         '[SEARCH_TERM] \u0B87\u0BA4\u0BCD\u0BA4\u0BC7\u0B9F\u0BB2\u0BC1\u0B95\u0BCD\u0B95\u0BBE\u0BA9 \u0BAE\u0BC1\u0B9F\u0BBF\u0BB5\u0BC1\u0B95\u0BB3\u0BCD \u0B87\u0BB2\u0BCD\u0BB2\u0BC8, \u0B87\u0BA8\u0BCD\u0BA4 \u0BA4\u0BC7\u0B9F\u0BB2\u0BCD\u0B95\u0BB3\u0BC1\u0B95\u0BCD\u0B95\u0BBE\u0BA9 \u0B92\u0BA4\u0BCD\u0BA4 \u0BAE\u0BC1\u0B9F\u0BBF\u0BB5\u0BC1\u0B95\u0BB3\u0BCD [DIFFERENT_TERM]',
       search_suggestion:
@@ -2030,7 +2468,13 @@
     },
     Ei = { thanks_to: hi, comments: mi, direction: pi, strings: gi };
   var Jt = {};
-  S(Jt, { comments: () => bi, default: () => ki, direction: () => Ti, strings: () => Ci, thanks_to: () => Ri });
+  S(Jt, {
+    comments: () => bi,
+    default: () => ki,
+    direction: () => Ti,
+    strings: () => Ci,
+    thanks_to: () => Ri,
+  });
   var Ri = 'Taylan \xD6zg\xFCr Bildik',
     bi = '',
     Ti = 'ltr',
@@ -2051,15 +2495,24 @@
     },
     ki = { thanks_to: Ri, comments: bi, direction: Ti, strings: Ci };
   var Yt = {};
-  S(Yt, { comments: () => Si, default: () => vi, direction: () => Mi, strings: () => Ai, thanks_to: () => yi });
+  S(Yt, {
+    comments: () => Si,
+    default: () => vi,
+    direction: () => Mi,
+    strings: () => Ai,
+    thanks_to: () => yi,
+  });
   var yi = 'Vladyslav Lyshenko <vladdnepr1989@gmail.com>',
     Si = '',
     Mi = 'ltr',
     Ai = {
       placeholder: '\u041F\u043E\u0448\u0443\u043A',
-      clear_search: '\u041E\u0447\u0438\u0441\u0442\u0438\u0442\u0438 \u043F\u043E\u043B\u0435',
-      load_more: '\u0417\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0438\u0442\u0438 \u0449\u0435',
-      search_label: '\u041F\u043E\u0448\u0443\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443',
+      clear_search:
+        '\u041E\u0447\u0438\u0441\u0442\u0438\u0442\u0438 \u043F\u043E\u043B\u0435',
+      load_more:
+        '\u0417\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0438\u0442\u0438 \u0449\u0435',
+      search_label:
+        '\u041F\u043E\u0448\u0443\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443',
       filters_label: '\u0424\u0456\u043B\u044C\u0442\u0440\u0438',
       zero_results:
         '\u041D\u0456\u0447\u043E\u0433\u043E \u043D\u0435 \u0437\u043D\u0430\u0439\u0434\u0435\u043D\u043E \u0437\u0430 \u0437\u0430\u043F\u0438\u0442\u043E\u043C: [SEARCH_TERM]',
@@ -2076,7 +2529,13 @@
     },
     vi = { thanks_to: yi, comments: Si, direction: Mi, strings: Ai };
   var Zt = {};
-  S(Zt, { comments: () => Fi, default: () => Oi, direction: () => Hi, strings: () => Ni, thanks_to: () => wi });
+  S(Zt, {
+    comments: () => Fi,
+    default: () => Oi,
+    direction: () => Hi,
+    strings: () => Ni,
+    thanks_to: () => wi,
+  });
   var wi = 'Long Nhat Nguyen',
     Fi = '',
     Hi = 'ltr',
@@ -2086,7 +2545,8 @@
       load_more: 'Nhi\u1EC1u k\u1EBFt qu\u1EA3 h\u01A1n',
       search_label: 'T\xECm ki\u1EBFm trong trang n\xE0y',
       filters_label: 'B\u1ED9 l\u1ECDc',
-      zero_results: 'Kh\xF4ng t\xECm th\u1EA5y k\u1EBFt qu\u1EA3 cho [SEARCH_TERM]',
+      zero_results:
+        'Kh\xF4ng t\xECm th\u1EA5y k\u1EBFt qu\u1EA3 cho [SEARCH_TERM]',
       many_results: '[COUNT] k\u1EBFt qu\u1EA3 cho [SEARCH_TERM]',
       one_result: '[COUNT] k\u1EBFt qu\u1EA3 cho [SEARCH_TERM]',
       alt_search:
@@ -2097,7 +2557,13 @@
     },
     Oi = { thanks_to: wi, comments: Fi, direction: Hi, strings: Ni };
   var Xt = {};
-  S(Xt, { comments: () => ji, default: () => Ii, direction: () => Di, strings: () => Ui, thanks_to: () => zi });
+  S(Xt, {
+    comments: () => ji,
+    default: () => Ii,
+    direction: () => Di,
+    strings: () => Ui,
+    thanks_to: () => zi,
+  });
   var zi = 'Amber Song',
     ji = '',
     Di = 'ltr',
@@ -2107,9 +2573,12 @@
       load_more: '\u52A0\u8F7D\u66F4\u591A\u7ED3\u679C',
       search_label: '\u7AD9\u5185\u641C\u7D22',
       filters_label: '\u7B5B\u9009',
-      zero_results: '\u672A\u627E\u5230 [SEARCH_TERM] \u7684\u76F8\u5173\u7ED3\u679C',
-      many_results: '\u627E\u5230 [COUNT] \u4E2A [SEARCH_TERM] \u7684\u76F8\u5173\u7ED3\u679C',
-      one_result: '\u627E\u5230 [COUNT] \u4E2A [SEARCH_TERM] \u7684\u76F8\u5173\u7ED3\u679C',
+      zero_results:
+        '\u672A\u627E\u5230 [SEARCH_TERM] \u7684\u76F8\u5173\u7ED3\u679C',
+      many_results:
+        '\u627E\u5230 [COUNT] \u4E2A [SEARCH_TERM] \u7684\u76F8\u5173\u7ED3\u679C',
+      one_result:
+        '\u627E\u5230 [COUNT] \u4E2A [SEARCH_TERM] \u7684\u76F8\u5173\u7ED3\u679C',
       alt_search:
         '\u672A\u627E\u5230 [SEARCH_TERM] \u7684\u76F8\u5173\u7ED3\u679C\u3002\u6539\u4E3A\u663E\u793A [DIFFERENT_TERM] \u7684\u76F8\u5173\u7ED3\u679C',
       search_suggestion:
@@ -2118,7 +2587,13 @@
     },
     Ii = { thanks_to: zi, comments: ji, direction: Di, strings: Ui };
   var Qt = {};
-  S(Qt, { comments: () => Li, default: () => Wi, direction: () => qi, strings: () => Bi, thanks_to: () => Pi });
+  S(Qt, {
+    comments: () => Li,
+    default: () => Wi,
+    direction: () => qi,
+    strings: () => Bi,
+    thanks_to: () => Pi,
+  });
   var Pi = 'Amber Song',
     Li = '',
     qi = 'ltr',
@@ -2128,9 +2603,12 @@
       load_more: '\u52A0\u8F09\u66F4\u591A\u7D50\u679C',
       search_label: '\u7AD9\u5167\u641C\u7D22',
       filters_label: '\u7BE9\u9078',
-      zero_results: '\u672A\u627E\u5230 [SEARCH_TERM] \u7684\u76F8\u95DC\u7D50\u679C',
-      many_results: '\u627E\u5230 [COUNT] \u500B [SEARCH_TERM] \u7684\u76F8\u95DC\u7D50\u679C',
-      one_result: '\u627E\u5230 [COUNT] \u500B [SEARCH_TERM] \u7684\u76F8\u95DC\u7D50\u679C',
+      zero_results:
+        '\u672A\u627E\u5230 [SEARCH_TERM] \u7684\u76F8\u95DC\u7D50\u679C',
+      many_results:
+        '\u627E\u5230 [COUNT] \u500B [SEARCH_TERM] \u7684\u76F8\u95DC\u7D50\u679C',
+      one_result:
+        '\u627E\u5230 [COUNT] \u500B [SEARCH_TERM] \u7684\u76F8\u95DC\u7D50\u679C',
       alt_search:
         '\u672A\u627E\u5230 [SEARCH_TERM] \u7684\u76F8\u95DC\u7D50\u679C\u3002\u6539\u70BA\u986F\u793A [DIFFERENT_TERM] \u7684\u76F8\u95DC\u7D50\u679C',
       search_suggestion:
@@ -2139,7 +2617,13 @@
     },
     Wi = { thanks_to: Pi, comments: Li, direction: qi, strings: Bi };
   var xt = {};
-  S(xt, { comments: () => Gi, default: () => Yi, direction: () => Ki, strings: () => Ji, thanks_to: () => Vi });
+  S(xt, {
+    comments: () => Gi,
+    default: () => Yi,
+    direction: () => Ki,
+    strings: () => Ji,
+    thanks_to: () => Vi,
+  });
   var Vi = 'Amber Song',
     Gi = '',
     Ki = 'ltr',
@@ -2149,9 +2633,12 @@
       load_more: '\u52A0\u8F7D\u66F4\u591A\u7ED3\u679C',
       search_label: '\u7AD9\u5185\u641C\u7D22',
       filters_label: '\u7B5B\u9009',
-      zero_results: '\u672A\u627E\u5230 [SEARCH_TERM] \u7684\u76F8\u5173\u7ED3\u679C',
-      many_results: '\u627E\u5230 [COUNT] \u4E2A [SEARCH_TERM] \u7684\u76F8\u5173\u7ED3\u679C',
-      one_result: '\u627E\u5230 [COUNT] \u4E2A [SEARCH_TERM] \u7684\u76F8\u5173\u7ED3\u679C',
+      zero_results:
+        '\u672A\u627E\u5230 [SEARCH_TERM] \u7684\u76F8\u5173\u7ED3\u679C',
+      many_results:
+        '\u627E\u5230 [COUNT] \u4E2A [SEARCH_TERM] \u7684\u76F8\u5173\u7ED3\u679C',
+      one_result:
+        '\u627E\u5230 [COUNT] \u4E2A [SEARCH_TERM] \u7684\u76F8\u5173\u7ED3\u679C',
       alt_search:
         '\u672A\u627E\u5230 [SEARCH_TERM] \u7684\u76F8\u5173\u7ED3\u679C\u3002\u6539\u4E3A\u663E\u793A [DIFFERENT_TERM] \u7684\u76F8\u5173\u7ED3\u679C',
       search_suggestion:
@@ -2267,7 +2754,9 @@
             a[0] & 262144 && (o.available_filters = i[18]),
             a[0] & 524288 && (o.automatic_translations = i[19]),
             a[0] & 128 && (o.translations = i[7]),
-            !t && a[0] & 1 && ((t = !0), (o.selected_filters = i[0]), hn(() => (t = !1))),
+            !t &&
+              a[0] & 1 &&
+              ((t = !0), (o.selected_filters = i[0]), hn(() => (t = !1))),
             e.$set(o);
         },
         i(i) {
@@ -2297,7 +2786,9 @@
       (s = i[t] = r[t](n)),
       {
         c() {
-          (e = C('div')), s.c(), E(e, 'class', 'pagefind-ui__results-area svelte-e9gkc3');
+          (e = C('div')),
+            s.c(),
+            E(e, 'class', 'pagefind-ui__results-area svelte-e9gkc3');
         },
         m(o, h) {
           y(o, e, h), i[t].m(e, null), (l = !0);
@@ -2339,7 +2830,11 @@
       a,
       o;
     function h(u, f) {
-      return u[13].results.length === 0 ? ta : u[13].results.length === 1 ? ea : $i;
+      return u[13].results.length === 0
+        ? ta
+        : u[13].results.length === 1
+          ? ea
+          : $i;
     }
     let c = h(n, [-1, -1]),
       m = c(n),
@@ -2367,9 +2862,14 @@
         y(u, i, f), _ && _.m(u, f), y(u, a, f), (o = !0);
       },
       p(u, f) {
-        c === (c = h(u, f)) && m ? m.p(u, f) : (m.d(1), (m = c(u)), m && (m.c(), m.m(e, null))),
+        c === (c = h(u, f)) && m
+          ? m.p(u, f)
+          : (m.d(1), (m = c(u)), m && (m.c(), m.m(e, null))),
           f[0] & 139292 &&
-            ((p = u[13].results.slice(0, u[17])), ae(), (l = gn(l, f, d, 1, u, p, r, s, pn, es, null, Qn)), oe()),
+            ((p = u[13].results.slice(0, u[17])),
+            ae(),
+            (l = gn(l, f, d, 1, u, p, r, s, pn, es, null, Qn)),
+            oe()),
           u[13].results.length > u[17]
             ? _
               ? _.p(u, f)
@@ -2404,7 +2904,11 @@
         t && t.m(s, l), y(s, e, l);
       },
       p(s, l) {
-        s[16] ? (t ? t.p(s, l) : ((t = ns(s)), t.c(), t.m(e.parentNode, e))) : t && (t.d(1), (t = null));
+        s[16]
+          ? t
+            ? t.p(s, l)
+            : ((t = ns(s)), t.c(), t.m(e.parentNode, e))
+          : t && (t.d(1), (t = null));
       },
       i: j,
       o: j,
@@ -2417,7 +2921,10 @@
     let e =
         n[20]('many_results', n[19], n[7])
           .replace(/\[SEARCH_TERM\]/, n[16])
-          .replace(/\[COUNT\]/, new Intl.NumberFormat(n[7].language).format(n[13].results.length)) + '',
+          .replace(
+            /\[COUNT\]/,
+            new Intl.NumberFormat(n[7].language).format(n[13].results.length)
+          ) + '',
       t;
     return {
       c() {
@@ -2432,7 +2939,12 @@
             (e =
               s[20]('many_results', s[19], s[7])
                 .replace(/\[SEARCH_TERM\]/, s[16])
-                .replace(/\[COUNT\]/, new Intl.NumberFormat(s[7].language).format(s[13].results.length)) + '') &&
+                .replace(
+                  /\[COUNT\]/,
+                  new Intl.NumberFormat(s[7].language).format(
+                    s[13].results.length
+                  )
+                ) + '') &&
           N(t, e);
       },
       d(s) {
@@ -2444,7 +2956,10 @@
     let e =
         n[20]('one_result', n[19], n[7])
           .replace(/\[SEARCH_TERM\]/, n[16])
-          .replace(/\[COUNT\]/, new Intl.NumberFormat(n[7].language).format(1)) + '',
+          .replace(
+            /\[COUNT\]/,
+            new Intl.NumberFormat(n[7].language).format(1)
+          ) + '',
       t;
     return {
       c() {
@@ -2459,7 +2974,10 @@
             (e =
               s[20]('one_result', s[19], s[7])
                 .replace(/\[SEARCH_TERM\]/, s[16])
-                .replace(/\[COUNT\]/, new Intl.NumberFormat(s[7].language).format(1)) + '') &&
+                .replace(
+                  /\[COUNT\]/,
+                  new Intl.NumberFormat(s[7].language).format(1)
+                ) + '') &&
           N(t, e);
       },
       d(s) {
@@ -2468,7 +2986,9 @@
     };
   }
   function ta(n) {
-    let e = n[20]('zero_results', n[19], n[7]).replace(/\[SEARCH_TERM\]/, n[16]) + '',
+    let e =
+        n[20]('zero_results', n[19], n[7]).replace(/\[SEARCH_TERM\]/, n[16]) +
+        '',
       t;
     return {
       c() {
@@ -2479,7 +2999,12 @@
       },
       p(s, l) {
         l[0] & 589952 &&
-          e !== (e = s[20]('zero_results', s[19], s[7]).replace(/\[SEARCH_TERM\]/, s[16]) + '') &&
+          e !==
+            (e =
+              s[20]('zero_results', s[19], s[7]).replace(
+                /\[SEARCH_TERM\]/,
+                s[16]
+              ) + '') &&
           N(t, e);
       },
       d(s) {
@@ -2490,7 +3015,9 @@
   function na(n) {
     let e, t;
     return (
-      (e = new vn({ props: { show_images: n[2], process_result: n[4], result: n[51] } })),
+      (e = new vn({
+        props: { show_images: n[2], process_result: n[4], result: n[51] },
+      })),
       {
         c() {
           et(e.$$.fragment);
@@ -2520,7 +3047,9 @@
   function sa(n) {
     let e, t;
     return (
-      (e = new Pn({ props: { show_images: n[2], process_result: n[4], result: n[51] } })),
+      (e = new Pn({
+        props: { show_images: n[2], process_result: n[4], result: n[51] },
+      })),
       {
         c() {
           et(e.$$.fragment);
@@ -2606,13 +3135,18 @@
       r;
     return {
       c() {
-        (e = C('button')), (s = w(t)), E(e, 'type', 'button'), E(e, 'class', 'pagefind-ui__button svelte-e9gkc3');
+        (e = C('button')),
+          (s = w(t)),
+          E(e, 'type', 'button'),
+          E(e, 'class', 'pagefind-ui__button svelte-e9gkc3');
       },
       m(i, a) {
         y(i, e, a), b(e, s), l || ((r = J(e, 'click', n[22])), (l = !0));
       },
       p(i, a) {
-        a[0] & 524416 && t !== (t = i[20]('load_more', i[19], i[7]) + '') && N(s, t);
+        a[0] & 524416 &&
+          t !== (t = i[20]('load_more', i[19], i[7]) + '') &&
+          N(s, t);
       },
       d(i) {
         i && k(e), (l = !1), r();
@@ -2621,17 +3155,27 @@
   }
   function ns(n) {
     let e,
-      t = n[20]('searching', n[19], n[7]).replace(/\[SEARCH_TERM\]/, n[16]) + '',
+      t =
+        n[20]('searching', n[19], n[7]).replace(/\[SEARCH_TERM\]/, n[16]) + '',
       s;
     return {
       c() {
-        (e = C('p')), (s = w(t)), E(e, 'class', 'pagefind-ui__message svelte-e9gkc3');
+        (e = C('p')),
+          (s = w(t)),
+          E(e, 'class', 'pagefind-ui__message svelte-e9gkc3');
       },
       m(l, r) {
         y(l, e, r), b(e, s);
       },
       p(l, r) {
-        r[0] & 589952 && t !== (t = l[20]('searching', l[19], l[7]).replace(/\[SEARCH_TERM\]/, l[16]) + '') && N(s, t);
+        r[0] & 589952 &&
+          t !==
+            (t =
+              l[20]('searching', l[19], l[7]).replace(
+                /\[SEARCH_TERM\]/,
+                l[16]
+              ) + '') &&
+          N(s, t);
       },
       d(l) {
         l && k(e);
@@ -2714,10 +3258,14 @@
             (_ = !0));
       },
       p(R, M) {
-        (!d || (M[0] & 524416 && l !== (l = R[20]('placeholder', R[19], R[7])))) && E(s, 'placeholder', l),
+        (!d ||
+          (M[0] & 524416 && l !== (l = R[20]('placeholder', R[19], R[7])))) &&
+          E(s, 'placeholder', l),
           (!d || M[0] & 256) && (s.autofocus = R[8]),
           M[0] & 512 && s.value !== R[9] && ft(s, R[9]),
-          (!d || M[0] & 524416) && a !== (a = R[20]('clear_search', R[19], R[7]) + '') && N(o, a),
+          (!d || M[0] & 524416) &&
+            a !== (a = R[20]('clear_search', R[19], R[7]) + '') &&
+            N(o, a),
           (!d || M[0] & 512) && B(i, 'pagefind-ui__suppressed', !R[9]),
           R[12]
             ? f
@@ -2740,7 +3288,10 @@
               }),
               oe()),
           (!d || M[0] & 32768) && B(c, 'pagefind-ui__hidden', !R[15]),
-          (!d || (M[0] & 524416 && p !== (p = R[20]('search_label', R[19], R[7])))) && E(t, 'aria-label', p),
+          (!d ||
+            (M[0] & 524416 &&
+              p !== (p = R[20]('search_label', R[19], R[7])))) &&
+            E(t, 'aria-label', p),
           (!d || M[0] & 2) && B(e, 'pagefind-ui--reset', R[1]);
       },
       i(R) {
@@ -2750,7 +3301,13 @@
         P(f), P(T), (d = !1);
       },
       d(R) {
-        R && k(e), n[34](null), n[35](null), f && f.d(), T && T.d(), (_ = !1), G(u);
+        R && k(e),
+          n[34](null),
+          n[35](null),
+          f && f.d(),
+          T && T.d(),
+          (_ = !1),
+          G(u);
       },
     };
   }
@@ -2758,7 +3315,8 @@
   function ia(n, e, t) {
     let s = {},
       l = Xn.map((g) => g.match(/([^\/]+)\.json$/)[1]);
-    for (let g = 0; g < l.length; g++) s[l[g]] = { language: l[g], ...Zn[g].strings };
+    for (let g = 0; g < l.length; g++)
+      s[l[g]] = { language: l[g], ...Zn[g].strings };
     let { base_path: r = '/pagefind/' } = e,
       { page_size: i = 5 } = e,
       { reset_styles: a = !0 } = e,
@@ -2799,7 +3357,10 @@
       t(
         19,
         (rn =
-          s[`${H.language}-${H.script}-${H.region}`] || s[`${H.language}-${H.region}`] || s[`${H.language}`] || s.en)
+          s[`${H.language}-${H.script}-${H.region}`] ||
+          s[`${H.language}-${H.region}`] ||
+          s[`${H.language}`] ||
+          s.en)
       );
     }),
       ht(() => {
@@ -2825,7 +3386,8 @@
           let H = { ...(f || {}), excerptLength: c };
           await g.options(H);
           for (let z of T) {
-            if (!z.bundlePath) throw new Error('mergeIndex requires a bundlePath parameter');
+            if (!z.bundlePath)
+              throw new Error('mergeIndex requires a bundlePath parameter');
             let L = z.bundlePath;
             delete z.bundlePath, await g.mergeIndex(L, z);
           }
@@ -2833,7 +3395,9 @@
         }
       },
       is = async () => {
-        F && ((ln = await F.filters()), (!ce || !Object.keys(ce).length) && t(18, (ce = ln)));
+        F &&
+          ((ln = await F.filters()),
+          (!ce || !Object.keys(ce).length) && t(18, (ce = ln)));
       },
       as = (g) => {
         let H = {};
@@ -2855,20 +3419,31 @@
         }
         let z = as(H),
           L = () => us(g, z);
-        u > 0 && g ? (_e && clearTimeout(_e), (_e = setTimeout(L, u)), await on(), F.preload(g, { filters: z })) : L(),
+        u > 0 && g
+          ? (_e && clearTimeout(_e),
+            (_e = setTimeout(L, u)),
+            await on(),
+            F.preload(g, { filters: z }))
+          : L(),
           cs();
       },
       on = async () => {
         for (; !F; ) an(), await new Promise((g) => setTimeout(g, 50));
       },
       us = async (g, H) => {
-        t(16, (sn = g || '')), typeof p == 'function' && (g = p(g)), t(14, (lt = !0)), t(15, (rt = !0)), await on();
+        t(16, (sn = g || '')),
+          typeof p == 'function' && (g = p(g)),
+          t(14, (lt = !0)),
+          t(15, (rt = !0)),
+          await on();
         let z = ++nn,
           L = { filters: H };
         X && typeof X == 'object' && (L.sort = X);
         let te = await F.search(g, L);
         nn === z &&
-          (te.filters && Object.keys(te.filters)?.length && t(18, (ce = te.filters)),
+          (te.filters &&
+            Object.keys(te.filters)?.length &&
+            t(18, (ce = te.filters)),
           t(13, (tn = te)),
           t(14, (lt = !1)),
           t(17, (it = i)));
@@ -2881,7 +3456,8 @@
         g?.preventDefault(), t(17, (it += i));
       },
       fs = (g) => {
-        g.key === 'Escape' && (t(9, (v = '')), O.blur()), g.key === 'Enter' && g.preventDefault();
+        g.key === 'Escape' && (t(9, (v = '')), O.blur()),
+          g.key === 'Enter' && g.preventDefault();
       };
     function ds() {
       (v = this.value), t(9, v), t(23, R);
@@ -3006,7 +3582,9 @@
     ss = $t;
   var en;
   try {
-    en = new URL(document.currentScript.src).pathname.match(/^(.*\/)(?:pagefind-)?ui.js.*$/)[1];
+    en = new URL(document.currentScript.src).pathname.match(
+      /^(.*\/)(?:pagefind-)?ui.js.*$/
+    )[1];
   } catch {
     en = '/pagefind/';
   }

@@ -18,63 +18,79 @@ figure[data-astro-cid-ke3zp52o].has-padding img[data-astro-cid-ke3zp52o] {
     padding: 2rem;
   }
 }
-html[data-theme='dark'] figure[data-astro-cid-ke3zp52o]:has(:not(.inverted)) img[data-astro-cid-ke3zp52o] {
-  filter: saturate(0.25);
-  filter: brightness(0.8);
+figure[data-astro-cid-ke3zp52o] img[data-astro-cid-ke3zp52o] {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
 }
-figure[data-astro-cid-ke3zp52o].inverted img[data-astro-cid-ke3zp52o] {
+html[data-theme='dark']
+  figure[data-astro-cid-ke3zp52o]
+  img[data-astro-cid-ke3zp52o] {
+  border-color: #fff;
+}
+html[data-theme='dark']
+  figure[data-astro-cid-ke3zp52o]
+  img[data-astro-cid-ke3zp52o] {
+  filter: saturate(0.8) brightness(0.8);
+}
+figure[data-astro-cid-ke3zp52o] img[data-astro-cid-ke3zp52o].inverted {
   filter: invert(0);
 }
-html[data-theme='dark'] figure[data-astro-cid-ke3zp52o].inverted img[data-astro-cid-ke3zp52o] {
-  filter: saturate(0.25);
-  filter: invert(1);
+html[data-theme='dark']
+  figure[data-astro-cid-ke3zp52o]
+  img[data-astro-cid-ke3zp52o].inverted {
+  filter: saturate(0.8) invert(1);
 }
-figure[data-astro-cid-ke3zp52o].half-width {
+figure[data-astro-cid-ke3zp52o].width-75 {
   margin-inline: auto;
   width: 100%;
 }
 @media (min-width: 1024px) {
-  figure[data-astro-cid-ke3zp52o].half-width {
+  figure[data-astro-cid-ke3zp52o].width-75 {
+    width: 75%;
+  }
+}
+figure[data-astro-cid-ke3zp52o].width-50 {
+  margin-inline: auto;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  figure[data-astro-cid-ke3zp52o].width-50 {
     width: 50%;
   }
 }
-figure[data-astro-cid-ke3zp52o].third-width {
+figure[data-astro-cid-ke3zp52o].width-33 {
   margin-inline: auto;
   width: 100%;
 }
 @media (min-width: 768px) {
-  figure[data-astro-cid-ke3zp52o].third-width {
+  figure[data-astro-cid-ke3zp52o].width-33 {
     width: 50%;
   }
 }
 @media (min-width: 1024px) {
-  figure[data-astro-cid-ke3zp52o].third-width {
+  figure[data-astro-cid-ke3zp52o].width-33 {
     width: 33%;
   }
 }
-figure[data-astro-cid-ke3zp52o].forth-width {
+figure[data-astro-cid-ke3zp52o].width-25 {
   margin-inline: auto;
   width: 100%;
 }
 @media (min-width: 375px) {
-  figure[data-astro-cid-ke3zp52o].forth-width {
+  figure[data-astro-cid-ke3zp52o].width-25 {
     width: 50%;
   }
 }
 @media (min-width: 768px) {
-  figure[data-astro-cid-ke3zp52o].forth-width {
+  figure[data-astro-cid-ke3zp52o].width-25 {
     width: 33%;
   }
 }
 @media (min-width: 1024px) {
-  figure[data-astro-cid-ke3zp52o].forth-width {
+  figure[data-astro-cid-ke3zp52o].width-25 {
     width: 25%;
   }
-}
-figure[data-astro-cid-ke3zp52o] img[data-astro-cid-ke3zp52o] {
-  border-color: #000;
-  border-style: solid;
-  border-width: 1px;
 }
 figure[data-astro-cid-ke3zp52o] figcaption[data-astro-cid-ke3zp52o] {
   margin-top: 0.5rem;
@@ -141,17 +157,34 @@ caption[data-astro-cid-3emi7drq] {
   padding: 10px;
   width: 100%;
   font-family: inherit;
+  text-align: left;
 }
-.frontmatter-detail[data-astro-cid-sxpugf6n] .collapsible-btn[data-astro-cid-sxpugf6n] {
+@media (min-width: 768px) {
+  .frontmatter-detail[data-astro-cid-sxpugf6n] {
+    text-align: center;
+  }
+}
+.frontmatter-detail[data-astro-cid-sxpugf6n]
+  .frontmatter-summary[data-astro-cid-sxpugf6n] {
   cursor: pointer;
-  margin-bottom: 1rem;
   font-family: inherit;
   font-size: 1rem;
   width: fit-content;
   margin-inline: auto;
+  text-align: center;
+  margin-bottom: 1rem;
 }
-.frontmatter-detail[data-astro-cid-sxpugf6n] .collapsible-content[data-astro-cid-sxpugf6n] {
-  display: none;
+.frontmatter-detail[data-astro-cid-sxpugf6n]
+  .frontmatter-summary[data-astro-cid-sxpugf6n]
+  .text[data-astro-cid-sxpugf6n] {
+  font-size: 2rem;
+  cursor: pointer;
+  color: red;
+}
+.frontmatter-detail[data-astro-cid-sxpugf6n]
+  .frontmatter-content[data-astro-cid-sxpugf6n] {
+  display: block;
+  height: fit-content;
   overflow: hidden;
   margin-top: 10px;
   padding: 10px;
@@ -159,12 +192,52 @@ caption[data-astro-cid-3emi7drq] {
   border-width: 1px;
   border-color: #000;
 }
-html[data-theme='dark'] .frontmatter-detail[data-astro-cid-sxpugf6n] .collapsible-content[data-astro-cid-sxpugf6n] {
+html[data-theme='dark']
+  .frontmatter-detail[data-astro-cid-sxpugf6n]
+  .frontmatter-content[data-astro-cid-sxpugf6n] {
   border-color: #fff;
 }
-.frontmatter-detail[data-astro-cid-sxpugf6n] .collapsible-content[data-astro-cid-sxpugf6n].active {
-  display: block;
-  height: fit-content;
+.frontmatter-detail[data-astro-cid-sxpugf6n]
+  .frontmatter-title[data-astro-cid-sxpugf6n] {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .frontmatter-detail[data-astro-cid-sxpugf6n]
+    .frontmatter-title[data-astro-cid-sxpugf6n] {
+    font-weight: 400;
+    font-size: 1.125rem;
+  }
+}
+.frontmatter-detail[data-astro-cid-sxpugf6n]
+  .frontmatter-value[data-astro-cid-sxpugf6n] {
+  width: 90%;
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+@media (min-width: 768px) {
+  .frontmatter-detail[data-astro-cid-sxpugf6n]
+    .frontmatter-value[data-astro-cid-sxpugf6n] {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-left: auto;
+  }
+}
+.frontmatter-detail[data-astro-cid-sxpugf6n]
+  .frontmatter-value[data-astro-cid-sxpugf6n].subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  text-indent: 0;
+  letter-spacing: 1;
+}
+@media (min-width: 768px) {
+  .frontmatter-detail[data-astro-cid-sxpugf6n]
+    .frontmatter-value[data-astro-cid-sxpugf6n].subtitle {
+    letter-spacing: 0.5rem;
+  }
 }
 .recent-posts-wrapper[data-astro-cid-qmdwnt4y] {
   margin-top: 4rem;
@@ -187,36 +260,6 @@ html[data-theme='dark'] .recent-posts-wrapper[data-astro-cid-qmdwnt4y] {
     max-width: 80%;
   }
 }
-.frontmatter-detail[data-astro-cid-qmdwnt4y] {
-  margin: 10px;
-  padding: 10px;
-  width: 100%;
-  font-family: inherit;
-}
-.frontmatter-detail[data-astro-cid-qmdwnt4y] .collapsible-btn[data-astro-cid-qmdwnt4y] {
-  cursor: pointer;
-  margin-bottom: 1rem;
-  font-family: inherit;
-  font-size: 1rem;
-  width: fit-content;
-  margin-inline: auto;
-}
-.frontmatter-detail[data-astro-cid-qmdwnt4y] .collapsible-content[data-astro-cid-qmdwnt4y] {
-  display: none;
-  overflow: hidden;
-  margin-top: 10px;
-  padding: 10px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #000;
-}
-html[data-theme='dark'] .frontmatter-detail[data-astro-cid-qmdwnt4y] .collapsible-content[data-astro-cid-qmdwnt4y] {
-  border-color: #fff;
-}
-.frontmatter-detail[data-astro-cid-qmdwnt4y] .collapsible-content[data-astro-cid-qmdwnt4y].active {
-  display: block;
-  height: fit-content;
-}
 .frontmatter-wrapper {
   margin-inline: auto;
   max-width: 95%;
@@ -238,6 +281,15 @@ html[data-theme='dark'] .frontmatter-detail[data-astro-cid-qmdwnt4y] .collapsibl
 }
 html[data-theme='dark'] .img-wrapper {
   border-color: #fff;
+}
+html[data-theme='dark'] .img-wrapper img {
+  filter: saturate(0.8) brightness(0.8);
+}
+.img-wrapper img.inverted {
+  filter: invert(0);
+}
+html[data-theme='dark'] .img-wrapper img.inverted {
+  filter: saturate(0.8) invert(1);
 }
 .img-credit-wrapper {
   margin-top: 0.5rem;
@@ -407,60 +459,4 @@ html[data-theme='dark'] .content-wrapper #contents + ol a:hover {
   flex-direction: column;
   align-items: center;
   width: 100%;
-}
-.frontmatter-detail {
-  text-align: left;
-}
-@media (min-width: 768px) {
-  .frontmatter-detail {
-    text-align: center;
-  }
-}
-.frontmatter-key {
-  width: 100%;
-  font-weight: 700;
-  font-size: 1rem;
-}
-@media (min-width: 768px) {
-  .frontmatter-key {
-    font-weight: 400;
-  }
-}
-@media (min-width: 768px) {
-  .frontmatter-key {
-    font-size: 1.125rem;
-  }
-}
-.frontmatter-value {
-  width: 90%;
-  font-weight: 300;
-  font-size: 1.25rem;
-  margin-left: 1rem;
-}
-@media (min-width: 768px) {
-  .frontmatter-value {
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .frontmatter-value {
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 768px) {
-  .frontmatter-value {
-    margin-left: auto;
-  }
-}
-.frontmatter-value.subtitle {
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  text-indent: 0;
-  letter-spacing: 1;
-}
-@media (min-width: 768px) {
-  .frontmatter-value.subtitle {
-    letter-spacing: 0.5rem;
-  }
 }
