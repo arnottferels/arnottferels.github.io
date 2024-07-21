@@ -1,3 +1,36 @@
+.post-type-wrapper[data-astro-cid-z4ppvxf4] {
+  margin-top: 2rem;
+}
+.post-type-wrapper[data-astro-cid-z4ppvxf4].index {
+  display: grid;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+  margin-inline: 0.5rem;
+}
+@media (min-width: 768px) {
+  .post-type-wrapper[data-astro-cid-z4ppvxf4].index {
+    gap: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .post-type-wrapper[data-astro-cid-z4ppvxf4].index {
+    margin-inline: 2rem;
+  }
+}
+.post-type-name[data-astro-cid-z4ppvxf4] {
+  margin-top: 0;
+  display: inline-block;
+  width: 100%;
+  hyphens: auto;
+  text-align: left;
+  word-break: normal;
+  font-size: 1.75rem;
+}
+@media (min-width: 500px) {
+  .post-type-name[data-astro-cid-z4ppvxf4] {
+    font-size: 3rem;
+  }
+}
 .collection-card-container[data-astro-cid-z4ppvxf4] {
   display: flex;
   flex-direction: column;
@@ -110,7 +143,25 @@
   flex: 1;
   text-transform: uppercase;
   text-align: center;
+}
+.collection-card-wrapper[data-astro-cid-z4ppvxf4]
+  .collection-date-wrapper[data-astro-cid-z4ppvxf4]:has(:not(.list))
+  .collection-card-wrapper[data-astro-cid-z4ppvxf4]
+  .collection-date-wrapper[data-astro-cid-z4ppvxf4] {
   padding-inline: 1rem;
+}
+@media (min-width: 768px) {
+  .collection-card-wrapper[data-astro-cid-z4ppvxf4]
+    .collection-date-wrapper[data-astro-cid-z4ppvxf4]:has(:not(.list))
+    .collection-card-wrapper[data-astro-cid-z4ppvxf4]
+    .collection-date-wrapper[data-astro-cid-z4ppvxf4] {
+    padding-inline: 0;
+  }
+}
+.list[data-astro-cid-z4ppvxf4]
+  .collection-card-wrapper[data-astro-cid-z4ppvxf4]
+  .collection-date-wrapper[data-astro-cid-z4ppvxf4] {
+  padding-inline: 0;
 }
 @media (min-width: 768px) {
   .collection-card-wrapper[data-astro-cid-z4ppvxf4]
@@ -209,12 +260,6 @@
     .small[data-astro-cid-z4ppvxf4]
     .collection-date[data-astro-cid-z4ppvxf4] {
     font-weight: 300;
-  }
-}
-@media (min-width: 768px) {
-  .collection-card-wrapper[data-astro-cid-z4ppvxf4]
-    .collection-date-wrapper[data-astro-cid-z4ppvxf4] {
-    padding-inline: 0;
   }
 }
 .collection-card-wrapper[data-astro-cid-z4ppvxf4]
@@ -345,6 +390,39 @@ html[data-theme='dark']
     flex-direction: column;
   }
 }
+.post-type-wrapper[data-astro-cid-oo5ia57v] {
+  margin-top: 2rem;
+}
+.post-type-wrapper[data-astro-cid-oo5ia57v].index {
+  display: grid;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+  margin-inline: 0.5rem;
+}
+@media (min-width: 768px) {
+  .post-type-wrapper[data-astro-cid-oo5ia57v].index {
+    gap: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .post-type-wrapper[data-astro-cid-oo5ia57v].index {
+    margin-inline: 2rem;
+  }
+}
+.post-type-name[data-astro-cid-oo5ia57v] {
+  margin-top: 0;
+  display: inline-block;
+  width: 100%;
+  hyphens: auto;
+  text-align: left;
+  word-break: normal;
+  font-size: 1.75rem;
+}
+@media (min-width: 500px) {
+  .post-type-name[data-astro-cid-oo5ia57v] {
+    font-size: 3rem;
+  }
+}
 .collection-card-container[data-astro-cid-oo5ia57v] {
   display: flex;
   flex-direction: column;
@@ -457,7 +535,25 @@ html[data-theme='dark']
   flex: 1;
   text-transform: uppercase;
   text-align: center;
+}
+.collection-card-wrapper[data-astro-cid-oo5ia57v]
+  .collection-date-wrapper[data-astro-cid-oo5ia57v]:has(:not(.list))
+  .collection-card-wrapper[data-astro-cid-oo5ia57v]
+  .collection-date-wrapper[data-astro-cid-oo5ia57v] {
   padding-inline: 1rem;
+}
+@media (min-width: 768px) {
+  .collection-card-wrapper[data-astro-cid-oo5ia57v]
+    .collection-date-wrapper[data-astro-cid-oo5ia57v]:has(:not(.list))
+    .collection-card-wrapper[data-astro-cid-oo5ia57v]
+    .collection-date-wrapper[data-astro-cid-oo5ia57v] {
+    padding-inline: 0;
+  }
+}
+.list[data-astro-cid-oo5ia57v]
+  .collection-card-wrapper[data-astro-cid-oo5ia57v]
+  .collection-date-wrapper[data-astro-cid-oo5ia57v] {
+  padding-inline: 0;
 }
 @media (min-width: 768px) {
   .collection-card-wrapper[data-astro-cid-oo5ia57v]
@@ -556,12 +652,6 @@ html[data-theme='dark']
     .small[data-astro-cid-oo5ia57v]
     .collection-date[data-astro-cid-oo5ia57v] {
     font-weight: 300;
-  }
-}
-@media (min-width: 768px) {
-  .collection-card-wrapper[data-astro-cid-oo5ia57v]
-    .collection-date-wrapper[data-astro-cid-oo5ia57v] {
-    padding-inline: 0;
   }
 }
 .collection-card-wrapper[data-astro-cid-oo5ia57v]

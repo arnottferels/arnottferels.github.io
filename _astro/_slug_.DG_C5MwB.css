@@ -1,3 +1,36 @@
+.post-type-wrapper[data-astro-cid-3ufteex6] {
+  margin-top: 2rem;
+}
+.post-type-wrapper[data-astro-cid-3ufteex6].index {
+  display: grid;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+  margin-inline: 0.5rem;
+}
+@media (min-width: 768px) {
+  .post-type-wrapper[data-astro-cid-3ufteex6].index {
+    gap: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .post-type-wrapper[data-astro-cid-3ufteex6].index {
+    margin-inline: 2rem;
+  }
+}
+.post-type-name[data-astro-cid-3ufteex6] {
+  margin-top: 0;
+  display: inline-block;
+  width: 100%;
+  hyphens: auto;
+  text-align: left;
+  word-break: normal;
+  font-size: 1.75rem;
+}
+@media (min-width: 500px) {
+  .post-type-name[data-astro-cid-3ufteex6] {
+    font-size: 3rem;
+  }
+}
 .collection-card-container[data-astro-cid-3ufteex6] {
   display: flex;
   flex-direction: column;
@@ -110,7 +143,25 @@
   flex: 1;
   text-transform: uppercase;
   text-align: center;
+}
+.collection-card-wrapper[data-astro-cid-3ufteex6]
+  .collection-date-wrapper[data-astro-cid-3ufteex6]:has(:not(.list))
+  .collection-card-wrapper[data-astro-cid-3ufteex6]
+  .collection-date-wrapper[data-astro-cid-3ufteex6] {
   padding-inline: 1rem;
+}
+@media (min-width: 768px) {
+  .collection-card-wrapper[data-astro-cid-3ufteex6]
+    .collection-date-wrapper[data-astro-cid-3ufteex6]:has(:not(.list))
+    .collection-card-wrapper[data-astro-cid-3ufteex6]
+    .collection-date-wrapper[data-astro-cid-3ufteex6] {
+    padding-inline: 0;
+  }
+}
+.list[data-astro-cid-3ufteex6]
+  .collection-card-wrapper[data-astro-cid-3ufteex6]
+  .collection-date-wrapper[data-astro-cid-3ufteex6] {
+  padding-inline: 0;
 }
 @media (min-width: 768px) {
   .collection-card-wrapper[data-astro-cid-3ufteex6]
@@ -209,12 +260,6 @@
     .small[data-astro-cid-3ufteex6]
     .collection-date[data-astro-cid-3ufteex6] {
     font-weight: 300;
-  }
-}
-@media (min-width: 768px) {
-  .collection-card-wrapper[data-astro-cid-3ufteex6]
-    .collection-date-wrapper[data-astro-cid-3ufteex6] {
-    padding-inline: 0;
   }
 }
 .collection-card-wrapper[data-astro-cid-3ufteex6]
@@ -343,32 +388,5 @@ html[data-theme='dark']
   .collection-card-wrapper[data-astro-cid-3ufteex6]
     .post[data-astro-cid-3ufteex6] {
     flex-direction: column;
-  }
-}
-.post-type-wrapper[data-astro-cid-3ufteex6] {
-  margin-top: 2rem;
-  &.index {
-    display: grid;
-    gap: 2.5rem;
-    @media (min-width: 768px) {
-      gap: 1rem;
-    }
-    margin-bottom: 4rem;
-    margin-inline: 0.5rem;
-    @media (min-width: 768px) {
-      margin-inline: 2rem;
-    }
-  }
-}
-.post-type-name[data-astro-cid-3ufteex6] {
-  margin-top: 0;
-  display: inline-block;
-  width: 100%;
-  hyphens: auto;
-  text-align: left;
-  word-break: normal;
-  font-size: 2rem;
-  @media (min-width: 425px) {
-    font-size: 3rem;
   }
 }

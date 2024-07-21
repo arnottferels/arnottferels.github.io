@@ -391,9 +391,14 @@ a:has(img) img:hover {
     justify-content: left;
   }
 }
-.frontmatter-wrapper .links-wrapper,
-.links-wrapper.index {
+.frontmatter-wrapper .links-wrapper {
   justify-content: center;
+}
+.links-wrapper.index:has(:not(.list)) .links-wrapper.index {
+  justify-content: center;
+}
+.list .links-wrapper.index {
+  justify-content: start;
 }
 .links-wrapper.tag-page {
   display: block;
@@ -462,18 +467,13 @@ a:has(img) img:hover {
   font-size: 1.25rem;
   cursor: pointer;
 }
-.links-wrapper.author a {
-  font-size: 1.125rem;
-  font-style: italic;
-  cursor: pointer;
-}
 .links-wrapper:has(.small) {
   margin-inline: 0.5rem;
 }
 .links {
   padding-inline: 0.5rem;
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
 }
 @media (min-width: 1024px) {
@@ -522,8 +522,24 @@ a:has(img) img:hover {
     text-align: left;
   }
 }
-.links.index {
+.links.index:has(:not(.list)) .links.index {
   text-align: center;
+}
+.list .links.index {
+  text-align: start;
+}
+.list .links.index .title {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .list .links.index .title {
+    font-size: 2rem;
+  }
+}
+.list .links.index .author {
+  font-size: 1rem;
+  font-style: italic;
+  cursor: pointer;
 }
 .links:hover {
   background-color: #000;
