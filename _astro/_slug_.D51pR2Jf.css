@@ -394,6 +394,11 @@ a:has(img) img:hover {
 .frontmatter-wrapper .links-wrapper {
   justify-content: center;
 }
+@media (min-width: 768px) {
+  .links-wrapper.index {
+    justify-content: center;
+  }
+}
 .links-wrapper.index:has(:not(.list)) .links-wrapper.index {
   justify-content: center;
 }
