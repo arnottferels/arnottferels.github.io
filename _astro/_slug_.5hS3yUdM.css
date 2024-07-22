@@ -268,9 +268,6 @@ html[data-theme='dark'] blockquote {
 blockquote a {
   word-break: break-all;
 }
-blockquote:has(:only-child(p)) p {
-  font-size: calc(var(--site-ui-font-size) * 0.25) !important;
-}
 th,
 td {
   font-size: calc(var(--site-ui-font-size) * 0.75);
