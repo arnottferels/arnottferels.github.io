@@ -918,7 +918,7 @@ header[data-astro-cid-pwmmw5ba] {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1;
   height: 5vh;
   border-bottom: 1px solid black;
   font-size: calc(var(--site-ui-font-size) * 0.5);
@@ -1428,6 +1428,26 @@ body .hero-banner-subtitle[data-astro-cid-37fxchfa] {
   text-align: center;
   text-transform: uppercase;
 }
+body .hero-banner-title[data-astro-cid-37fxchfa].print,
+body .hero-banner-subtitle[data-astro-cid-37fxchfa].print {
+  width: 75%;
+  margin-inline: auto;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: calc(var(--site-ui-font-size) * 0.25);
+}
+@media (min-width: 768px) {
+  body .hero-banner-title[data-astro-cid-37fxchfa].print,
+  body .hero-banner-subtitle[data-astro-cid-37fxchfa].print {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  body .hero-banner-title[data-astro-cid-37fxchfa].print,
+  body .hero-banner-subtitle[data-astro-cid-37fxchfa].print {
+    letter-spacing: calc(var(--site-ui-font-size) * 0.5);
+  }
+}
 body .hero-banner-subtitle[data-astro-cid-37fxchfa] {
   margin-top: calc(var(--site-ui-font-size) * 1);
 }
@@ -1457,6 +1477,43 @@ body[data-post-type='models'] .hero-banner-title[data-astro-cid-37fxchfa],
 body[data-post-type='models'] .hero-banner-subtitle[data-astro-cid-37fxchfa] {
   text-align: center;
   text-transform: uppercase;
+}
+body[data-post-type='projects']
+  .hero-banner-title[data-astro-cid-37fxchfa].print,
+body[data-post-type='projects']
+  .hero-banner-subtitle[data-astro-cid-37fxchfa].print,
+body[data-post-type='models'] .hero-banner-title[data-astro-cid-37fxchfa].print,
+body[data-post-type='models']
+  .hero-banner-subtitle[data-astro-cid-37fxchfa].print {
+  width: 75%;
+  margin-inline: auto;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: calc(var(--site-ui-font-size) * 0.25);
+}
+@media (min-width: 768px) {
+  body[data-post-type='projects']
+    .hero-banner-title[data-astro-cid-37fxchfa].print,
+  body[data-post-type='projects']
+    .hero-banner-subtitle[data-astro-cid-37fxchfa].print,
+  body[data-post-type='models']
+    .hero-banner-title[data-astro-cid-37fxchfa].print,
+  body[data-post-type='models']
+    .hero-banner-subtitle[data-astro-cid-37fxchfa].print {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  body[data-post-type='projects']
+    .hero-banner-title[data-astro-cid-37fxchfa].print,
+  body[data-post-type='projects']
+    .hero-banner-subtitle[data-astro-cid-37fxchfa].print,
+  body[data-post-type='models']
+    .hero-banner-title[data-astro-cid-37fxchfa].print,
+  body[data-post-type='models']
+    .hero-banner-subtitle[data-astro-cid-37fxchfa].print {
+    letter-spacing: calc(var(--site-ui-font-size) * 0.5);
+  }
 }
 body[data-post-type='projects'] .hero-banner-subtitle[data-astro-cid-37fxchfa],
 body[data-post-type='models'] .hero-banner-subtitle[data-astro-cid-37fxchfa] {
