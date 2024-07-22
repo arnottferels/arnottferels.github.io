@@ -1,17 +1,17 @@
 import { i as Q } from './index.CTbVEFV3.js';
 function k() {
-  const e = document.querySelector('.nav-links'),
+  const e = document.querySelector('.menu-links'),
     t = document.querySelector('.menu');
   e.classList.toggle('expanded'), t.classList.toggle('active');
 }
 function D() {
-  const e = document.querySelector('.nav-links'),
+  const e = document.querySelector('.menu-links'),
     t = document.querySelector('.menu');
   window.innerWidth >= 1440 &&
     (e.classList.remove('expanded'), t.classList.remove('active'));
 }
 function b() {
-  const e = document.querySelector('.nav-links'),
+  const e = document.querySelector('.menu-links'),
     t = document.querySelector('.menu');
   e.classList.remove('expanded'), t.classList.remove('active');
 }

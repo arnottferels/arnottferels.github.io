@@ -1,20 +1,21 @@
-.greeting {
+.hello {
   padding-block: calc(var(--site-ui-font-size) * 0.5);
   margin-block: 0;
   display: flex;
   align-items: end;
+  font-weight: 700;
   min-height: 28vh;
   @media (min-width: 425px) {
     min-height: 28vh;
   }
 }
-#greeting {
+#hello {
   font-size: calc(var(--site-ui-font-size) * 1.5);
   @media (min-width: 425px) {
     font-size: calc(var(--site-ui-font-size) * 2);
   }
 }
-#greeting > .transliteration {
+#hello > .transliteration {
   font-weight: 300;
   font-size: calc(var(--site-ui-font-size) * 0.75);
   @media (min-width: 425px) {
