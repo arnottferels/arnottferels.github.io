@@ -9,7 +9,7 @@ div[data-astro-cid-kh7btl4r] {
   @media (min-width: 768px) {
     font-size: calc(var(--site-ui-font-size) * 1);
   }
-  padding-inline: calc(var(--site-ui-font-size) * 1z);
+  padding-inline: calc(var(--site-ui-font-size) * 1);
   width: 100%;
   text-align: left;
 }
