@@ -1,4 +1,4 @@
-import { F as o } from './hoisted.DIPfkk3w.js';
+import { F as o } from './hoisted.DtA5ocgQ.js';
 import './index.CTbVEFV3.js';
 document.addEventListener('DOMContentLoaded', () => {
   const e = document.getElementById('hello');

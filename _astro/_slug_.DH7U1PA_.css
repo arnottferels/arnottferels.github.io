@@ -1,19 +1,19 @@
 .post-type-wrapper[data-astro-cid-7srjhiin] {
   margin-top: calc(var(--site-ui-font-size) * 1);
 }
-.post-type-wrapper[data-astro-cid-7srjhiin].index {
+.post-type-wrapper[data-astro-cid-7srjhiin].index-page {
   display: grid;
   gap: calc(var(--site-ui-font-size) * 1.25);
   margin-bottom: calc(var(--site-ui-font-size) * 2);
   margin-inline: calc(var(--site-ui-font-size) * 0.25);
 }
 @media (min-width: 768px) {
-  .post-type-wrapper[data-astro-cid-7srjhiin].index {
+  .post-type-wrapper[data-astro-cid-7srjhiin].index-page {
     gap: calc(var(--site-ui-font-size) * 0.5);
   }
 }
 @media (min-width: 768px) {
-  .post-type-wrapper[data-astro-cid-7srjhiin].index {
+  .post-type-wrapper[data-astro-cid-7srjhiin].index-page {
     margin-inline: calc(var(--site-ui-font-size) * 1);
   }
 }
@@ -45,36 +45,36 @@
     margin-top: calc(var(--site-ui-font-size) * 4);
   }
 }
-.collection-card-container[data-astro-cid-7srjhiin].index,
+.collection-card-container[data-astro-cid-7srjhiin].index-page,
 .collection-card-container[data-astro-cid-7srjhiin].list {
   display: grid;
   gap: calc(var(--site-ui-font-size) * 2);
 }
 @media (min-width: 768px) {
-  .collection-card-container[data-astro-cid-7srjhiin].index,
+  .collection-card-container[data-astro-cid-7srjhiin].index-page,
   .collection-card-container[data-astro-cid-7srjhiin].list {
     gap: calc(var(--site-ui-font-size) * 1);
   }
 }
-.collection-card-container[data-astro-cid-7srjhiin].index {
+.collection-card-container[data-astro-cid-7srjhiin].index-page {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 @media (min-width: 768px) {
-  .collection-card-container[data-astro-cid-7srjhiin].index {
+  .collection-card-container[data-astro-cid-7srjhiin].index-page {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media (min-width: 1024px) {
-  .collection-card-container[data-astro-cid-7srjhiin].index {
+  .collection-card-container[data-astro-cid-7srjhiin].index-page {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 @media (min-width: 1440px) {
-  .collection-card-container[data-astro-cid-7srjhiin].index {
+  .collection-card-container[data-astro-cid-7srjhiin].index-page {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
-.collection-card-container[data-astro-cid-7srjhiin].index.list {
+.collection-card-container[data-astro-cid-7srjhiin].index-page.list {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 @media (min-width: 768px) {
@@ -99,17 +99,17 @@
     gap: calc(var(--site-ui-font-size) * 1);
   }
 }
-.collection-card-wrapper[data-astro-cid-7srjhiin].index {
+.collection-card-wrapper[data-astro-cid-7srjhiin].index-page {
   display: grid;
   gap: calc(var(--site-ui-font-size) * 0.25);
   align-items: start;
 }
 @media (min-width: 1024px) {
-  .collection-card-wrapper[data-astro-cid-7srjhiin].index {
+  .collection-card-wrapper[data-astro-cid-7srjhiin].index-page {
     gap: calc(var(--site-ui-font-size) * 0.25);
   }
 }
-.collection-card-wrapper[data-astro-cid-7srjhiin].index.list {
+.collection-card-wrapper[data-astro-cid-7srjhiin].index-page.list {
   justify-items: start;
 }
 .collection-card-wrapper[data-astro-cid-7srjhiin]
@@ -133,7 +133,7 @@
 }
 @media (min-width: 768px) {
   .collection-card-wrapper[data-astro-cid-7srjhiin]
-    .collection-head-wrapper[data-astro-cid-7srjhiin].index {
+    .collection-head-wrapper[data-astro-cid-7srjhiin].index-page {
     width: 100%;
   }
 }
@@ -170,22 +170,22 @@
   }
 }
 .collection-card-wrapper[data-astro-cid-7srjhiin]
-  .collection-date-wrapper[data-astro-cid-7srjhiin].index {
+  .collection-date-wrapper[data-astro-cid-7srjhiin].index-page {
   text-align: center;
 }
 .collection-card-wrapper[data-astro-cid-7srjhiin]
-  .collection-date-wrapper[data-astro-cid-7srjhiin].index.list {
+  .collection-date-wrapper[data-astro-cid-7srjhiin].index-page.list {
   text-align: start;
 }
 .collection-card-wrapper[data-astro-cid-7srjhiin]
-  .collection-date-wrapper[data-astro-cid-7srjhiin].index
-  .collection-date[data-astro-cid-7srjhiin].index {
+  .collection-date-wrapper[data-astro-cid-7srjhiin].index-page
+  .collection-date[data-astro-cid-7srjhiin].index-page {
   font-size: calc(var(--site-ui-font-size) * 0.5);
 }
 @media (min-width: 768px) {
   .collection-card-wrapper[data-astro-cid-7srjhiin]
-    .collection-date-wrapper[data-astro-cid-7srjhiin].index
-    .collection-date[data-astro-cid-7srjhiin].index {
+    .collection-date-wrapper[data-astro-cid-7srjhiin].index-page
+    .collection-date[data-astro-cid-7srjhiin].index-page {
     font-size: calc(var(--site-ui-font-size) * 0.5);
   }
 }
@@ -303,32 +303,32 @@ html[data-theme='dark']
   }
 }
 .collection-card-wrapper[data-astro-cid-7srjhiin]
-  .collection-img-wrapper[data-astro-cid-7srjhiin].index {
+  .collection-img-wrapper[data-astro-cid-7srjhiin].index-page {
   min-height: 0;
   height: fit-content;
   max-height: 33vh;
 }
 @media (min-width: 768px) {
   .collection-card-wrapper[data-astro-cid-7srjhiin]
-    .collection-img-wrapper[data-astro-cid-7srjhiin].index {
+    .collection-img-wrapper[data-astro-cid-7srjhiin].index-page {
     min-height: 33vh;
   }
 }
 @media (min-width: 1440px) {
   .collection-card-wrapper[data-astro-cid-7srjhiin]
-    .collection-img-wrapper[data-astro-cid-7srjhiin].index {
+    .collection-img-wrapper[data-astro-cid-7srjhiin].index-page {
     min-height: 25vh;
   }
 }
 @media (min-width: 768px) {
   .collection-card-wrapper[data-astro-cid-7srjhiin]
-    .collection-img-wrapper[data-astro-cid-7srjhiin].index {
+    .collection-img-wrapper[data-astro-cid-7srjhiin].index-page {
     max-height: fit-content;
   }
 }
 @media (min-width: 1440px) {
   .collection-card-wrapper[data-astro-cid-7srjhiin]
-    .collection-img-wrapper[data-astro-cid-7srjhiin].index {
+    .collection-img-wrapper[data-astro-cid-7srjhiin].index-page {
     max-height: fit-content;
   }
 }
@@ -347,11 +347,11 @@ html[data-theme='dark']
   }
 }
 .collection-card-wrapper[data-astro-cid-7srjhiin]
-  .collection-data-wrapper[data-astro-cid-7srjhiin].index {
+  .collection-data-wrapper[data-astro-cid-7srjhiin].index-page {
   justify-content: flex-start;
 }
 .collection-card-wrapper[data-astro-cid-7srjhiin]
-  .collection-data-wrapper[data-astro-cid-7srjhiin].index.list {
+  .collection-data-wrapper[data-astro-cid-7srjhiin].index-page.list {
   align-items: flex-start;
 }
 .collection-card-wrapper[data-astro-cid-7srjhiin]

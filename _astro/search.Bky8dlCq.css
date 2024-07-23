@@ -110,7 +110,6 @@ html[data-theme='dark'] #searchContainer .pagefind-ui__result-link:hover {
 }
 html[data-theme='dark'] #searchContainer .pagefind-ui__search-input {
   color: #fff;
-  border-color: gray;
 }
 #searchContainer .pagefind-ui__search-input::placeholder {
   color: #000;
@@ -120,7 +119,6 @@ html[data-theme='dark']
   #searchContainer
   .pagefind-ui__search-input::placeholder {
   color: #fff;
-  opacity: 0.5;
 }
 #searchContainer .pagefind-ui__drawer {
   text-transform: initial;

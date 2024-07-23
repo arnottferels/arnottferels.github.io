@@ -1,5 +1,5 @@
-import { i as Q } from './index.CTbVEFV3.js';
-function k() {
+import { i as te } from './index.CTbVEFV3.js';
+function R() {
   const e = document.querySelector('.menu-links'),
     t = document.querySelector('.menu');
   e.classList.toggle('expanded'), t.classList.toggle('active');
@@ -16,18 +16,18 @@ function b() {
   e.classList.remove('expanded'), t.classList.remove('active');
 }
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.menu').addEventListener('click', k);
+  document.querySelector('.menu').addEventListener('click', R);
 });
 window.addEventListener('load', D);
 window.addEventListener('resize', D);
-function _() {
-  document.querySelector('.menu').addEventListener('click', k), D();
+function X() {
+  document.querySelector('.menu').addEventListener('click', R), D();
 }
 document.addEventListener('astro:before-swap', () => {
-  document.querySelector('.menu').removeEventListener('click', k);
+  document.querySelector('.menu').removeEventListener('click', R);
 });
-document.addEventListener('astro:after-swap', _);
-document.addEventListener('astro:page-load', _);
+document.addEventListener('astro:after-swap', X);
+document.addEventListener('astro:page-load', X);
 window.addEventListener('popstate', b);
 window.addEventListener('pushstate', b);
 window.addEventListener('replacestate', b);
@@ -49,7 +49,7 @@ window.addEventListener('replacestate', b);
       );
     });
 })(window.history);
-function X() {
+function $() {
   const e = window.location.pathname;
   document.querySelectorAll('a').forEach((n) => {
     n.getAttribute('href') === e
@@ -58,10 +58,10 @@ function X() {
   });
 }
 document.addEventListener('DOMContentLoaded', () => {
-  X();
+  $();
 });
 document.addEventListener('astro:after-swap', () => {
-  X();
+  $();
 });
 function L() {
   if (window.innerWidth >= 1440) {
@@ -80,7 +80,7 @@ L();
 window.addEventListener('scroll', L);
 window.addEventListener('resize', L);
 window.addEventListener('astro:after-swap', L);
-const B = {
+const U = {
   scrollToTop: function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   },
@@ -96,13 +96,13 @@ const B = {
   },
 };
 document.addEventListener('DOMContentLoaded', function () {
-  B.init();
+  U.init();
 });
 document.addEventListener('astro:after-swap', function () {
-  B.init();
+  U.init();
 });
 const g = 'data-astro-transition-persist';
-function ee(e) {
+function ne(e) {
   for (const t of document.scripts)
     for (const n of e.scripts)
       if (
@@ -114,7 +114,7 @@ function ee(e) {
         break;
       }
 }
-function te(e) {
+function oe(e) {
   const t = document.documentElement,
     n = [...t.attributes].filter(
       ({ name: o }) => (t.removeAttribute(o), o.startsWith('data-astro-'))
@@ -123,14 +123,14 @@ function te(e) {
     t.setAttribute(o, r)
   );
 }
-function ne(e) {
+function re(e) {
   for (const t of Array.from(document.head.children)) {
-    const n = ie(t, e);
+    const n = ae(t, e);
     n ? n.remove() : t.remove();
   }
   document.head.append(...e.head.children);
 }
-function oe(e, t) {
+function se(e, t) {
   t.replaceWith(e);
   for (const n of t.querySelectorAll(`[${g}]`)) {
     const o = n.getAttribute(g),
@@ -138,12 +138,12 @@ function oe(e, t) {
     r &&
       (r.replaceWith(n),
       r.localName === 'astro-island' &&
-        se(n) &&
+        ce(n) &&
         (n.setAttribute('ssr', ''),
         n.setAttribute('props', r.getAttribute('props'))));
   }
 }
-const re = () => {
+const ie = () => {
     const e = document.activeElement;
     if (e?.closest(`[${g}]`)) {
       if (e instanceof HTMLInputElement || e instanceof HTMLTextAreaElement) {
@@ -161,7 +161,7 @@ const re = () => {
         (typeof t == 'number' && (e.selectionStart = t),
         typeof n == 'number' && (e.selectionEnd = n)));
   },
-  ie = (e, t) => {
+  ae = (e, t) => {
     const n = e.getAttribute(g),
       o = n && t.head.querySelector(`[${g}="${n}"]`);
     if (o) return o;
@@ -171,21 +171,21 @@ const re = () => {
     }
     return null;
   },
-  se = (e) => {
+  ce = (e) => {
     const t = e.dataset.astroTransitionPersistProps;
     return t == null || t === 'false';
   },
-  ae = (e) => {
-    ee(e), te(e), ne(e);
-    const t = re();
-    oe(e.body, document.body), t();
+  le = (e) => {
+    ne(e), oe(e), re(e);
+    const t = ie();
+    se(e.body, document.body), t();
   },
-  ce = 'astro:before-preparation',
-  le = 'astro:after-preparation',
-  de = 'astro:before-swap',
-  ue = 'astro:after-swap',
-  me = (e) => document.dispatchEvent(new Event(e));
-class U extends Event {
+  de = 'astro:before-preparation',
+  ue = 'astro:after-preparation',
+  me = 'astro:before-swap',
+  fe = 'astro:after-swap',
+  he = (e) => document.dispatchEvent(new Event(e));
+class B extends Event {
   from;
   to;
   direction;
@@ -194,11 +194,11 @@ class U extends Event {
   info;
   newDocument;
   signal;
-  constructor(t, n, o, r, s, d, a, c, u, l) {
+  constructor(t, n, o, r, i, d, a, c, u, l) {
     super(t, n),
       (this.from = o),
       (this.to = r),
-      (this.direction = s),
+      (this.direction = i),
       (this.navigationType = d),
       (this.sourceElement = a),
       (this.info = c),
@@ -216,11 +216,11 @@ class U extends Event {
       });
   }
 }
-class fe extends U {
+class pe extends B {
   formData;
   loader;
-  constructor(t, n, o, r, s, d, a, c, u, l) {
-    super(ce, { cancelable: !0 }, t, n, o, r, s, d, a, c),
+  constructor(t, n, o, r, i, d, a, c, u, l) {
+    super(de, { cancelable: !0 }, t, n, o, r, i, d, a, c),
       (this.formData = u),
       (this.loader = l.bind(this, this)),
       Object.defineProperties(this, {
@@ -229,13 +229,13 @@ class fe extends U {
       });
   }
 }
-class he extends U {
+class we extends B {
   direction;
   viewTransition;
   swap;
   constructor(t, n) {
     super(
-      de,
+      me,
       void 0,
       t.from,
       t.to,
@@ -248,7 +248,7 @@ class he extends U {
     ),
       (this.direction = t.direction),
       (this.viewTransition = n),
-      (this.swap = () => ae(this.newDocument)),
+      (this.swap = () => le(this.newDocument)),
       Object.defineProperties(this, {
         direction: { enumerable: !0 },
         viewTransition: { enumerable: !0 },
@@ -256,21 +256,21 @@ class he extends U {
       });
   }
 }
-async function pe(e, t, n, o, r, s, d, a, c) {
-  const u = new fe(e, t, n, o, r, s, window.document, d, a, c);
+async function ve(e, t, n, o, r, i, d, a, c) {
+  const u = new pe(e, t, n, o, r, i, window.document, d, a, c);
   return (
     document.dispatchEvent(u) &&
       (await u.loader(),
       u.defaultPrevented ||
-        (me(le), u.navigationType !== 'traverse' && P({ scrollX, scrollY }))),
+        (he(ue), u.navigationType !== 'traverse' && P({ scrollX, scrollY }))),
     u
   );
 }
-function we(e, t) {
-  const n = new he(e, t);
+function ye(e, t) {
+  const n = new we(e, t);
   return document.dispatchEvent(n), n.swap(), n;
 }
-const ve = history.pushState.bind(history),
+const ge = history.pushState.bind(history),
   T = history.replaceState.bind(history),
   P = (e) => {
     history.state &&
@@ -281,9 +281,9 @@ const ve = history.pushState.bind(history),
   I = () => !!document.querySelector('[name="astro-view-transitions-enabled"]'),
   W = (e, t) => e.pathname === t.pathname && e.search === t.search;
 let m, w, A;
-const $ = (e) => document.dispatchEvent(new Event(e)),
-  K = () => $('astro:page-load'),
-  ye = () => {
+const K = (e) => document.dispatchEvent(new Event(e)),
+  V = () => K('astro:page-load'),
+  be = () => {
     let e = document.createElement('div');
     e.setAttribute('aria-live', 'assertive'),
       e.setAttribute('aria-atomic', 'true'),
@@ -297,10 +297,10 @@ const $ = (e) => document.dispatchEvent(new Event(e)),
         e.textContent = t;
       }, 60);
   },
-  N = 'data-astro-transition-persist',
+  q = 'data-astro-transition-persist',
   O = 'data-astro-transition',
-  R = 'data-astro-transition-fallback';
-let q,
+  k = 'data-astro-transition-fallback';
+let C,
   E = 0;
 history.state
   ? ((E = history.state.index),
@@ -308,7 +308,7 @@ history.state
   : I() &&
     (T({ index: E, scrollX, scrollY }, ''),
     (history.scrollRestoration = 'manual'));
-async function ge(e, t) {
+async function Ee(e, t) {
   try {
     const n = await fetch(e, t),
       r = (n.headers.get('content-type') ?? '').split(';', 1)[0].trim();
@@ -323,11 +323,11 @@ async function ge(e, t) {
     return null;
   }
 }
-function V() {
+function j() {
   const e = document.querySelector('[name="astro-view-transitions-fallback"]');
   return e ? e.getAttribute('content') : 'animate';
 }
-function be() {
+function Te() {
   let e = Promise.resolve();
   for (const t of Array.from(document.scripts)) {
     if (t.dataset.astroExec === '') continue;
@@ -337,10 +337,10 @@ function be() {
     o.innerHTML = t.innerHTML;
     for (const r of t.attributes) {
       if (r.name === 'src') {
-        const s = new Promise((d) => {
+        const i = new Promise((d) => {
           o.onload = o.onerror = d;
         });
-        e = e.then(() => s);
+        e = e.then(() => i);
       }
       o.setAttribute(r.name, r.value);
     }
@@ -348,8 +348,8 @@ function be() {
   }
   return e;
 }
-const j = (e, t, n, o, r) => {
-  const s = W(t, e),
+const z = (e, t, n, o, r) => {
+  const i = W(t, e),
     d = document.title;
   document.title = o;
   let a = !1;
@@ -361,11 +361,11 @@ const j = (e, t, n, o, r) => {
         '',
         e.href
       );
-    } else ve({ ...n.state, index: ++E, scrollX: 0, scrollY: 0 }, '', e.href);
+    } else ge({ ...n.state, index: ++E, scrollX: 0, scrollY: 0 }, '', e.href);
   if (
     ((document.title = d),
     (A = e),
-    s || (scrollTo({ left: 0, top: 0, behavior: 'instant' }), (a = !0)),
+    i || (scrollTo({ left: 0, top: 0, behavior: 'instant' }), (a = !0)),
     r)
   )
     scrollTo(r.scrollX, r.scrollY);
@@ -375,17 +375,17 @@ const j = (e, t, n, o, r) => {
       const c = history.state;
       (location.href = e.href),
         history.state ||
-          (T(c, ''), s && window.dispatchEvent(new PopStateEvent('popstate')));
+          (T(c, ''), i && window.dispatchEvent(new PopStateEvent('popstate')));
     } else a || scrollTo({ left: 0, top: 0, behavior: 'instant' });
     history.scrollRestoration = 'manual';
   }
 };
-function Ee(e) {
+function Le(e) {
   const t = [];
   for (const n of e.querySelectorAll('head link[rel=stylesheet]'))
     if (
       !document.querySelector(
-        `[${N}="${n.getAttribute(N)}"], link[rel=stylesheet][href="${n.getAttribute('href')}"]`
+        `[${q}="${n.getAttribute(q)}"], link[rel=stylesheet][href="${n.getAttribute('href')}"]`
       )
     ) {
       const o = document.createElement('link');
@@ -394,15 +394,15 @@ function Ee(e) {
         o.setAttribute('href', n.getAttribute('href')),
         t.push(
           new Promise((r) => {
-            ['load', 'error'].forEach((s) => o.addEventListener(s, r)),
+            ['load', 'error'].forEach((i) => o.addEventListener(i, r)),
               document.head.append(o);
           })
         );
     }
   return t;
 }
-async function C(e, t, n, o, r) {
-  async function s(c) {
+async function H(e, t, n, o, r) {
+  async function i(c) {
     function u(h) {
       const f = h.effect;
       return !f || !(f instanceof KeyframeEffect) || !f.target
@@ -411,30 +411,30 @@ async function C(e, t, n, o, r) {
             .animationIterationCount === 'infinite';
     }
     const l = document.getAnimations();
-    document.documentElement.setAttribute(R, c);
+    document.documentElement.setAttribute(k, c);
     const p = document.getAnimations().filter((h) => !l.includes(h) && !u(h));
     return Promise.allSettled(p.map((h) => h.finished));
   }
   if (r === 'animate' && !n.transitionSkipped && !e.signal.aborted)
     try {
-      await s('old');
+      await i('old');
     } catch {}
   const d = document.title,
-    a = we(e, n.viewTransition);
-  j(a.to, a.from, t, d, o),
-    $(ue),
+    a = ye(e, n.viewTransition);
+  z(a.to, a.from, t, d, o),
+    K(fe),
     r === 'animate' &&
       (!n.transitionSkipped && !a.signal.aborted
-        ? s('new').finally(() => n.viewTransitionFinished())
+        ? i('new').finally(() => n.viewTransitionFinished())
         : n.viewTransitionFinished());
 }
-function Te() {
+function Ae() {
   return m?.controller.abort(), (m = { controller: new AbortController() });
 }
-async function z(e, t, n, o, r) {
-  const s = Te();
+async function G(e, t, n, o, r) {
+  const i = Ae();
   if (!I() || location.origin !== n.origin) {
-    s === m && (m = void 0), (location.href = n.href);
+    i === m && (m = void 0), (location.href = n.href);
     return;
   }
   const d = r ? 'traverse' : o.history === 'replace' ? 'replace' : 'push';
@@ -442,66 +442,66 @@ async function z(e, t, n, o, r) {
     (d !== 'traverse' && P({ scrollX, scrollY }),
     W(t, n) && ((e !== 'back' && n.hash) || (e === 'back' && t.hash)))
   ) {
-    j(n, t, o, document.title, r), s === m && (m = void 0);
+    z(n, t, o, document.title, r), i === m && (m = void 0);
     return;
   }
-  const a = await pe(
+  const a = await ve(
     t,
     n,
     e,
     d,
     o.sourceElement,
     o.info,
-    s.controller.signal,
+    i.controller.signal,
     o.formData,
     c
   );
   if (a.defaultPrevented || a.signal.aborted) {
-    s === m && (m = void 0), a.signal.aborted || (location.href = n.href);
+    i === m && (m = void 0), a.signal.aborted || (location.href = n.href);
     return;
   }
-  async function c(i) {
-    const p = i.to.href,
-      h = { signal: i.signal };
-    if (i.formData) {
+  async function c(s) {
+    const p = s.to.href,
+      h = { signal: s.signal };
+    if (s.formData) {
       h.method = 'POST';
       const y =
-        i.sourceElement instanceof HTMLFormElement
-          ? i.sourceElement
-          : i.sourceElement instanceof HTMLElement && 'form' in i.sourceElement
-            ? i.sourceElement.form
-            : i.sourceElement?.closest('form');
+        s.sourceElement instanceof HTMLFormElement
+          ? s.sourceElement
+          : s.sourceElement instanceof HTMLElement && 'form' in s.sourceElement
+            ? s.sourceElement.form
+            : s.sourceElement?.closest('form');
       h.body =
         y?.attributes.getNamedItem('enctype')?.value ===
         'application/x-www-form-urlencoded'
-          ? new URLSearchParams(i.formData)
-          : i.formData;
+          ? new URLSearchParams(s.formData)
+          : s.formData;
     }
-    const f = await ge(p, h);
+    const f = await Ee(p, h);
     if (f === null) {
-      i.preventDefault();
+      s.preventDefault();
       return;
     }
     if (f.redirected) {
       const y = new URL(f.redirected);
-      if (y.origin !== i.to.origin) {
-        i.preventDefault();
+      if (y.origin !== s.to.origin) {
+        s.preventDefault();
         return;
       }
-      i.to = y;
+      s.to = y;
     }
     if (
-      ((q ??= new DOMParser()),
-      (i.newDocument = q.parseFromString(f.html, f.mediaType)),
-      i.newDocument.querySelectorAll('noscript').forEach((y) => y.remove()),
-      !i.newDocument.querySelector('[name="astro-view-transitions-enabled"]') &&
-        !i.formData)
+      ((C ??= new DOMParser()),
+      (s.newDocument = C.parseFromString(f.html, f.mediaType)),
+      s.newDocument.querySelectorAll('noscript').forEach((y) => y.remove()),
+      !s.newDocument.querySelector('[name="astro-view-transitions-enabled"]') &&
+        !s.formData)
     ) {
-      i.preventDefault();
+      s.preventDefault();
       return;
     }
-    const S = Ee(i.newDocument);
-    S.length && !i.signal.aborted && (await Promise.all(S));
+    const S = Le(s.newDocument);
+    S.length && !s.signal.aborted && (await Promise.all(S));
   }
   async function u() {
     if (w && w.viewTransition) {
@@ -516,47 +516,47 @@ async function z(e, t, n, o, r) {
   }
   const l = await u();
   if (a.signal.aborted) {
-    s === m && (m = void 0);
+    i === m && (m = void 0);
     return;
   }
   if ((document.documentElement.setAttribute(O, a.direction), M))
     l.viewTransition = document.startViewTransition(
-      async () => await C(a, o, l, r)
+      async () => await H(a, o, l, r)
     );
   else {
-    const i = (async () => {
-      await Promise.resolve(), await C(a, o, l, r, V());
+    const s = (async () => {
+      await Promise.resolve(), await H(a, o, l, r, j());
     })();
     l.viewTransition = {
-      updateCallbackDone: i,
-      ready: i,
+      updateCallbackDone: s,
+      ready: s,
       finished: new Promise((p) => (l.viewTransitionFinished = p)),
       skipTransition: () => {
-        (l.transitionSkipped = !0), document.documentElement.removeAttribute(R);
+        (l.transitionSkipped = !0), document.documentElement.removeAttribute(k);
       },
     };
   }
   l.viewTransition.updateCallbackDone.finally(async () => {
-    await be(), K(), ye();
+    await Te(), V(), be();
   }),
     l.viewTransition.finished.finally(() => {
       (l.viewTransition = void 0),
         l === w && (w = void 0),
-        s === m && (m = void 0),
+        i === m && (m = void 0),
         document.documentElement.removeAttribute(O),
-        document.documentElement.removeAttribute(R);
+        document.documentElement.removeAttribute(k);
     });
   try {
     await l.viewTransition.updateCallbackDone;
-  } catch (i) {
-    const p = i;
+  } catch (s) {
+    const p = s;
     console.log('[astro]', p.name, p.message, p.stack);
   }
 }
-async function H(e, t) {
-  await z('forward', A, new URL(e, location.href), t ?? {});
+async function _(e, t) {
+  await G('forward', A, new URL(e, location.href), t ?? {});
 }
-function Le(e) {
+function Se(e) {
   if (!I() && e.state) {
     location.reload();
     return;
@@ -565,7 +565,7 @@ function Le(e) {
   const t = history.state,
     n = t.index,
     o = n > E ? 'forward' : 'back';
-  (E = n), z(o, A, new URL(location.href), {}, t);
+  (E = n), G(o, A, new URL(location.href), {}, t);
 }
 const F = () => {
   history.state &&
@@ -573,11 +573,11 @@ const F = () => {
     P({ scrollX, scrollY });
 };
 {
-  if (M || V() !== 'none')
+  if (M || j() !== 'none')
     if (
       ((A = new URL(location.href)),
-      addEventListener('popstate', Le),
-      addEventListener('load', K),
+      addEventListener('popstate', Se),
+      addEventListener('load', V),
       'onscrollend' in window)
     )
       addEventListener('scrollend', F);
@@ -607,14 +607,14 @@ const F = () => {
     }
   for (const e of document.scripts) e.dataset.astroExec = '';
 }
-function Ae() {
+function xe() {
   const e = document.querySelector('[name="astro-view-transitions-fallback"]');
   return e ? e.getAttribute('content') : 'animate';
 }
 function Y(e) {
   return e.dataset.astroReload !== void 0;
 }
-(M || Ae() !== 'none') &&
+(M || xe() !== 'none') &&
   (document.addEventListener('click', (e) => {
     let t = e.target;
     if (
@@ -640,7 +640,7 @@ function Y(e) {
       e.shiftKey ||
       e.defaultPrevented ||
       (e.preventDefault(),
-      H(o, {
+      _(o, {
         history: t.dataset.astroHistory === 'replace' ? 'replace' : 'auto',
         sourceElement: t,
       }));
@@ -651,27 +651,29 @@ function Y(e) {
     const n = t,
       o = e.submitter,
       r = new FormData(n, o),
-      s = typeof n.action == 'string' ? n.action : n.getAttribute('action'),
+      i = typeof n.action == 'string' ? n.action : n.getAttribute('action'),
       d = typeof n.method == 'string' ? n.method : n.getAttribute('method');
-    let a = o?.getAttribute('formaction') ?? s ?? location.pathname;
+    let a = o?.getAttribute('formaction') ?? i ?? location.pathname;
     const c = o?.getAttribute('formmethod') ?? d ?? 'get';
     if (c === 'dialog' || location.origin !== new URL(a, location.href).origin)
       return;
     const u = { sourceElement: o ?? n };
     if (c === 'get') {
       const l = new URLSearchParams(r),
-        i = new URL(a);
-      (i.search = l.toString()), (a = i.toString());
+        s = new URL(a);
+      (s.search = l.toString()), (a = s.toString());
     } else u.formData = r;
-    e.preventDefault(), H(a, u);
+    e.preventDefault(), _(a, u);
   }),
-  Q({ prefetchAll: !0 }));
-const Se = new URL('https://arnottferels.github.io');
-Se.origin;
-const xe = 'Arnott Ferels',
-  Re = 'Arnott',
-  ke = 'Arn',
-  Oe = [
+  te({ prefetchAll: !0 }));
+const ke = ['/cv', '/links'],
+  Re = new URL('https://arnottferels.github.io');
+Re.origin;
+const N = 'Arnott',
+  De = 'Ferels',
+  Pe = `${N} ${De}`,
+  Me = N.substring(0, 3),
+  He = [
     { text: 'Hello', latin: !0 },
     { text: '您好', latin: !1, transliteration: 'Nín hǎo' },
     { text: 'こんにちは', latin: !1, transliteration: 'Konnichiwa' },
@@ -689,18 +691,18 @@ const xe = 'Arnott Ferels',
     { text: 'สวัสดี', latin: !1, transliteration: 'S̄wạs̄dī' },
     { text: 'Xin chào', latin: !0 },
   ],
-  De = xe,
-  Pe = Re,
-  Me = ke;
+  Ie = Pe,
+  Ne = N,
+  qe = Me;
 function v() {
   const e = document.querySelector('.name-span');
   if (!e) return;
   const t = document.documentElement.clientWidth;
   t < 320
-    ? (e.textContent = Me)
+    ? (e.textContent = qe)
     : t <= 600
-      ? (e.textContent = Pe)
-      : (e.textContent = De);
+      ? (e.textContent = Ne)
+      : (e.textContent = Ie);
 }
 document.addEventListener('DOMContentLoaded', () => {
   v(),
@@ -711,23 +713,28 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('astro:after-swap', v),
     document.addEventListener('astro:page-load', v);
 });
-const G = () => localStorage.getItem('theme') || 'light',
-  Z = (e) => {
+const Z = () => localStorage.getItem('theme') || 'light',
+  J = (e) => {
     document.documentElement.setAttribute('data-theme', e),
       document.querySelectorAll('[data-theme-toggle]').forEach((t) => {
         t.textContent = e === 'light' ? 'Dark' : 'Light';
       });
   },
-  Ie = () => {
-    const e = G() === 'light' ? 'dark' : 'light';
-    localStorage.setItem('theme', e), Z(e);
+  Oe = () => {
+    const e = Z() === 'light' ? 'dark' : 'light';
+    localStorage.setItem('theme', e), J(e);
   },
-  J = () => {
-    Z(G()),
+  Q = () => {
+    J(Z()),
       document.querySelectorAll('[data-theme-toggle]').forEach((e) => {
-        e.addEventListener('click', Ie);
+        e.addEventListener('click', Oe);
       });
-  };
-document.addEventListener('DOMContentLoaded', J);
-document.addEventListener('astro:after-swap', J);
-export { Oe as F };
+  },
+  ee = () => !ke.includes(window.location.pathname);
+document.addEventListener('DOMContentLoaded', () => {
+  ee() && Q();
+});
+document.addEventListener('astro:after-swap', () => {
+  ee() && Q();
+});
+export { He as F };
