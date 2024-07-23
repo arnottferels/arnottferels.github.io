@@ -120,6 +120,19 @@ html[data-theme='dark']
   img[data-astro-cid-ke3zp52o] {
   border-color: #fff;
 }
+figure[data-astro-cid-ke3zp52o]
+  img[data-astro-cid-ke3zp52o]
+  img[data-astro-cid-ke3zp52o].inverted {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+}
+html[data-theme='dark']
+  figure[data-astro-cid-ke3zp52o]
+  img[data-astro-cid-ke3zp52o]
+  img[data-astro-cid-ke3zp52o].inverted {
+  border-color: #000;
+}
 html[data-theme='dark']
   figure[data-astro-cid-ke3zp52o]
   img[data-astro-cid-ke3zp52o] {
@@ -301,9 +314,11 @@ html[data-theme='dark'] .recent-posts-wrapper[data-astro-cid-tz5sky4s] {
 .img-wrapper {
   max-height: 50vh;
   display: flex;
-  border: 1px solid black;
   overflow: hidden;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
 }
 @media (min-width: 768px) {
   .img-wrapper {
@@ -312,6 +327,14 @@ html[data-theme='dark'] .recent-posts-wrapper[data-astro-cid-tz5sky4s] {
 }
 html[data-theme='dark'] .img-wrapper {
   border-color: #fff;
+}
+.img-wrapper :has(img.inverted) {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+}
+html[data-theme='dark'] .img-wrapper :has(img.inverted) {
+  border-color: #000;
 }
 html[data-theme='dark'] .img-wrapper img {
   filter: saturate(0.8) brightness(0.8);

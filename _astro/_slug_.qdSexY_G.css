@@ -380,9 +380,12 @@ a:has(img) {
 }
 a:has(img) img {
   transition-duration: 0.3s;
+  scale: 105%;
 }
 a:has(img) img:hover {
-  scale: 110%;
+  scale: 115%;
+}
+a:has(img) img:hover {
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .links-wrapper {
