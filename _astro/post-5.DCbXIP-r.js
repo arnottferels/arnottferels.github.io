@@ -1,0 +1,3 @@
+const t="post-5.md",o="blog",n="post-5",s=`
+It wasn't always smooth sailing, but I'm enjoying building with Astro. And, the [Discord community](https://astro.build/chat) is really friendly and helpful!
+`,e={env_prod_ignore:!0,title:"My Third Blog Post",post_type:"blog",description:"I had some challenges, but asking in the community really helped!",pub_date:"2022-07-15",keywords:["astro","learning in public","setbacks","community"],softwares:[],authors:["Astro Learner"],courseworks:[],editors:[],contributions:[],jury:[],instructor:[],team_leader:[],advisor:[]},i={type:"content",filePath:"D:/izvw/github/astro/mad-jet/src/content/blog/post-5.md",rawData:void 0};export{i as _internal,s as body,o as collection,e as data,t as id,n as slug};
