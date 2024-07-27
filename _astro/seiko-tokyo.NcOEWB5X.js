@@ -1,0 +1,2 @@
+const __vite__fileDeps=["_astro/seiko-tokyo.Do2xdTG9.js","_astro/hoisted.DW6I3GbW.js","_astro/index.CTbVEFV3.js","_astro/astro/assets-service.vIrN2Q6E.js"],__vite__mapDeps=i=>i.map(i=>__vite__fileDeps[i]);
+import{_ as t}from"./astro/assets-service.vIrN2Q6E.js";async function o(){return t(()=>import("./seiko-tokyo.Do2xdTG9.js"),__vite__mapDeps([0,1,2,3]))}const e="@@ASTRO-LINKS@@",c="@@ASTRO-STYLES@@",r="@@ASTRO-SCRIPTS@@",l={__astroPropagation:!0,getMod:o,collectedLinks:e,collectedStyles:c,collectedScripts:r};export{l as default};
