@@ -36,6 +36,7 @@ You can visit the website [here](https://arnottferels.github.io).
 Your feedback is valuable as I continue to improve the website. If you have any suggestions or encounter any issues, please contact me [here](https://arnottferels.github.io/contact).
 
 Future plans include:
+
 - Integrating a contact form for easier communication.
 - Optimizing for better performance and accessibility.
 
