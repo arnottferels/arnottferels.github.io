@@ -1,0 +1,10 @@
+Date          : 2021-01
+Title         : Rattan Charm
+Keywords      : Rattan, Pattern generation, Pattern design
+Softwares     : Rhino, Grasshopper
+Subtitle      : Redefining the Bedroom in BSD House with Full Ceiling Weave
+Location      : BSD, Indonesia
+Details       : Professional work at BYO Living
+Contributions : Research and development, Conceptual design, Digital modeling, Scripting
+Team leader   : Trianzani Sulshi
+Abstract      : This project delves into two design options: Pyramid and Wave Rattan pattern generation. The Pyramid approach involves systematically creating intricate two-dimensional patterns, refining them in the third dimension using weaving techniques, thereby enhancing the understanding of multidimensional pattern manipulation. The Wave design introduces a rattan object shaped like a flag for the ceiling, fulfilling the client’s need for visibility from diverse angles, particularly from the bed. This addition contributes a dynamic and visually appealing element to the overall space.

@@ -1,0 +1,12 @@
+Date           : 2021-02
+Title          : Dynamic Metamorphosis
+Keywords       : Rattan, Surface exploration, Pattern generation, Pattern design
+Softwares      : Rhino, Grasshopper
+Authors        : Arnott Ferels, Cathleen Charity, Oliver Kenny
+Subtitle       : A Fusion of Architectural Innovation & Interactive Engagement
+Location       : Portable (relocatable, no fixed location)
+Classification : Professional Work
+Details        : Professional work at BYO Living
+Contributions  : Research and development, Digital modeling, Analysis, Simulation, Scripting
+Team leader    : Trianzani Sulshi
+Abstract       : This project centers on refining Seniman Ruang’s Hyperbolic Paraboloid design, aiming to optimize both aesthetics and functionality. Leveraging computational tools, the goal is to elevate the unique features of the design, creating an engaging and visually compelling space for visitors. This endeavor reflects a commitment to pushing design boundaries through innovative computational methodologies.

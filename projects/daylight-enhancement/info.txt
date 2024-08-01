@@ -1,0 +1,11 @@
+Date           : 2021-11
+Title          : Daylight Enhancement in Architectural Design
+Keywords       : Computation, Simulation, Optioneering, Design optimization
+Softwares      : Rhino, Grasshopper, Ladybug, Honeybee, Colibri
+Courseworks    : Architectural Modeling, Architectural Simulation
+Subtitle       : Transforming a Double 5-Story Residences Project with Iterative Louver Concepts
+Location       : Central Jakarta, Indonesia
+Classification : Master’s Architectural Modeling
+Details        : Individual work
+Instructor     : Aswin Indraprastha
+Abstract       : For an affordable double 5-story residences project, the original window design featuring a 10cm-long Egg Crate profile was revamped to incorporate a 50cm-long louver concept. Using the Brute Force approach through the Colibri Iterator Definition, the design underwent 50 iterations to assess the impact on illumination metrics like CDA, UDI, DF. The objective is to optimize daylight performance and adapt to specific design requirements through Design Explorer 2 analysis.

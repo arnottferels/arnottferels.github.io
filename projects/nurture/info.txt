@@ -1,0 +1,15 @@
+Date           : 2022-04
+Title          : NURTURE
+Keywords       : Urban housing research, Apartment design, Sustainable design, Design optimization
+Softwares      : Rhino, Grasshopper, SketchUp, Lumion, Adobe Photoshop, Microsoft Excel
+Authors        : Arnott Ferels, Fikri Nur Khalid, Ekky Maulidin, Citra Destianti, Farelio Artha, Hasrul Nurliansyah
+Courseworks    : Architectural Design Studio
+Subtitle       : Nutrient for Future Singapore
+Location       : Singapore
+Classification : Master’s Design Studio 2
+Details        : Collaborative work in the International Student Competition by Designing Resilience in Asia (DRIA) & TU Darmstadt
+Contributions  : Conceptual, Formal analysis, Architectural modeling, Environmental modeling, Simulation, Housing design, Visualization
+Jury           : Adjie Negara, Hendrajaya Isnaeny, Aloysius Iwan Handono
+Instructor     : Widiyani
+Advisor        : M. Prasetiyo Effendi Yasin, Roro Diah Asih Purwaningrum
+Abstract       : This project aims to revitalize Singapore’s urban environment, tackling critical issues like food security and environmental sustainability, which are primary concerns in the country. By integrating education-focused communities with advanced technology, the pond-centric design, especially in housing placement, promotes sensory learning within the Transit-Oriented Development (TOD) framework. The proposed design advocates for a self-sufficient strategy through both public and private housing, contributing significantly to Singapore’s 2030 goal of attaining 30% food self-sufficiency. This initiative marks a comprehensive shift towards sustainable living for future residents of Singapore.

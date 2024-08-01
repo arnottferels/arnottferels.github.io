@@ -1,0 +1,6 @@
+Date          : 2023-11-16
+Title         : Daylight modeling in Architecture
+Keywords      : Daylight, Modeling, Architecture, Green architecture
+Courseworks   : Architectural Modeling, Architectural Simulation, Architectural Technology
+Location      : Bandung, Indonesia
+Event         : Guest Lecturer #7, AR4122 Green Architecture, Architecture Program Study, SAPPD ITB

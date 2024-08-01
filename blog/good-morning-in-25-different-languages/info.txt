@@ -1,0 +1,8 @@
+Date            : 2024-07-20
+Title           : Good Morning in 25 Different Languages
+Keywords        : good morning, language, world
+Abstract        : This guide presents how to say 'Good Morning' in 25 languages, covering major regions around the world, including Asia, Europe, North America, South America, and Oceania
+Description     : A list of how to say 'Good Morning' in 25 different languages, grouped by continent.
+Hero img credit : 圣诞又至
+Hero img url    : https://www.seaart.ai/explore/detail/cldm4n94msbdmlsoovq0
+Hero img desc   : (pencil drawing)，line art，black andwhite，fine brushwork，logotype, (((magia))), planet earth, Eau, firey, ventania, Magic Array, datura, Abstract, fractalized, patterned, Creative, art  stations, vector, (accurate lines)，(Elegant curves)。(best quality,4k,8k,highres,masterpiece:1.2), ultra-detailed, realistic:1.37

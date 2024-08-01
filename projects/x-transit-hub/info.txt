@@ -1,0 +1,12 @@
+Date           : 2023-01-25
+Title          : X Transit Hub
+Keywords       : Urban research, Transit design, Public space, Computation, Design methods, Design optimization
+Softwares      : Rhino, Grasshopper, Wallacei, Culebra, Quelea, Anemone, Caribou, Arachne, Kangaroo 2, Twinmotion, Adobe Photoshop, Simplify3D, UltiMaker Cura
+Courseworks    : Thesis
+Subtitle       :  Walkability Model Using Dynamic Multilayer Method in Transit Hub Design
+Location       : West Jakarta, Indonesia
+Classification : Master’s Thesis
+Details        : Individual work
+Jury           : M. Donny Koerniawan, Heru W. Poerbo
+Advisor        : Aswin Indraprastha
+Abstract       : This thesis delves into the challenges, methodologies, and solutions associated with the design of a transit hub (TH) in Jakarta that integrates both public transportation and public spaces (PS). A Dynamic Multi-Layer (DML) method addresses these intricate challenges by examining traffic density, simulating pedestrian movements, and optimizing for multiple objectives, such as minimizing distance to PS and reducing the total number of PS. The ultimate solution serves as a blueprint for the TH design, emphasizing human mobility, connectivity, and greenery.

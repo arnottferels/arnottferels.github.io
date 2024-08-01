@@ -1,0 +1,11 @@
+Date           : 2019-12
+Title          : Hawker Center Jakarta Experimental
+Keywords       : Experimental design, Parametric design, Tensile structures
+Softwares      : Rhino, Grasshopper, Kangaroo 2, Paneling Tools, Lumion, Adobe Photoshop, Adobe Illustrator
+Courseworks    : Architectural Design Studio
+Subtitle       : Innovative Concepts & Designs Emerging from Thematic Experimentation
+Location       : West Jakarta, Indonesia
+Classification : Bachelor’s Experimental Studio
+Details        : Individual work
+Advisor        : Trianzani Sulshi, Audrey Juliana
+Abstract       : This project relocates informal street vendors from West Jakarta along Letjen. S. Parman Rd, using experimental architectural exploration to create multi-dimensional spatial definition. Featuring a floating acrylic vista for zone and circulation definition, the design addresses challenges of limited green space and diverse zones near the busy road. Integrating experimental layers, materials, and facades, the Hawker Center creatively tackles the district’s shortage of public spaces and green areas. The split structure incorporates elements like a steel frame, polycarbonate panels, and tensile structures, enhancing architectural creativity and the urban environment.
