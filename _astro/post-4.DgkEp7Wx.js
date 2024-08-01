@@ -1,3 +1,0 @@
-const o="post-4.md",t="blog",e="post-4",s=`
-After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!
-`,r={env_prod_ignore:!0,post_type:"blog",pub_date:"2022-07-08",main_title:"My Second Blog Post",description:"After learning some Astro, I couldn't stop!",contributions:[],jury:[],instructor:[],team_leader:[],advisor:[],keywords:["astro","blogging","learning in public","successes"],softwares:[],authors:["Astro Learner"],courseworks:[],editors:[]},n={type:"content",filePath:"D:/izvw/github/astro/mad-jet/src/content/blog/post-4.md",rawData:void 0};export{n as _internal,s as body,t as collection,r as data,o as id,e as slug};
