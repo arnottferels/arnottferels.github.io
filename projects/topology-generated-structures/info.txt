@@ -1,7 +1,0 @@
-Date          : 2022-11-5
-Title         : Topology-Generated Structures
-Keywords      : topology optimization, generative design, computational design, structural optimization
-Softwares     : Rhino, Grasshopper, tOpos
-Subtitle      : Exploring Topology-Generated Structures
-Details       : Individual work
-Abstract      : This project explores topology optimization as a tool for creating innovative structural designs, focusing on an imaginary bridge spanning a wide river. Using Rhino, Grasshopper, and tOpos, it generates complex, optimized geometries tailored to the bridge’s needs.

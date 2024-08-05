@@ -1,3 +1,0 @@
-Date          : 2023-06
-Title         : Onion
-Keywords      : Algorithmic design, Architecture, Onion

@@ -1,3 +1,0 @@
-Date          : 2023-11
-Title         : Cupcake
-Keywords      : Design exploration, Algorithmic design, Cupcake

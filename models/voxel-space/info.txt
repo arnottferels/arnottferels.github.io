@@ -1,3 +1,0 @@
-Date          : 2023-09
-Title         : Voxel Space
-Keywords      : Algorithmic design, Computational thinking, Design exploration, Generative design, Voxel Space

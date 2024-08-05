@@ -1,7 +1,0 @@
-Date          : 2023-07-29
-Title         : Workshop DIALux & OTTV
-Keywords      : DIALux, OTTV, Workshop, Sustainable development, Efficient & energy conservation
-Softwares     : DIALux, Microsoft Excel
-Courseworks   : Architectural Modeling, Architectural Simulation, Architectural Technology
-Location      : Online
-Event         : IVC ITB, Summer Course on Sustainable Development, SAPPD ITB, Efficient & Energy Conservation

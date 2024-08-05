@@ -1,3 +1,0 @@
-Date          : 2023-12
-Title         : Half-submerged
-Keywords      : Design exploration, Half-submerged
