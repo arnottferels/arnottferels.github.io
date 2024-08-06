@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /_html/
 
 Sitemap: https://arnottferels.github.io/sitemap-index.xml
