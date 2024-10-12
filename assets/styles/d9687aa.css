@@ -1,0 +1,1 @@
+[data-table=ob24] :where(tr){border:0}[data-table=ob24] :where(td){color:#000;text-align:end}@media screen{[data-theme=dark] [data-table=ob24] :where(thead,tbody){filter:var(--filter-invert)}}@media print{[data-table=ob24] :where(td){font-size:8pt}}

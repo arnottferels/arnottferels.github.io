@@ -1,0 +1,1 @@
+:where(.hello-case){align-items:end;display:flex;margin-block-end:var(--scale-0-5);min-height:20vh}:where(.hello-text){font-size:var(--font-size-1-7);font-weight:700}@media (min-width:425px){:where(.hello-text){font-size:var(--font-size-2-5)}}:where(.hello-tr){font-size:var(--font-size-1-1);font-weight:300}

@@ -1,0 +1,1 @@
+[data-meta-name=collection] :where(.coll-data-case){row-gap:var(--scale-0-3)}@media (min-width:768px){[data-meta-name=collection] :where(.coll-data-case){row-gap:var(--scale-0-5)}}
