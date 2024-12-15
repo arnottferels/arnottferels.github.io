@@ -1,0 +1,1 @@
+[data-astro-image]{aspect-ratio:var(--w) /var(--h);height:auto;-o-object-fit:var(--fit);object-fit:var(--fit);-o-object-position:var(--pos);object-position:var(--pos);width:100%}[data-astro-image=responsive]{max-height:calc(var(--h)*1px);max-width:calc(var(--w)*1px)}[data-astro-image=fixed]{height:calc(var(--h)*1px);width:calc(var(--w)*1px)}

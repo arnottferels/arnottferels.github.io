@@ -1,0 +1,1 @@
+import{r as s,Z as n}from"./const.mjs";import{I as i}from"./media.mjs";import{d as c}from"./debounce.mjs";import"./events.mjs";const d=()=>{const t=window.scrollY,o=document.body.scrollHeight-window.innerHeight,e=Math.max(0,Math.min(100,t/o*100)),m=document.getElementById(n);m&&m.style.setProperty("width",`${e}%`)},m=()=>{i&&window.addEventListener(s,c(d))};m();

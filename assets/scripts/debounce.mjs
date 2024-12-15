@@ -1,0 +1,1 @@
+import{_ as r}from"./const.mjs";const u=(t,e=r)=>{let o;return()=>{clearTimeout(o),o=setTimeout(t,e)}};export{u as d};

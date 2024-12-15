@@ -1,0 +1,1 @@
+const c="screen",e="print",s=e=>window.matchMedia(e).matches,n=s(c);s(e);export{n as I,e as M};

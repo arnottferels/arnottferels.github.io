@@ -1,0 +1,1 @@
+import{P as e,Q as n,V as o,W as K,X as i}from"./const.mjs";const E=(s,a)=>s.key===a,P=(s,a)=>(s.ctrlKey||s.metaKey)&&s.key===a,c=(s,a)=>E(s,a),t=(s,a)=>a.some((a=>P(s,a))),y=s=>t(s,[e,n]),u=s=>t(s,[e]),S=s=>t(s,[o]),d=s=>c(s,K),h=s=>c(s,i);export{y as a,S as b,d as c,h as d,u as i};
