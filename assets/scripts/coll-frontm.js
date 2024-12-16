@@ -1,1 +1,1 @@
-import{Y as o,k as e,g as n}from"./const.mjs";import"./events.mjs";const r=o=>{document.querySelectorAll(n).forEach((e=>e.open=o))},a=()=>{[o,e].forEach((e=>{window.addEventListener(e,(()=>r(e===o)))}))};a();
+import{Y as o,j as e,f as n}from"./const.mjs";import"./events.mjs";const r=o=>{document.querySelectorAll(n).forEach((e=>e.open=o))},a=()=>{[o,e].forEach((e=>{window.addEventListener(e,(()=>r(e===o)))}))};a();
