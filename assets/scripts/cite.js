@@ -1,0 +1,1 @@
+import{T as n,C as o,c as r}from"./const.mjs";import{i as a}from"./key.mjs";import"./events.mjs";const i=window.location,s=i.pathname.includes(`/${n}/`)&&!i.pathname.endsWith(".bib"),c=(e,t)=>{s&&(t.preventDefault(),i.href=e.href)},m=()=>{const e=document.querySelector(`.${o}`);e&&document.addEventListener(r,(t=>a(t)&&c(e,t)))};m();
