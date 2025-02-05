@@ -1,0 +1,1 @@
+import{i}from"./prefetch.mjs";i();

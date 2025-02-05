@@ -1,0 +1,1 @@
+import{b as o}from"./global.mjs";import{b as r,c as e}from"./attrs.mjs";import{D as n,d as i}from"./e.mjs";import"./router.mjs";const s=()=>{if(window.history.length>1)return;const t=document.querySelector(`[${r}=${e}]`);t&&(t.style.display=o)},a=()=>{n.forEach((o=>document.addEventListener(o,s))),window.addEventListener(i,window.history.back)};a();

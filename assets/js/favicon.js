@@ -1,0 +1,1 @@
+import{n as i,D as E}from"./e.mjs";import"./router.mjs";const o="href",e="favicon",c=".svg",s=`/${e}${c}`,r=`/${e}-hidden${c}`,d=()=>{const e=document.querySelector('link[rel="icon"]');if(!e)return;const t=document.hidden?r:s;e.getAttribute(o)!==t&&e.setAttribute(o,t)},a=()=>{[i,...E].forEach((e=>document.addEventListener(e,d)))};a();

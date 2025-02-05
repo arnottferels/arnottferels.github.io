@@ -1,0 +1,1 @@
+import{a as o}from"./global.mjs";import{a as i}from"./e.mjs";import{d as n}from"./c-key.mjs";import{i as a}from"./shortcut.mjs";import"./router.mjs";const r=window.location,s=r.pathname.includes(n)&&!r.pathname.endsWith(".bib"),m=(o,t)=>{s&&(t.preventDefault(),r.href=o.href)},c=()=>{const r=document.querySelector(`.${o}`);r&&document.addEventListener(i,(o=>a(o)&&m(r,o)))};c();
