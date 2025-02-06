@@ -1,1 +1,1 @@
-const _="analytics_storage",s="granted",A="denied",O="analytics",a="show--consent",C="Google Analytics";export{a as C,A as G,O as a,s as b,_ as c,C as d};
+import{A as _,J as E}from"./global.mjs";const a="analytics_storage",c="granted",n="denied",t="cookie-consent",A="analytics",e="show--consent",S="Google Analytics",O="data-cc",C="show-preferencesModal",N=a=>`<${_} ${O}="${C}" class="Cookie-Btn"><i class="${E}">${a}</i></${_}>`,T=N("Manage preferences...");export{T as B,e as C,n as G,A as a,c as b,a as c,t as d,S as e};
