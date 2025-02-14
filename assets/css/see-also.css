@@ -1,1 +1,1 @@
-:where(.SeeAlso-Box){margin-block-start:2.125rem;margin-inline:auto;max-width:80vw;width:100%}@media (min-width:1024px){:where(.SeeAlso-Box){max-width:90vw}}@media (min-width:1440px){:where(.SeeAlso-Box){margin-block-start:4.125rem;max-width:70vw}}
+:where(.SeeAlso-Box){margin-block-start:2.125rem;margin-inline:auto;width:100%}@media (min-width:1440px){:where(.SeeAlso-Box){margin-block-start:4.125rem}}

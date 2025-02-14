@@ -1,1 +1,1 @@
-import{E as r}from"./global.mjs";import{q as o,d as e}from"./e.mjs";import"./router.mjs";const i=e=>document.querySelectorAll(r).forEach((r=>r.open=e===o)),n=()=>[o,e].forEach((o=>window.addEventListener(o,(()=>i(o)))));n();
+import{p as e,d as E}from"./events.mjs";import{l as r}from"./global.mjs";import"./router.mjs";const n=o=>{for(const t of document.querySelectorAll(r))t.open=o===e};for(const o of[e,E])window.addEventListener(o,(()=>n(o)));
