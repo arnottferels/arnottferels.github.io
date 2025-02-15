@@ -1,1 +1,1 @@
-const L=768,B=1024;export{L as B,B as a};
+const L=768,B=1024;export{B,L as a};
