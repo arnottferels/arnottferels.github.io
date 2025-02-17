@@ -1,1 +1,1 @@
-import{o as u}from"./global.mjs";const n=(o,t=u)=>{let e;return()=>{clearTimeout(e),e=setTimeout(o,t)}};export{n as d};
+import{D as a}from"./global.mjs";const l=(l,t=a)=>{let e=null;return(...o)=>{e&&clearTimeout(e),e=setTimeout((()=>l(...o)),t)}};export{l as c};
