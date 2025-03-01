@@ -1,1 +1,1 @@
-const _=".pagefind-ui",I=`${_}__search`,E=`${_}__result`,S=`${_}__button`,A=_,N=`${E}-image`,s=`${E}-thumb`,G=`${E}-title`,t=`${E}-link`,P=`${I}-input`,D=`${I}-clear`,F=`${S}`,c="data-giscus";export{c as G,A as P,P as a,D as b,t as c,F as d,N as e,s as f,G as g};
+const t=(...t)=>`${t[0]}${t[1]?`__${t[1]}${t[2]?`-${t[2]}`:""}`:""}`,n=".pagefind-ui",o="button",c="result",e="search",a={a:"data-pagefind-ignore",b:t(n),c:t(n,o),d:t(n,c,"image"),e:t(n,c,"thumb"),f:t(n,c,"title"),g:t(n,c,"link"),h:t(n,e,"input"),i:t(n,e,"clear"),n:"data-giscus"};export{a as V};
