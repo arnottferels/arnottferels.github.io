@@ -1,1 +1,1 @@
-const e={a:["view","v"],b:["search","s"],c:["theme","t"],d:["expand","e"],e:"h"};export{e as Q};
+const e={a:["view","v"],b:["search","s"],c:["theme","t"],d:["expand","e"],e:["border","b"],f:"h"};export{e as Q};
