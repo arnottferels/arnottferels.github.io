@@ -1,0 +1,1 @@
+import{A as n}from"./attrs.mjs";import{E as a}from"./events.mjs";import{s as t,U as s}from"./consts.mjs";import{S as c}from"./shortcut.mjs";const r=window.location,m=t(r.pathname).includes(t(s.a)),f=(t,o)=>{m&&(o.preventDefault(),r.href=t.href)},o=document.querySelector(`[${n.L}]`);o&&document.addEventListener(a.h,(t=>c.h(t)&&f(o,t)));

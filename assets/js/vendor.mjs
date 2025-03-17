@@ -1,1 +1,0 @@
-const t=(...t)=>`${t[0]}${t[1]?`__${t[1]}${t[2]?`-${t[2]}`:""}`:""}`,n=".pagefind-ui",o="button",c="result",e="search",a={a:"data-pagefind-ignore",b:t(n),c:t(n,o),d:t(n,c,"image"),e:t(n,c,"thumb"),f:t(n,c,"title"),g:t(n,c,"link"),h:t(n,e,"input"),i:t(n,e,"clear"),n:"data-giscus"};export{a as V};

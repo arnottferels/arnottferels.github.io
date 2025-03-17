@@ -1,1 +1,0 @@
-import{A as a}from"./attrs.mjs";import{E as o}from"./events.mjs";import{M as e}from"./global.mjs";import{Q as m}from"./query.mjs";async function i(){const t={highlightParam:m.f,markContext:`[${a.a}="${a.c}"]`,markOptions:{className:"highlight"}};new PagefindHighlight(t)}if(window.matchMedia(e.a).matches){i();for(const a of o.f)document.addEventListener(a,i)}

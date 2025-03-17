@@ -1,1 +1,0 @@
-import{E as e}from"./events.mjs";import{E as n}from"./global.mjs";const r=o=>{for(const r of document.querySelectorAll(n.c))r.open=o===e.c};for(const o of[e.c,e.a])window.addEventListener(o,(()=>r(o)));
