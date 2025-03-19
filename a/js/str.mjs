@@ -1,0 +1,1 @@
+const a=a=>a.replace(/([^:]\/)\/+/g,"$1").replace(/(.+?)\/+$/,"$1");export{a as s};
