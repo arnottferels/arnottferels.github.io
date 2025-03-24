@@ -1,1 +1,0 @@
-const t={a:(t,a,e={})=>(!e.ctrl||t.ctrlKey||t.metaKey)&&(!e.alt||t.altKey)&&t.key.toLowerCase()===a.toLowerCase(),b:(a,e)=>t.a(a,e,{ctrl:!0}),c:(a,e)=>t.a(a,e,{alt:!0}),d:a=>t.a(a,"/"),e:a=>t.a(a,"Escape"),f:a=>t.b(a,"k"),g:a=>t.b(a,"p"),h:a=>t.b(a,"s"),i:a=>t.c(a,"b"),j:a=>t.c(a,"f"),k:a=>t.c(a,"s"),l:a=>t.c(a,"t"),m:a=>t.c(a,"v")};export{t as S};

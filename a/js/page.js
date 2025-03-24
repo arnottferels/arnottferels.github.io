@@ -1,1 +1,1 @@
-import{i}from"./prefetch.mjs";i();
+import{i}from"./prefetch.js";i();

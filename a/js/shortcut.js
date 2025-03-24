@@ -1,0 +1,1 @@
+const i=a=>"/"===a.key,l=a=>"Escape"===a.key,c=(a,e)=>(a.ctrlKey||a.metaKey)&&a.key===e,t=(a,e)=>a.altKey&&a.key===e,o=a=>c(a,"k"),n=a=>c(a,"p"),e=a=>c(a,"s"),r=a=>t(a,"b"),y=a=>t(a,"s"),k=a=>t(a,"t"),A=a=>t(a,"v");export{i as a,l as b,y as c,n as d,e,r as f,A as g,k as h,o as i};
