@@ -1,0 +1,1 @@
+const s=s=>/^https?:\/\//.test(s);export{s as i};

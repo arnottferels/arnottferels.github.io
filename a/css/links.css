@@ -1,1 +1,1 @@
-.LinksCollection-Box{align-items:flex-start;font-family:var(--ar-font-primary);font-size:1rem;margin-block-start:.75rem}.LinksCollection-Box ::marker{font-size:.75rem}@media (min-width:768px){.LinksCollection-Box{font-size:1.125rem;margin-block-start:1.75rem}.LinksCollection-Box ::marker{font-size:1.125rem}}
+.LinksCollection{font-size:1rem;margin-block-start:.75rem}@media (min-width:768px){.LinksCollection{font-size:1.125rem;margin-block-start:1.75rem}}
