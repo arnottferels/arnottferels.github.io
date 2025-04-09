@@ -1,1 +1,0 @@
-import{D as c}from"./global.js";const n=e=>document.createElement(e),o=(e,t=c)=>{let o=null;return(...a)=>{o&&clearTimeout(o),o=setTimeout((()=>e(...a)),t)}};export{n as a,o as c};

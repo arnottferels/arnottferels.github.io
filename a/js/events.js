@@ -1,1 +1,1 @@
-const e={a:"afterprint",b:"astro:before-swap",c:"beforeprint",d:"change",e:"click",f:["DOMContentLoaded","astro:after-swap"],g:"input",h:"keydown",i:"load",j:"mouseleave",k:"mousemove",l:"mouseover",m:"resize",n:"scroll",o:"visibilitychange"};export{e as E};
+const e={a:"afterprint",b:"astro:before-swap",c:"beforeprint",d:"change",e:"click",f:["DOMContentLoaded","astro:after-swap"],g:"input",h:"keydown",i:"load",j:"mouseleave",k:"mousemove",l:"mouseover",m:"resize",n:"scroll"};export{e as E};
