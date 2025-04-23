@@ -1,1 +1,0 @@
-const a={a:"lib",b:"pagefind",c:"a",d:"data"},s={a:"image.json",b:"rss.xml"};export{a as D,s as F};

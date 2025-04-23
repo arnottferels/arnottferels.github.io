@@ -1,0 +1,1 @@
+const e={$:"afterprint",a:"astro:before-swap",b:"beforeprint",c:"change",d:"click",e:["DOMContentLoaded","astro:after-swap"],f:"input",g:"keydown",h:"load",i:"mouseleave",j:"mousemove",k:"mouseover",l:"resize",m:"scroll"};export{e as E};

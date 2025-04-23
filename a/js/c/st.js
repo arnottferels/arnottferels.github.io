@@ -1,0 +1,1 @@
+const r={$:"ar/theme",a:"ar/border",b:"ar/card",c:"ar/toc",d:"ar/toc_",e:"ar/vp",f:"ar/br",g:"ar/pl",h:"ar/os",i:"ar/resume",j:"ar/entries",k:"ar/img"};export{r as S};

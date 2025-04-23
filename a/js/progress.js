@@ -1,1 +1,0 @@
-import{A as s}from"./attrs.js";import{E as r}from"./events.js";import{M as i,c,g as a}from"./global.js";const d=()=>{const t=window.scrollY,o=document.body.scrollHeight-a(),e=Math.max(0,Math.min(100,t/o*100)),m=document.querySelector(`[${s.o}]`);m&&(m.style.width=`${e}%`)},m=()=>{window.matchMedia(i.a).matches&&window.addEventListener(r.n,c(d))};m();
