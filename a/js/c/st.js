@@ -1,1 +1,1 @@
-const r={$:"ar/theme",a:"ar/border",b:"ar/card",c:"ar/toc",d:"ar/toc_",e:"ar/vp",f:"ar/br",g:"ar/pl",h:"ar/os",i:"ar/resume",j:"ar/entries",k:"ar/img"};export{r as S};
+const c=c=>`ar/${c}`,o={$:c("t"),a:c("e"),b:c("c"),c:c("br"),d:c("pl"),e:c("os"),f:c("r"),g:c("404"),h:c("toc"),i:c("toc"),k:c("gc"),l:c("pf")};export{o as S};
