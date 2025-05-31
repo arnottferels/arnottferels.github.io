@@ -1,1 +1,1 @@
-import{i}from"./prefetch.js";i();
+import{i as r}from"./client-router.js";r();

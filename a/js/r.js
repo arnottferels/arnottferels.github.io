@@ -1,0 +1,1 @@
+import{w as t,x as e}from"./core.js";import{d as o,c as r,p as s}from"./u.js";o(e,(()=>{const e=r('link[rel="canonical"]');if(e){const o=e.href,c=new URL(s()).search;if(c){const e=r("meta[http-equiv]"),s=r(`body > ${t}`);if(s){s.href=o+c;const t=s.querySelector("code:last-of-type");t&&(t.innerHTML=o+c)}e&&e.setAttribute("content",`0;url=${o}${c}`)}}}));

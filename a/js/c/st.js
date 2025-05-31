@@ -1,1 +1,0 @@
-const c=c=>`ar/${c}`,o={$:c("t"),a:c("e"),b:c("c"),c:c("br"),d:c("pl"),e:c("os"),f:c("r"),g:c("404"),h:c("toc"),i:c("toc"),k:c("gc"),l:c("pf")};export{o as S};

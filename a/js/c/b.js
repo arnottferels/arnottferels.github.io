@@ -1,1 +1,0 @@
-const a={a:1024,b:1440};export{a as B};

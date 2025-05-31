@@ -1,1 +1,0 @@
-const e={$:["v","view"],a:["s","search"],b:["t","theme"],c:["x","expand"],d:["e","edges"],e:["p","print"],f:"h"};export{e as Q};

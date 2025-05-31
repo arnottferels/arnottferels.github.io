@@ -1,1 +1,0 @@
-const i=(t,e,l)=>{const r={ctrl:t.ctrlKey||t.metaKey,alt:t.altKey,shift:t.shiftKey};return(null===e||r[e])&&t.key===l};export{i};
