@@ -1,1 +1,1 @@
-import{ag as a,aO as s,a5 as o}from"./core.js";import{D as r,E as e,c as t,b as c,d as f,G as i}from"./u.js";const n=r(e()).includes(r(a)),l=t(c(s));l&&f(o,(a=>i(a,"ctrl","s")&&((a,s)=>{n&&(s.preventDefault(),window.location.href=a.href)})(l,a)));
+import{z as s,A as a,F as o}from"./core.js";import{z as r,A as e,c as t,b as c,d as f,B as i}from"./u.js";const n=r(e()).includes(r(s)),l=t(c(a));l&&f(o,(s=>i(s,"ctrl","s")&&((s,a)=>{n&&(a.preventDefault(),window.location.href=s.href)})(l,s)));
