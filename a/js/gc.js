@@ -1,1 +1,1 @@
-import{E as s,bS as a,bK as t,bT as o,bU as r,bV as c}from"./core.js";import{d as b,q as n,c as e,b as i,k as f,i as m}from"./u.js";const p=()=>{if(!n().startsWith(a)||e(t+i(o)))return;const s=f(t);s.async=!0,s.src=r,s.setAttribute(o,`${c}/count`),m.head.append(s)};for(const a of s)b(a,p);
+import{E as s,b_ as a,bX as t,b$ as o,c0 as r,c1 as c}from"./core.js";import{d as n,u as e,c as i,b,k as f,i as u}from"./u.js";const m=()=>{if(!e().startsWith(a)||i(t+b(o)))return;const s=f(t);s.async=!0,s.src=r,s.setAttribute(o,`${c}/count`),u.head.append(s)};for(const a of s)n(a,m);
