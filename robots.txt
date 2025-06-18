@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
 Sitemap: https://arnottferels.github.io/sitemap.xml
