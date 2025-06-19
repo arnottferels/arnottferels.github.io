@@ -1,2 +1,25 @@
+# Last modified: 2025-06-19
+
 User-agent: *
-Sitemap: https://arnottferels.github.io/sitemap.xml
+Disallow: /
+
+User-agent: Baiduspider
+User-agent: Googlebot
+User-agent: Slurp
+User-agent: bingbot
+Allow: /$
+Allow: /_test/
+Allow: /a/
+Allow: /concept/
+Allow: /mention/
+Allow: /post/
+Allow: /report/
+Allow: /research/
+Allow: /talk/
+Allow: /work/
+
+User-agent: Amazonbot
+Disallow: /
+
+Sitemap: https://arnottferels.github.io/sitemap/sitemap.xml
+Sitemap: https://arnottferels.github.io/sitemap/sitemap.txt
