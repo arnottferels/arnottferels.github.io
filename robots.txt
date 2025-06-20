@@ -1,4 +1,4 @@
-# Last modified: 2025-06-19
+# Last modified: 2025-06-20
 
 User-agent: *
 Disallow: /
@@ -21,5 +21,5 @@ Allow: /work/
 User-agent: Amazonbot
 Disallow: /
 
-Sitemap: https://arnottferels.github.io/sitemap/sitemap.xml
-Sitemap: https://arnottferels.github.io/sitemap/sitemap.txt
+Sitemap: https://arnottferels.github.io/sitemap.xml
+Sitemap: https://arnottferels.github.io/sitemap.txt
