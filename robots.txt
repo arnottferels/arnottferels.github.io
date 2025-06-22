@@ -1,14 +1,17 @@
-# Last modified: 2025-06-20
+# https://arnottferels.github.io
+# Last modified: 2025-06-22
 
 User-agent: *
 Disallow: /
 
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
 User-agent: Baiduspider
-User-agent: Googlebot
-User-agent: Slurp
-User-agent: bingbot
 Allow: /$
-Allow: /_test/
 Allow: /a/
 Allow: /concept/
 Allow: /mention/
@@ -18,8 +21,38 @@ Allow: /research/
 Allow: /talk/
 Allow: /work/
 
-User-agent: Amazonbot
-Disallow: /
+User-agent: Googlebot
+Allow: /$
+Allow: /a/
+Allow: /concept/
+Allow: /mention/
+Allow: /post/
+Allow: /report/
+Allow: /research/
+Allow: /talk/
+Allow: /work/
 
-Sitemap: https://arnottferels.github.io/sitemap.xml
-Sitemap: https://arnottferels.github.io/sitemap.txt
+User-agent: Slurp
+Allow: /$
+Allow: /a/
+Allow: /concept/
+Allow: /mention/
+Allow: /post/
+Allow: /report/
+Allow: /research/
+Allow: /talk/
+Allow: /work/
+
+User-agent: bingbot
+Allow: /$
+Allow: /a/
+Allow: /concept/
+Allow: /mention/
+Allow: /post/
+Allow: /report/
+Allow: /research/
+Allow: /talk/
+Allow: /work/
+
+Sitemap: https://arnottferels.github.io/sitemap/sitemap.xml
+Sitemap: https://arnottferels.github.io/sitemap/sitemap.txt
