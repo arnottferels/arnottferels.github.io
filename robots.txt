@@ -1,5 +1,5 @@
 # https://arnottferels.github.io
-# Last modified: 2025-06-23
+# Last modified: 2025-06-26
 
 User-agent: *
 Disallow: /
@@ -13,46 +13,79 @@ Disallow: /
 User-agent: Baiduspider
 Allow: /$
 Allow: /a/
+Allow: /concept
 Allow: /concept/
+Allow: /mention
 Allow: /mention/
+Allow: /post
 Allow: /post/
+Allow: /report
 Allow: /report/
+Allow: /research
 Allow: /research/
+Allow: /talk
 Allow: /talk/
+Allow: /work
 Allow: /work/
 
 User-agent: Googlebot
 Allow: /$
 Allow: /a/
+Allow: /concept
 Allow: /concept/
+Allow: /mention
 Allow: /mention/
+Allow: /post
 Allow: /post/
+Allow: /report
 Allow: /report/
+Allow: /research
 Allow: /research/
+Allow: /talk
 Allow: /talk/
+Allow: /work
 Allow: /work/
 
 User-agent: Slurp
 Allow: /$
 Allow: /a/
+Allow: /concept
 Allow: /concept/
+Allow: /mention
 Allow: /mention/
+Allow: /post
 Allow: /post/
+Allow: /report
 Allow: /report/
+Allow: /research
 Allow: /research/
+Allow: /talk
 Allow: /talk/
+Allow: /work
 Allow: /work/
 
 User-agent: bingbot
 Allow: /$
 Allow: /a/
+Allow: /concept
 Allow: /concept/
+Allow: /mention
 Allow: /mention/
+Allow: /post
 Allow: /post/
+Allow: /report
 Allow: /report/
+Allow: /research
 Allow: /research/
+Allow: /talk
 Allow: /talk/
+Allow: /work
 Allow: /work/
+
+User-agent: GPTBot
+Allow: /research
+Allow: /research/
+Disallow: /
 
 Sitemap: https://arnottferels.github.io/sitemap/sitemap.xml
 Sitemap: https://arnottferels.github.io/sitemap/sitemap.txt
