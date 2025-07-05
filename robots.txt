@@ -1,5 +1,5 @@
 # https://arnottferels.github.io
-# Last modified: 2025-07-04
+# Last modified: 2025-07-05
 
 User-agent: *
 Disallow: /
@@ -61,3 +61,7 @@ Disallow: /
 Sitemap: https://arnottferels.github.io/sitemap-index.xml
 Sitemap: https://arnottferels.github.io/sitemaps/sitemap.xml
 Sitemap: https://arnottferels.github.io/sitemaps/sitemap.txt
+Sitemap: https://arnottferels.github.io/sitemapindex.xml
+Sitemap: https://arnottferels.github.io/sitemap.xml
+Sitemap: https://arnottferels.github.io/sitemap/sitemap.xml
+Sitemap: https://arnottferels.github.io/sitemap/sitemap.txt
