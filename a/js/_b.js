@@ -1,0 +1,1 @@
+import{eg as t,a$ as o}from"./_c.js";const s=()=>{const t=window.location.hostname;return/localhost$|^127\.|^10\.|^172\.(1[6-9]|2[0-9]|3[0-1])\.|^192\.168\.|^0\.0\.0\.0$/.test(t)},a=()=>{const t=window.location.pathname;return o.some((o=>t.startsWith(o)))},n=()=>document.documentElement.hasAttribute(t);export{n as a,s as b,a as g};
