@@ -1,1 +1,1 @@
-import{ed as s,ee as a}from"./_c.js";import{l as o,s as r}from"./_s.js";const e=a,m=s,t=()=>o(m,[e]),p=(s,a)=>r(m,s,a);export{t as l,p as s};
+import{eb as s,ec as a}from"./_c.js";import{l as o,s as r}from"./_s.js";const m=a,t=s,c=()=>o(t,[m]),e=(s,a)=>r(t,s,a);export{c as l,e as s};
