@@ -1,0 +1,1 @@
+const s="cite",a="contents",t="collections",e="tags",c="comments",n="BibTeX",o="main menu",i="search",m="settings";export{n as B,c as C,o as M,m as S,e as T,t as a,i as b,a as c,s as d};

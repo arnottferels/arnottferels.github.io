@@ -1,0 +1,1 @@
+:where(.E9){color:var(--pV);place-content:center;place-items:center;gap:.75rem;font-size:.875rem;display:flex}:where(.E9) svg{height:1.125rem}@media (width>=768px){:where(.E9) svg{height:1.5rem}}:where(.E9) path{fill:var(--ZJ)}:where(.E9):active,:where(.E9):hover{color:var(--ZJ)}

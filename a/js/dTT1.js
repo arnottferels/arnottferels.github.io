@@ -1,0 +1,1 @@
+import{h as s}from"./MTdV.js";import{t as a,$ as t,w as i,dk as r,dn as d,a1 as m,di as o,dl as j,ch as n,c as e,s as c,dj as p,a2 as h,dm as f}from"./XDLd.js";import"./LVfj.js";import"./clT1.js";import"./jhPR.js";import"../lib/bP1u.js";const l=()=>{if(i.innerWidth>=o)return;const t=e(p),m=c(t),n={[f]:a(d),[r]:a(j)};s(m,3,!1,n)};m().matches&&(h(l),i.addEventListener(t,n(l,1e3)));

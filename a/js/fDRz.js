@@ -1,0 +1,1 @@
+const e=e=>{const o={},t=new URLSearchParams(e);for(const[e,n]of t.entries())o[e]=n;return o},o=e=>e?e.split(",").map(e=>decodeURIComponent(e.trim())):[];export{e as a,o as d};

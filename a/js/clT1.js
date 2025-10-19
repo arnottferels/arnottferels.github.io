@@ -1,0 +1,1 @@
+const a="Ctrl",s="Alt",t="Shift",o="Meta",C="Option",n="Control",d="Cmd",e="Command",l="⌥",m="⌘",r="^",c="⇧",f="+",h=" ";export{s as A,a as C,h as M,C as O,t as S,f as W,l as a,o as b,d as c,e as d,m as e,c as f,n as g,r as h};

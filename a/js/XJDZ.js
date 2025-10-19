@@ -1,0 +1,1 @@
+import{c as s,w as a,en as t,i as o,C as e}from"./XDLd.js";const c=()=>/localhost$|^127\.|^10\.|^172\.(1[6-9]|2[0-9]|3[0-1])\.|^192\.168\.|^0\.0\.0\.0$/.test(a.location.hostname),n=()=>!!o.querySelector(s(e)),l=()=>o.documentElement.classList.contains(t);export{l as a,c,n as h};

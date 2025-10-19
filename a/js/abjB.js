@@ -1,0 +1,1 @@
+const s=s=>s.startsWith("/")?s:`/${s}`,t=s=>s.endsWith("/")?s.slice(0,-1):s,a=t=>s((s=>s.endsWith("/")?s:`${s}/`)(t)),i=(...s)=>s.filter(s=>!!s).join("/");export{s as a,a as f,i as j,t as r};

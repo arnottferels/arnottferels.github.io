@@ -1,0 +1,1 @@
+import{d as t,s as e,b as a}from"../lib/3kDP.js";const n=()=>{const t=new Date,a=new Date(Date.UTC(t.getUTCFullYear(),t.getUTCMonth(),t.getUTCDate())),n=a.getUTCDay();return e(a,0===n?6:n-1).toISOString()},s=e=>{const n=new Date(0),s=a(n,e);return t(s,n)};export{s as d,n as t};

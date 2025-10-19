@@ -1,0 +1,1 @@
+import{h as s}from"./ajHL.js";import{f as a}from"./ijnt.js";const t="https://arnott.netlify.app",e="/api/c",i="/api/s",o="/api/t",n="/api/v",p="/api/co",r=t=>{const e="/"!==t&&t.endsWith("/")?t.slice(0,-1):t,i=e.toLowerCase().endsWith(a)?e.slice(0,-a.length)||"/":e;return i.toLowerCase().endsWith(s)?i.slice(0,-s.length):i};export{n as N,t as a,e as b,i as c,o as d,r as e,p as f};

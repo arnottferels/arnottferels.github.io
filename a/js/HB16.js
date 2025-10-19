@@ -1,0 +1,1 @@
+import{R as s}from"./88er.js";import{j as a}from"./abjB.js";const o="v1",v="v2",j="v",r="c",m="m.json",c="v.json",n="c.json",t=a(s,"v","v1",m),p=a(s,"v","v2",m);export{n as C,j as P,p as U,v as V,o as a,c as b,r as c,t as d};

@@ -1,0 +1,1 @@
+import{C as e,S as r,A as s}from"./clT1.js";const t=(t,a,o)=>{const y={[e]:t.ctrlKey||t.metaKey,[s]:t.altKey,[r]:t.shiftKey};return(null===a||(Array.isArray(a)?a:[a]).every(e=>y[e]))&&t.key.toLowerCase()===o.toLowerCase()};export{t as i};
