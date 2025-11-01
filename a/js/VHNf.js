@@ -1,1 +1,1 @@
-import{f5 as t}from"./XDLd.js";const e=t,o=(t,o)=>{const r=o;t.removeAttribute(e),r&&t.setAttribute(e,r)};export{o as u};
+import{fa as t}from"./XDLd.js";const e=t,o=(t,o)=>{const r=o;t.removeAttribute(e),r&&t.setAttribute(e,r)};export{o as u};
