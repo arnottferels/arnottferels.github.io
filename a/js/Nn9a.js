@@ -1,1 +1,0 @@
-import{r as s}from"./npBb.js";import{a1 as a,$ as t,a2 as m,n,c4 as r,w as e}from"./XDLd.js";import"https://cdn.jsdelivr.net/npm/p5@1.11.0/+esm";const p=()=>s(r);a().matches&&(m(p),e.addEventListener(t,n(p)));

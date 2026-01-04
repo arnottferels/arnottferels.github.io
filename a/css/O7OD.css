@@ -1,1 +1,0 @@
-.cl{display:none}@media (width>=1024px){.cl{border:0;width:100%;max-width:85%;height:100%;min-height:80vh;margin-inline:auto;display:block}}@media (width>=1024px) and (prefers-color-scheme:dark){.cl{filter:saturate()invert()}}@media (width>=1024px){:where([data-jz=dark]) .cl{filter:saturate()invert()}[data-jz=light] .cl{filter:none}}

@@ -1,1 +1,0 @@
-import{a as s,c as a,e as c,k as t}from"./p12e.js";import{b5 as o,c1 as e,de as i,c2 as d}from"./XDLd.js";const l=()=>{const i=t();i?.classList.add(d);const l=s(),m=c();a()?.classList.contains(e)&&m?.click(),l?.classList.add(o)},m=()=>{const a=s();t()?.classList.remove(d),a&&(a.className=i)};export{m as d,l as e};

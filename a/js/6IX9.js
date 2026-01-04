@@ -1,1 +1,0 @@
-import{c as s,_ as a,aY as n,n as t,p as o,aX as r,a_ as c,d as e,z as i,$ as l,aZ as d,w as Y,A as m}from"./XDLd.js";let p=0;const f=s(d),h=()=>{const s=e(f);if(s){const a=Y.innerWidth>=c&&Y.scrollY>.3*Y.innerHeight&&Y.scrollY>p;o(s,{[n]:i([m],300),[m]:r(a?"-100%":0)}),p=Y.scrollY}};[a,l].map(s=>Y.addEventListener(s,t(h)));
